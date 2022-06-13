@@ -129,3 +129,5 @@ Possible additional choices are:
 - **"Field name": translate automatically** – choose this option to export/import the "translate automatically" value of the corresponding field.
 - **"Field name": translated** – choose this option to export/import the value indicating whether this field has been translated. 
 - **"Field name" | Translate** – this option is available only for the import feeds is identical to the click on the `Translate` button. It applies a machine translation for the specified field value. It can only be used in import feeds.
+
+just testing edition, please remove this :)
