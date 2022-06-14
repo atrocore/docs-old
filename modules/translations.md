@@ -42,7 +42,7 @@ Created rules cannot be modified. For some destination language only one rule ca
 
 ### Language configuration
 
-Our system always has a Main Language, which can be any language of your consideration. All the additional languages should be configured additionally. Translations only to configured languages can be made.
+Our system always has a Main Language, which can be any language of your consideration. All the additional languages should be configured additionally. Translations can only be made to configured languages.
 
 To add a new language, go to Administration panel > Languages. In the dropdown menu choose as many languages as you need.
 
@@ -52,8 +52,12 @@ To add a new language, go to Administration panel > Languages. In the dropdown m
 
 ### View mode
 
-???????????????????????????????????? тут це треба описати, також про інформативні іконки і додати скріншот
-To switch to the edit mode click the pencil icon. - цей скріншот не вдалий він не показує обидві можливі іконки, треба замінити
+Depending on the pregonfigured parameters your multilingual may be marked with the following icons:
+
+![view_mode](_assets/translation/view_mode.png) 
+
+The "Book" icon indicates that this field needs to be translated, and the "Magic wand" icon indicates the automatically translated fields.
+To switch to the edit mode hover the mouse over the field you want to edit and click the pencil icon. 
 
 ![edit_field](_assets/translation/edit_field.png)  
 
@@ -104,8 +108,6 @@ To apply an action to multiple entities simultaneously, choose the required enti
 
 In the opened window click the `Select field` dropdown menu. For each multilingual field three actions are available.
 
-!!! скріншот завеликий, треба замінити !!!
-
 ![mass_update_select_field](_assets/translation/mass_update_select_field.png)  
 
 Possible additional choices are:
@@ -120,7 +122,6 @@ Additional meta data for multilingual fields or attributes can also be used for 
 
 With "Translations" module the extended functionality will be provided for the export/import feeds as well. In the configurator settings you will be able to use these "additional fields". 
 
-!!! скріншот завеликий, треба замінити !!!
 
 ![configurator](_assets/translation/configurator.png) 
 
@@ -130,4 +131,3 @@ Possible additional choices are:
 - **"Field name": translated** – choose this option to export/import the value indicating whether this field has been translated. 
 - **"Field name" | Translate** – this option is available only for the import feeds is identical to the click on the `Translate` button. It applies a machine translation for the specified field value. It can only be used in import feeds.
 
-just testing edition, please remove this :)
