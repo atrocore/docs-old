@@ -108,6 +108,11 @@ To apply an action to multiple entities simultaneously, choose the required enti
 
 In the opened window click the `Select field` dropdown menu. For each multilingual field three actions are available.
 
+<<<<<<< HEAD
+=======
+<!-- скріншот завеликий, треба замінити -->
+
+>>>>>>> b674ba94bfdaf738d1af43ae7215120bad3e4a8b
 ![mass_update_select_field](_assets/translation/mass_update_select_field.png)  
 
 Possible additional choices are:
@@ -122,6 +127,10 @@ Additional meta data for multilingual fields or attributes can also be used for 
 
 With "Translations" module the extended functionality will be provided for the export/import feeds as well. In the configurator settings you will be able to use these "additional fields". 
 
+<<<<<<< HEAD
+=======
+<!-- скріншот завеликий, треба замінити -->
+>>>>>>> b674ba94bfdaf738d1af43ae7215120bad3e4a8b
 
 ![configurator](_assets/translation/configurator.png) 
 
