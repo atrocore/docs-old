@@ -89,7 +89,8 @@ For some languages the automated translation option may not be available. In ord
 
 ### In-line edit mode
 
-Changing some value via in-line edit mode may trigger automatic translations, if for the corresponding values the checkbox `translate automatically` is set and the checkbox `translated` is not set. Thus, the new translated values for the corresponding fields are automatically stored into the database, without possibility to review these changes. So, if you always need to review the changes before saving a data record, please always use the edit mode. 
+Changing some values via in-line edit mode may trigger automatic translations, if for the corresponding values the checkbox `translate automatically` is set and the checkbox `translated` is not set. Thus, the new translated values for the corresponding fields are automatically stored in the database, without possibility to review these changes. So, if you always need to review the changes before saving a data record, please always use the edit mode. 
+Please note that if you change the "translate automatically" value to "true" the automated translation will be triggered only after the editing the source language value.
 
 ## Additional possibilities
 
@@ -102,17 +103,12 @@ These fields can be used for mass actions, import/export feeds and search and fi
 
 ### Mass action
 
-To apply an action to multiple entities simultaneously, choose the required entities by clicking the left checkbox on the list page click the `Actions` dropdown menu and choose `Mass update` option.
+To apply an action to multiple entities simultaneously, choose the required entities by clicking the left checkbox on the list page, click the `Actions` dropdown menu and choose `Mass update` option.
 
 ![mass_update](_assets/translation/mass_update.png)   
 
 In the opened window click the `Select field` dropdown menu. For each multilingual field three actions are available.
 
-<<<<<<< HEAD
-=======
-<!-- скріншот завеликий, треба замінити -->
-
->>>>>>> b674ba94bfdaf738d1af43ae7215120bad3e4a8b
 ![mass_update_select_field](_assets/translation/mass_update_select_field.png)  
 
 Possible additional choices are:
@@ -126,11 +122,6 @@ Possible additional choices are:
 Additional meta data for multilingual fields or attributes can also be used for import and export.
 
 With "Translations" module the extended functionality will be provided for the export/import feeds as well. In the configurator settings you will be able to use these "additional fields". 
-
-<<<<<<< HEAD
-=======
-<!-- скріншот завеликий, треба замінити -->
->>>>>>> b674ba94bfdaf738d1af43ae7215120bad3e4a8b
 
 ![configurator](_assets/translation/configurator.png) 
 
