@@ -13,7 +13,7 @@ You can configure your "Translations" module by going to "Administration panel /
 - **Translation engine** – select the machine translation engine to provide the automated translations to your multilingual fields.
 - **Main Language** – set the main language: choose the language which you consider as a main language in your system.
 - **Authentication Key** – this is a required value to get access to the DeepL translation engine API. To obtain it you need to register on the DeepL website.
-- **Default translation status** – here you can set the default translation status which is automatically applied to all multilingual fields (e.g. for a newly created product) and attribute values (eg newly added to a product).
+- **Default translation status** – here you can set the default translation status which is automatically applied to all multilingual fields (e.g., for a newly created product) and attribute values (e.g. newly added to a product).
 
 ### Default translation status
 
@@ -31,7 +31,7 @@ Please note that any information concerning the "translated" parameter hereafter
 
 ### Translation rules configuration
 
-On the `Translation rules` panel all your translation configurations are reflected. To create a new translation rule click the `+` button on your panel. For source and destination languages only the languages supported by the choosen translation engine can be selected.
+On the `Translation rules` panel all your translation configurations are reflected. To create a new translation rule, click the `+` button on your panel. For source and destination languages only, the languages supported by the chosen translation engine can be selected.
 
 ![translation_rules_panel_create](_assets/translation/translation_rules_panel_create.png)  
  
@@ -44,7 +44,7 @@ In the side-popup window you will be able to set up your translation rule. Only 
 
 Please note, if there is no translation rule for some language as a destination language, the translations to that language will not be made, either automatically or by clicking the `Translate` button.
 
-For some destination language only one rule can be created. For each destination language multiple source languages can be selected. By changing the sorting order of the source languages you define the order, in which source language the value is looked up. E.g. if for the Spanish as a destination language the source languages are English and German – the system will look up for the value in English, if it available it will be taken, if not the system will take the value for the second language, namely German, and so in.
+For some destination language only one rule can be created. For each destination language multiple source languages can be selected. By changing the sorting order of the source languages, you define the order, in which source language the value is looked up. E.g., if for the Spanish as a destination language the source languages are English and German – the system will look up for the value in English, if it available it will be taken, if not the system will take the value for the second language, namely German, and so in.
 
 ### Language configuration
 
@@ -63,7 +63,7 @@ Depending on the preconfigured parameters your multilingual text field may be ma
 ![view_mode](_assets/translation/view_mode.png) 
 
 The "Book" icon indicates that this field is not marked as "translated", and the "Magic wand" icon indicates the automatically translated fields.
-To switch to the edit mode hover the mouse over the field you want to edit and click the pencil icon. 
+To switch to the edit mode, hover the mouse over the field you want to edit and click the pencil icon. 
 
 ![edit_field](_assets/translation/edit_field.png)  
 
@@ -82,7 +82,7 @@ You have two checkboxes – `translated` and `translate automatically` as well a
 Please note, the checkbox `translated` will be automatically set if the checkbox `translate automatically` for the value is set and translation is executed. 
 You still can unset this checkbox, if you are not satisfied with the quality of the translation, or set it manually, if translation is done manually. In no other case this checkbox is set or unset by the system automatically.
 
-Set `translate automatically` checkbox if you want your multilingual value to be translated into automatically. Translation is executed for all values marked as `translate automatically` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages. In other words translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
+Set `translate automatically` checkbox if you want your multilingual value to be translated into automatically. Translation is executed for all values marked as `translate automatically` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages. In other words, translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
 
 The `translated` checkbox carries out an information function and can be used to mark the value that has been translated either automatically or manually.
 
@@ -90,8 +90,8 @@ The `Translate` button on the right corner under the text box is used to apply a
 
 In the edit mode all the changes/translations can be still changed, and you may change also the `translate automatically` and `translated` checkboxes anyway you like.
 
-Please note, the option `Translate automatically` is available only for the languages, for which a translation rule is created. And a translation rule can be created only if the destination language is supported. E.g. Ukrainian is not available for translations via DeepL, so no translation rule can be created for it.
-For some languages the automated translation option may not be available. In order to enable it, you need to configure the **Translation rules** for this language.
+Please note, the option `Translate automatically` is available only for the languages, for which a translation rule is created. And a translation rule can be created only if the destination language is supported. E.g., Ukrainian is not available for translations via DeepL, so no translation rule can be created for it.
+For some languages the automated translation option may not be available. To enable it, you need to configure the **Translation rules** for this language.
 
 ### In-line edit mode
 
@@ -142,5 +142,3 @@ Possible additional choices are:
 - **"Field name": translate automatically** – choose this option to export/import the "translate automatically" value of the corresponding field.
 - **"Field name": translated** – choose this option to export/import the value indicating whether this field has been translated. 
 - **"Field name" | Translate** – this option "executes" a click on the `Translate` button and executes a machine translation for the specified field value. It can only be used in import feeds, not in export feeds.
-
-
