@@ -23,6 +23,12 @@ Possible values are:
 - manually: means that the system will never translate the field or attribute value automatically
 - automatically: means that the system will translate the field or attribute value automatically as soon as this value will be marked as to be translated.
 
+### "Translated" option configuration
+
+In the module settings you may enable an additional parameter for your multilingual text fields, namely the "translated" parameter. By default, its value is "false", however if you set this value to "true" you will be able to mark a text field as "translated". This value will be set automatically to "true" if the "automated translation" is enabled. You may set it to "false" if you are not happy with the quality of machine translation and want to edit it later. After the edition you may set the "translated" value to "true" manually to mark it as correctly translated.
+
+Please note that any information concerning the "translated" parameter hereafter is effective only in case it is enabled in settings.
+
 ### Translation rules configuration
 
 On the `Translation rules` panel all your translation configurations are reflected. To create a new translation rule click the `+` button on your panel.
@@ -36,7 +42,7 @@ In the new window you will be able to set up your translation rule. Only after y
 - **Destination language** – the language to which the translation is made.
 - **Source language** – the language which is the source for the translation.
 
-Please note, if there is no translation rule for some language as a destination language, the translations to that language will no be made, whether automatically nor by clicking on the `Translate` button.
+Please note, if there is no translation rule for some language as a destination language, the translations to that language will no be made, either automatically or by clicking the `Translate` button.
 
 Created rules cannot be modified. For some destination language only one rule can be created. So, if you want to modify a rule for some destination language you need to remove it and create a new translation rule.
 
@@ -52,7 +58,7 @@ To add a new language, go to Administration panel > Languages. In the dropdown m
 
 ### View mode
 
-Depending on the pregonfigured parameters your multilingual may be marked with the following icons:
+Depending on the preconfigured parameters your multilingual text field may be marked with the following icons:
 
 ![view_mode](_assets/translation/view_mode.png) 
 
@@ -76,9 +82,9 @@ You have two checkboxes – `translated` and `translate automatically` as well a
 Please note, the checkbox `translated` will be automatically set if the checkbox `translate automatically` for the value is set and translation is executed. 
 You still can unset this checkbox, if you are not satisfied with the quality of the translation, or set it manually, if translation is done manually. In no other case this checkbox is set or unset by the system automatically.
 
-Set `translate automatically` checkbox if you want your multilingual value to be translated into automatically. Translation is executed for all values marked as `translate automatically` and not marked as `translated` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages. In other words translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
+Set `translate automatically` checkbox if you want your multilingual value to be translated into automatically. Translation is executed for all values marked as `translate automatically` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages. In other words translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
 
-The `translated` checkbox carries out an information function and can be used to mark the value that have been translated either automatically or manually.
+The `translated` checkbox carries out an information function and can be used to mark the value that has been translated either automatically or manually.
 
 The `Translate` button on the right corner under the text box is used to apply a machine translation for a certain value, regardless of whether both checkboxes are set or not.
 
@@ -96,7 +102,7 @@ Please note that if you change the "translate automatically" value to "true" the
 
 For each multilingual field/attribute the module adds additional meta data and action fields, which can be used anywhere in the system.
 - **"Field name": translate automatically** – meta data field: possible values are "True" or "False".
-- **"Field name": translated** – metadate field: possible values are "True" or "False".
+- **"Field name": translated** – metadata field: possible values are "True" or "False".
 - **"Field name" | Translate** – action field: usage of this field will trigger a click on the button `Translate`.
 
 These fields can be used for mass actions, import/export feeds and search and filtering.
@@ -131,5 +137,4 @@ Possible additional choices are:
 - **"Field name": translated** – choose this option to export/import the value indicating whether this field has been translated. 
 - **"Field name" | Translate** – this option is available only for the import feeds is identical to the click on the `Translate` button. It applies a machine translation for the specified field value. It can only be used in import feeds.
 
--1
 
