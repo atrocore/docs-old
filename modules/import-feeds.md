@@ -69,16 +69,15 @@ The following settings are available here:
     - *Create, Update and Delete* – full synchronization will be done.
 
 
-### File Settings
+### Import Data Settings
 
-The import file parameters are configured on the `FILE PROPERTIES` panel:
+The import data parameters are configured on the `IMPORT DATA SETTINGS` panel:
 
 ![Import feed cfg file](_assets/import-feeds/import-feeds-create-file-properties.png)
 
+- **Format** - define the import data format. It can be either CSV or Excel.
 - **File** – here you can upload the file which is to be imported or its shortened version (as a sample), which will be used for the configuration. The file should be UTF-8 encoded. 
 - **Header row** – activate the checkbox if the column names are included in the import file or leave it empty if the file to be imported has no header row with column names.
-- **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
-- **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
 - **Field delimiter** – select the preferred field delimiter to be used in the CSV import file, possible values are `,`, `;`,`\t`, `|`.
 - **Text qualifier** – select the preferred separator of the values within a cell: single or double quotes can be selected.
 
@@ -90,9 +89,11 @@ The next panel is the settings panel:
 
 - **Entity** – select the desired entity for the imported data from the drop-down list of all entities available in the system.
 - **Unused Columns** – this field is initially empty. After save you will see here the list of available unmapped columns.
-- **Field delimiter for relation** – field delimiter, which is used to separate fields in the relation, default value is "|".
-- **Data record delimiter** – is the delimiter to split multiple values (eg for "multienum" or "array" fields and attributes) or multiple related records.
+- **List Value Separator** – this field is used to specify the symbol to separate the values in list.
 - **Mark for a non-linked attribute** – this mark is only available for the product entity. This symbol marks attribute which should not be linked to the respective product.
+- **Field delimiter for relation** – field delimiter, which is used to separate fields in the relation, default value is "|".
+- **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
+- **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
 - **Empty Value** – This symbol will be interpreted as "empty" value additionally to the empty cell, eg "" and "none" will be interpreted as "", if you define "none" as an empty value.
 - **Null value** – this value will be interpreted as "NULL" value.
 
@@ -105,7 +106,7 @@ After the file is uploaded and file settings are properly configured you should 
 
 If the `Unused Columns` field is empty after saving your feed, you should check your field delimiter for correctness. If some column names have single or double quotes you may have set the wrong text qualifier.
 
-> Please, note that the defined `field delimiter`, `data record delimiter`, `empty value`, `null value`, `thousand separator`, `decimal mark`, `text qualifier` and `mark for a non-linked attribute` symbols must be different.
+> Please, note that the defined `field delimiter`, `list value separator`, `empty value`, `null value`, `thousand separator`, `decimal mark`, `text qualifier` and `mark for a non-linked attribute` symbols must be different.
 
 ## Configurator
 Configurator can be used after the import feed is created. Initially this panel is empty. This panel displays mapping rules for your data import.
@@ -230,7 +231,6 @@ If you create a rule only for Main Images and there will be no rule for other as
 
 > Marking an Image as a Main Image for a certain channel via import is currently not possible.
 
-
 Import of assets via local server path is currently not supported.
 
 ## Running Import Feed
@@ -266,12 +266,6 @@ Results of the data import can be viewed in two ways:
 - on the "Import Jobs List Page", which shows details on all import jobs performed in the system via import feeds. To open this page, click on the `Export Results` in your main navigation 
 
 ![import-results-list](_assets/import-feeds/import-feeds-import-results-list.png)
-
-or use the button `Show Full List` on your "Import Jobs Panel".
-
-![Queue manager](_assets/import-feeds/import-feeds-import-results-show-full-list.png)
-
-
 
 The Import Jobs details contain the following information:
 
