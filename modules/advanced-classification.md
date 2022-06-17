@@ -17,7 +17,7 @@ To add fields for additional languages you need to add these additional language
 
 ## Product family editing
 
-In order to view the product family details click on its name in the list. Click the `Edit` button if you need to make any changes.
+In order to view the product family details, click on its name in the list. Click the `Edit` button if you need to make any changes.
 
 ![Export feed cfg file](_assets/advanced-classification/edit_product_family.png)
 
@@ -35,7 +35,7 @@ or choose from the existing by clicking the `Select` button in the dropdown menu
 
 ## Inheritance of the product family attributes
 
-All child product families automatically inherit their attribute configuration from the parent product family. These configurations, e.g. whether the attribute is mandatory or not and its scope can still be changed.
+All child product families automatically inherit their attribute configuration from the parent product family. These configurations, e.g., whether the attribute is mandatory or not and its scope can still be changed.
 
 ## Product family tree
 
