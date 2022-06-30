@@ -17,6 +17,8 @@ You will be able to create a scheduled job for your import tasks only if the app
 - Import Feeds: URL – allows to import data from CSV, JSON and XML files via provided URL 
 - Import Feeds: HTTP Request – allows to import data via HTTP Request, eg via REST API
 - Connector – orchestrates multiple import and export feeds to automate the complex data exchange
+- Import Feeds: Remote File - the module enables to automate the import feed execution for a remote file, which can be accesses via FTP, sFTP or URL.
+- Translations – adds a functionality of the imported data automated or manual translation.
 
 
 ## Administrator Functions
@@ -45,7 +47,8 @@ To create a new import feed, click `Import Feeds` in the navigation menu and the
 The standard form for the import feed creating appears:
 ![Import feed creation](_assets/import-feeds/import-feeds-create.png)
 
-Here fill in the required fields and select the import feed type from the corresponding drop-down list. This module adds only **CSV File** type.
+Here fill in the required fields and select the import feed type from the corresponding drop-down list. By default, the import feed type is **File**. In case you need to import the data from other sources, the corresponding modules installation is required.
+
 Click the `Save` button. The new record will be added to the import feeds list. You can configure it right away on the detail view page that opens or return to it later.
 
 ### Overview panel
@@ -67,6 +70,7 @@ The following settings are available here:
     - *Create and Delete* – new data records are created, and no the records no longer provided in the import data will be deleted
     - *Update and Delete* – existing records will be updated and records with no longer provided IDs will be deleted
     - *Create, Update and Delete* – full synchronization will be done.
+- **Amount of "Success" Import Jobs to be stored** – you may specify how many successful import jobs you want to be stored in your system.
 
 
 ### Import Data Settings
@@ -75,11 +79,12 @@ The import data parameters are configured on the `IMPORT DATA SETTINGS` panel:
 
 ![Import feed cfg file](_assets/import-feeds/import-feeds-create-file-properties.png)
 
-- **Format** - define the import data format. It can be either CSV or Excel.
-- **File** – here you can upload the file which is to be imported or its shortened version (as a sample), which will be used for the configuration. The file should be UTF-8 encoded. 
+- **Format** – specify the format of the file from which the data will be imported. **CSV File** or **Excel File** types are available here. 
+- **File** – here you can upload the file which is to be imported or its shortened version (as a sample), which will be used for the configuration. The file should be UTF-8 encoded.
 - **Header row** – activate the checkbox if the column names are included in the import file or leave it empty if the file to be imported has no header row with column names.
 - **Field delimiter** – select the preferred field delimiter to be used in the CSV import file, possible values are `,`, `;`,`\t`, `|`.
 - **Text qualifier** – select the preferred separator of the values within a cell: single or double quotes can be selected.
+
 
 ### Feed Settings
 
@@ -88,8 +93,8 @@ The next panel is the settings panel:
 ![Simple type settings](_assets/import-feeds/import-feeds-create-settings.png)
 
 - **Entity** – select the desired entity for the imported data from the drop-down list of all entities available in the system.
-- **Unused Columns** – this field is initially empty. After save you will see here the list of available unmapped columns.
-- **List Value Separator** – this field is used to specify the symbol to separate the values in list.
+- **Unused Source Fields** – this field is initially empty. After save you will see here the list of available unmapped columns.
+- **List Value Separator** – is the separator to split the values in the list (eg for "multienum" or "array" fields and attributes).
 - **Mark for a non-linked attribute** – this mark is only available for the product entity. This symbol marks attribute which should not be linked to the respective product.
 - **Field delimiter for relation** – field delimiter, which is used to separate fields in the relation, default value is "|".
 - **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
@@ -97,7 +102,7 @@ The next panel is the settings panel:
 - **Empty Value** – This symbol will be interpreted as "empty" value additionally to the empty cell, eg "" and "none" will be interpreted as "", if you define "none" as an empty value.
 - **Null value** – this value will be interpreted as "NULL" value.
 
-If you import product data, some products may have certain attributes, other not. If the value for some attribute is empty it is not clear, whether this attribute have an empty value, or this product does not have this attribute at all. That is why the **mark for a non-linked attribute** should be used, to mark clearly, which attribute should not be linked to a certain product.
+If you import product data, some products may have certain attributes, other not. If the value for some attribute is empty it is not clear, whether this attribute has an empty value, or this product does not have this attribute at all. That is why the **mark for a non-linked attribute** should be used, to mark clearly, which attribute should not be linked to a certain product.
 
 After the file is uploaded and file settings are properly configured you should see column names from your file in the field `Unused Columns`.
 
@@ -115,9 +120,11 @@ Configurator can be used after the import feed is created. Initially this panel 
 
 To create a new entry, click on the `+` icon in the upper right corner. A popup window appears.
 
+### Overview
+
 ![Configurator panel](_assets/import-feeds/import-feeds-configurator-new.png)
 
-- **Type** – choose the type of your mapping rule by selection "Field" of "Attribute" in the field `Type`. The option "Attribute" is available only for product entity.
+- **Type** – choose the type of your mapping rule by selection "Field" of "Attribute" in the field `Type`. This option is available only for product entity. Other entities don't have attributes, only fields.
 
 ![Configurator panel](_assets/import-feeds/import-feeds-configurator-new-type.png)
 
@@ -125,10 +132,14 @@ To create a new entry, click on the `+` icon in the upper right corner. A popup 
 - **Identifier** – set this checkbox if the value in the selected column should be interpreted as an identifier. You can select multiple columns as identifier.
 - **Column(s)** – depending on the type of the selected entity field you can select one, two or multiple columns here.
 - **Default Value** – you can specify the default value to be set, if the cell value is "", "empty" or "null".
-
-Click on "Save" button to save the mapping rule.
+- **Create related data record** - this checkbox appears if you set an entity into the `field`. If this value is true, new data record for related entity will be created, if nothing is found based on provided data.
 
 > Please note, a certain column can be used multiple times in different rules.
+
+### File Mapping For Search
+
+- **Source Field(s)** - here you may specify the field value(s) that will be used to search if related data record already exists.
+- **Related entity field(s)** - сhoose related entity field(s) in your system, which should be used to search in based on the data provided in the select field "Source Field(s)". If only one data field is provided the "Field Delimiter for Relation" may apply. In other cases the amount of provided data fields and "Related entity field(s)" should be the same.
 
 To modify the mapping rule displayed on the `Configurator` panel, use the `Edit` option from the single record actions menu. Here you can also delete the selected rule.
 
@@ -253,6 +264,10 @@ Started import job is added to the Queue Manager, where you can see the current 
 
 The new record is also added to the "Import Jobs" Panel with the state `Pending`. After the import job is successfully completed the state will be automatically changed to `Done`.
 
+While the import is running you may cancel it in the right-side menu:
+
+![Run import option](_assets/import-feeds/import-feed-cancelled.png)
+
 
 ## Import Jobs
 
@@ -285,6 +300,7 @@ The following States are available:
 - **Pending** – for the import job, which is next in line for execution.
 - **Success** – for the successfully finished import job, regardless of containing errors.
 - **Failed** – for the import job that could not be performed due to some technical issues.
+- **Canceled** – for the import job that has been stopped by the user.
 
 You can use the data record action menu to view details of the respective import job or remove it.
 ![data-record-action](_assets/import-feeds/import-feeds-import-results-menu.png)
