@@ -111,7 +111,7 @@ After the file is uploaded and file settings are properly configured you should 
 
 If the `Unused Columns` field is empty after saving your feed, you should check your field delimiter for correctness. If some column names have single or double quotes you may have set the wrong text qualifier.
 
-> Please, note that the defined `field delimiter`, `data record delimiter`, `empty value`, `null value`, `thousand separator`, `decimal mark`, `text qualifier` and `mark for a non-linked attribute` symbols must be different.
+> Please, note that the defined `field delimiter`, `list value separator`, `empty value`, `null value`, `thousand separator`, `decimal mark`, `text qualifier` and `mark for a non-linked attribute` symbols must be different.
 
 ## Configurator
 Configurator can be used after the import feed is created. Initially this panel is empty. This panel displays mapping rules for your data import.
@@ -242,7 +242,6 @@ If you create a rule only for Main Images and there will be no rule for other as
 
 > Marking an Image as a Main Image for a certain channel via import is currently not possible.
 
-
 Import of assets via local server path is currently not supported.
 
 ## Running Import Feed
@@ -282,7 +281,6 @@ Results of the data import can be viewed in two ways:
 - on the "Import Jobs List Page", which shows details on all import jobs performed in the system via import feeds. To open this page, click on the `Export Results` in your main navigation 
 
 ![import-results-list](_assets/import-feeds/import-feeds-import-results-list.png)
-
 
 The Import Jobs details contain the following information:
 
