@@ -16,19 +16,38 @@ The "Export Feeds" module also supports transferring export feeds data of separa
 
 ![Layout mngr export feeds](_assets/export-feeds/layout-mngr-export-feeds.jpg)
 
-### Export Feed Creation
+## The following modules extend the functionality of the export feeds
+
+- Export Feeds: HTTP Request – the module allows to export data via HTTP request.
+- Connector – orchestrates multiple import and export feeds to automate the complex data exchange
+- Export Feeds: Remote File - the module enables to automatically or manually export data to a file on a FTP, sFTP or SSH server.
+- Translations – adds a functionality of the imported data automated or manual translation.
+
+## Export Feed Creation
 
 To create a new export feed, go to the `Administration > Export Feeds` page or click `Export Feeds` in the navigation menu and then click the `Create Export Feed` button. The common creation pop-up will appear:
 
-![Export feed creating](_assets/export-feeds/export-feed-create.jpg)
+![Export feed creating](_assets/export-feeds/export_feeds_new.png)
 
-Here enter the export feed name, select its type and define its owner. Currently the following export feed types are supported:
- - **Simple** – designed for exporting data from any entity existing in your system with the ability to configure the list of fields to be exported, their order and names. Also this export feed type allows you to export product attribute values and product categories for the product entities in accordance with their scope levels. Refer to the **AtroPIM User Guide** to learn more about the [Attributes](../atropim/user-guide/attributes.md) and [Products](../atropim/user-guide/products.md).
-- **Product image** – designed for exporting product images existing in your system. The resulting file will contain the URL links to the exported product images arranged in accordance with the scope level (global or channel) defined for product images in the system.
+Here enter the export feed name, select its type and define its owner. By default, the export feed type is **File**. In case you need to export the data to the other sources, the corresponding modules installation is required.
+
+You may also set up your export feed in the `Export Data Settings` panel and in the `Feed Settings` panel:
+
+![Export feed creating](_assets/export-feeds/export_feeds_new_panels.png)
+
+In the `Export Data Settings` panel you should specify the format of the file where the data will be exported. The available formats are **CSV** and **Excel**.
+
+In the `Feed Settings` panel you may set up the following values:
+
+- **Entity** – from the drop-down list of entities available in the system select the desired entity type, for which this export feed will be used.
+- **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
+- **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
+- **Empty Value** – This symbol will be interpreted as "empty" value additionally to the empty cell, eg "" and "none" will be interpreted as "", if you define "none" as an empty value.
+- **Null value** – this value will be interpreted as "NULL" value.
 
 Click the `Save` button to complete the operation; the new record will be added to the export feeds list. You can configure it right away on the detail view page that opens or return to it later.
 
-### Export Feed Configuration
+## Export Feed Configuration
 
 To configure the export feed, click the desired record in the export feeds list; the following detail view page will open:
 
@@ -38,19 +57,25 @@ In-line editing is supported here. So prior to making any changes, you have to c
 
 *For details on in-line editing and other features of the AtroPIM system, refer to the **Entity Records** section of the [**Views and Panels**](../atropim/user-guide/views-and-panels.md) article of our user guide.*
 
-The following settings are available on the `OVERVIEW` panel:
+### Overview panel
 
-- **Active** – select this checkbox to activate the export feed. If the export feed is not activated, the exporting feature will be disabled for it. 
-- **Name** – modify the export feed name, if needed.
-- **Channel** – to export the data prepared for a specific channel, please set the desired channel by using the actions button and selecting the existing channel in the `Channels` pop-up that appears. This setting is available only for products.
+Overview panel enables you to define the main feed parameters (name, action, activity etc):
+
+![Export feed cfg](_assets/export-feeds/export_feed_overview_panel.png)
+
+The following settings are available here:
+
+- **Active** – select this checkbox to activate the export feed. If the export feed is not activated, the exporting feature will be disabled for it.
+- **Name** – export feed name.
 - **Description** – enter the description of the export feed usage, i.e. what data and in what form they are exported, as a reminder for the future. This field is not required.
 - **Type** – the export feed type defined on its creation only; it cannot be modified.
+- **Amount of "Success" Export Jobs to be stored** – you may specify how many successful export jobs you want to be stored in your system.
+- **Maximum Number of Records per Iteration** - here enter the maximum number of rows to be exported at a time.
+- **Separate Job per Iteration** - check if each iteration should be performed in a separate export job.
 
-#### File
+### Export Data Settings
 
-The export file parameters are configured on the `FILE` panel:
-
-![Export feed cfg file](_assets/export-feeds/export-feed-cfg-file.jpg)
+![Export feed cfg](_assets/export-feeds/export_feed_data_settings.png)
 
 - **File format** – from the drop-down list select the file type – CSV or XLSX (Excel) – in which the data export will be performed. 
 - **Header row** – leave the checkbox activated to include the column names in the export file or remove its selection to skip column names from exporting.
@@ -61,30 +86,38 @@ When the SCV file format is selected, the following settings are added to be con
 
 Please, note that by default the XLSX (Excel) file format is set and the `Header row` checkbox is activated.
 
-#### Products Filter
+### Feed Settings
+
+The export file parameters are configured on the `FEED SETTINGS` panel:
+
+![Export feed cfg file](_assets/export-feeds/export_feed_settings.jpg)
+
+- **Entity** – from the drop-down list of entities available in the system select the desired entity type, for which this export feed will be used.
+- **Language** - this value is inherited by creating a rule for some language specific attribute and has no impact on export itself.
+- **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
+- **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
+- **Empty Value** – This symbol will be interpreted as "empty" value additionally to the empty cell, eg "" and "none" will be interpreted as "", if you define "none" as an empty value.
+- **Null value** – this value will be interpreted as "NULL" value.
+- **Convert collection to string** - check if the fields and attributes of type: multi-enum, array, one-to-many relation should be converted to string.
+- **List Value Separator** - specify the mark for dividing the values of the list.
+- **Convert relations to string** - check if the relations of the exported entity should be converted to string.
+- **Field Delimiter for Relation** - specify the mark for separating the relations.
+- **Mark for a not linked attribute** - specify how a not linked attribute should be labeled.
+
+
+#### Filter
 
 The AtroPIM system allows you to export a specific range of product data, which can be defined on the `PRODUCTS FILTER` panel. Here you can build filters by categories linked to the product, entity fields of the product itself, and by product attributes and their values:
 
 ![Products filter](_assets/export-feeds/products-filter.jpg)
 
-You can save the created filters for their further use for exporting the product data.
- 
-This setting is available only for products.
+You can save the created filters for their further use for exporting the data.
 
 Filtering settings for export feeds are the same as for product list view. However, the list of filters can be modified in the Layout Manager on the `Search filters` layout for the `products` entity:
 
 ![Layout mngr, search filters](_assets/export-feeds/layout-mngr-search-filters.jpg)
 
-#### Simple Type Settings
-
-To enable editing of the parameters on the `SIMPLE TYPE SETTINGS` panel, click the `Edit` button on the detail view page of the current `simple` export feed and configure the following settings:
-
-![Simple type settings](_assets/export-feeds/simple-type-settings.jpg)
-
-- **Entity** – from the drop-down list of entities available in the system select the desired entity type, for which this export feed will be used.
-- **Field value delimiter** – enter the preferred separator of the values within a field.
-
-#### Configurator
+### Configurator
 
 The configuration of the entity fields is performed on the `CONFIGURATOR` panel on either the detail or edit view page of the export feed. By default, the required fields of the entity type defined on the `SIMPLE TYPE SETTINGS` panel are displayed there, and depending on this choice, the `CONFIGURATOR` panel contains different fields. For [Products](../atropim/user-guide/products.md), this panel looks as follows: 
 
@@ -184,3 +217,84 @@ If an active channel contains one or several export feeds linked to it, the chan
 To see the list of export feeds linked to the channel and operate with them on a separate panel, the `Export feeds` panel should be added by the [administrator](#administrator-functions), as described above. 
 
 When the channel export is used, the data is exported into a single archive with separate files for each active export feed, linked to the given channel.
+
+
+## Running Export Feed
+
+Click on `Export` button to export the data from your system. 
+
+![Run export option](_assets/export-feeds/export_button.png)
+
+Started export job is added to the Queue Manager, where you can see the current status:
+
+![Queue manager](_assets/export-feeds/export_queue_manager.png)
+
+The new record is also added to the "Export Jobs" Panel with the state `Pending`. After the export job is successfully completed the state will be automatically changed to `Done`.
+
+While the export is running you may cancel it in the right-side menu:
+
+![Run import option](_assets/export-feeds/export_feed_cancel.png)
+
+
+## Export Jobs
+
+Information about completed export jobs is displayed on the `Export Jobs` panel, which is empty on the export feed [creation](#import-feed-creation) step but gets filled in after the data export is performed via the given export feed.
+
+Results of the data export can be viewed in two ways:
+- on the "Export Jobs" panel of the respective export feed, which shows the details on the export operations performed via the currently open export feed:
+
+![Queue manager](_assets/export-feeds/export_jobs_panel.png)
+
+- on the "Export Jobs List Page", which shows details on all export jobs performed in the system via export feeds. To open this page, click on the `Export Results` in your main navigation. 
+
+![Queue manager](_assets/export-feeds/export_jobs_list.png)
+
+
+The Export Jobs details contain the following information:
+
+- **Name** – the Export Job record name, which is generated automatically based on the date and time of the export job start. Click the Export Job record name to open its detail view page.
+- **Export feed** – the name of the export feed used for the export job. Click on the export feed record name to open its detail page.
+- **Exported file** – the name of the data file (CSV) where the exported data is stored. Click the exported file name to download it. 
+- **State** – the current status of the export operation.
+- **Start** – the date and time of the export job start.
+- **End** – the date and time of the export job end.
+- **Created** – the number of records created as a result of the performed export job. Click on this value to open the list view page of the corresponding entity records filtered by the given Export Job, i.e. with the `Created by export` filter applied.
+- **Updated** – the number of records updated as a result of the performed export job. Click on this value for the desired Export Job to open the list view page of the corresponding entity records filtered by the given Export Job, i.e. with the `Updated by export` filter applied.
+- **Errors** – the number of errors, if any, that occurred during the export job. Click on this value for the desired Export Job to open the list view page of the Export Job log records, where you can see the details on all errors.
+- **[Error file](#error-file)** – the name of the CSV file that contains only rows with errors, which were not imported. The error file name is generated automatically based on the exported file name. Click on the error file name to download it.
+
+The following States are available:
+- **Running** – for the currently running export job.
+- **Pending** – for the export job, which is next in line for execution.
+- **Success** – for the successfully finished export job, regardless of containing errors.
+- **Failed** – for the export job that could not be performed due to some technical issues.
+- **Canceled** – for the export job that has been stopped by the user.
+
+You can use the data record action menu to view details of the respective export job or remove it.
+![data-record-action](_assets/export-feeds/import-feeds-import-results- menu.png)
+
+### Exported File
+
+Exported file can be downloaded, eg to check what exactly was exported, if you click on the file name in your Export Jobs record.
+
+### Error File
+
+Data to be exported is automatically validated with the same rules, as if you would add this data manually. If your export file has no value for some required field error will be generated. Other examples of not valid data are usage of wrong data types (e.g. "Boolean" value is expected and some "string" is transferred, "integer" is expected, "float" is transferred), missing links, etc.
+
+> Please note, you will be able to export data with empty required fields if you use "completeness" module and "completeness" is activated for the chosen entity.
+
+Export job is done row by row. It means the whole row is either processed in full or is completely not processed. In case of some error this line is added to the error file, which can be downloaded. Just click on its name for that. Error file contains only rows, which were not processed because of some error. The error message is always written in the last column of the error file.
+
+> Please note, first error occurrence is enough to stop processing of the certain row. So, in the error file you will see only one error message. It is still possible that this row can have more than one error. 
+
+After export job is done you can download the error file, correct your data, and reexport your data again by using the same export feed. 
+
+## Export Feed Actions
+
+To *duplicate* the existing export feed record, use the corresponding option from the actions menu on the detail view page of the desired export feed record:
+
+![Duplicate feed](_assets/export-feeds/export_feeds_dublicate.png)
+
+You will be redirected to the export feed creation page and get all the values of the last chosen export feed record copied in the empty fields of the new feed record to be created. After save the mapping rules from the configurator will be copied too.
+
+To *remove* the export feed record, use the corresponding option from the action’s menu of your export feed.
