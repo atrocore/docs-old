@@ -46,3 +46,4 @@ Important! The "Advanced Classification" module enables you to filter your produ
 ![Export feed cfg file](_assets/advanced-classification/sort_by_product_family.png)
 
 11
+22
