@@ -44,6 +44,3 @@ or choose from the existing by clicking the `Select` button in the dropdown menu
 Important! The "Advanced Classification" module enables you to filter your products on the product list page by the product family. On the left panel in the `Product` tab click the dropdown menu and select `Product family`. The tree structure reflecting the product family hierarchy will then be shown. Choose the necessary item, and you're good to go!
 
 ![Export feed cfg file](_assets/advanced-classification/sort_by_product_family.png)
-
-11
-22
