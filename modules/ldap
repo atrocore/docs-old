@@ -1,0 +1,23 @@
+Ldap authentication 
+
+The “ldap” module allows to authenticate corporate users to your AtroСore, AtroPIM or AtroDAM system. Thanks to the module, you can upload a list of users that can login to AtroСore or AtroPIM system. They then use their personal username and common password.
+
+Module location
+
+After the module installation, a new Ldap authentication configuration group is added to the AtroPIM administration page. To configure the Ldap menu, go to Administration/Authentication and see LDAP menu. From there you can change module settings.
+
+![discussion-collapsed](_assets/Ldap/chrome_l1f6tQqXAV.png)
+
+Logging in for user
+
+When user logs in using “ldap” module you use your personal username (in blue square) and common password (in green square).
+
+![discussion-collapsed](_assets/Ldap/chrome_AXXrNPTEZT.png)
+
+Logging in first time
+
+First time user logs in he is added to our users (see Dashboard/Users). User team (in blue square) and role (in green square) is assigned by default role (in green square) and team (in blue square) that you can select in LDAP menu. Later you can change them in Dashboard/Users.
+
+![discussion-collapsed](_assets/Ldap/chrome_dEQaQjt9eE.png)
+
+![discussion-collapsed](_assets/Ldap/chrome_Zg6dkWj56n.png)

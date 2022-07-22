@@ -1,0 +1,17 @@
+You don't want to ask an It specialist to add a new user to PIM every time you have a new co-worker? You can use "ldap" module to do it for him! The "ldap" module allows you to add users to your database. You can create multiple user profiles to setup different users. It will automatically give them access to AtroCore. Then, first time user logs in he gets a role and a group in AtroCore.
+
+![discussion-collapsed](_assets/Ldap/chrome_AXXrNPTEZT.png)
+
+![discussion-collapsed](_assets/Ldap/chrome_l1f6tQqXAV.png)
+
+Documentation
+
+Read the technical documentation to learn more about the module.
+
+Customization
+
+The module can be adapted to your needs,please contact us.S
+
+Demo
+
+Please contact us, and we will send you the access data for the demo version.
