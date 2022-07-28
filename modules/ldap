@@ -1,22 +1,23 @@
-Ldap authentication 
+# Ldap authentication 
 
-The “ldap” module allows to authenticate corporate users to your AtroСore, AtroPIM or AtroDAM system. Thanks to the module, you can upload a list of users that can login to AtroСore or AtroPIM system. They then use their personal username and common password.
+The LDAP module allows you to control AtroCore users via your own DAP server. AtroCore always create user records, so If a new user is added via LDAP, a new record for this user will be created in AtroCore software autoamatically. For the new users a default role and a default team is assigned. Thease can still be changed via AtroCore Administration. 
 
-Module location
+Users can login via credentials, stored on the LDAP server or with their login and password.
 
-After the module installation, a new Ldap authentication configuration group is added to the AtroPIM administration page. To configure the Ldap menu, go to Administration/Authentication and see LDAP menu. From there you can change module settings.
+## Administrator Functions
+
+After the module is installed, a new LDAP panel is added in "Adminitration / Authentification". LDAP Authentification should be activated. After it you will be able to configure the connection to your LDAP Server. 
 
 ![discussion-collapsed](_assets/Ldap/chrome_l1f6tQqXAV.png)
 
-Logging in for user
+## User Functions
 
-When user logs in using “ldap” module you use your personal username (in blue square) and common password (in green square).
+### Logging in
 
+To log in the user should use the Username (in blue square) and Password (in green square) stored on the LDAP Server. 
 ![discussion-collapsed](_assets/Ldap/chrome_AXXrNPTEZT.png)
 
-Logging in first time
-
-First time user logs in he is added to our users (see Dashboard/Users). User team (in blue square) and role (in green square) is assigned by default role (in green square) and team (in blue square) that you can select in LDAP menu. Later you can change them in Dashboard/Users.
+After a User logs in for a first time a new user record for him is created in the AtroCore software (see "Administration / Users"). Default role (in green square) and Team (in blue square) are assigned to this user by default. Both can be changed by the AtroCore Administrator.
 
 ![discussion-collapsed](_assets/Ldap/chrome_dEQaQjt9eE.png)
 
