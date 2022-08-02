@@ -1,0 +1,42 @@
+This module allows you to import and export your data to and from your PIM system. It contains Import feeds and Export feeds features. You can export/import in different formats such as csv and excel files, http requests, etc.
+
+Import feeds
+
+You can find this menu in your system (see picture below):
+
+![discussion-collapsed](_assets/connector/import_feeds_icon.png)
+
+By clicking Import feeds submenu you will find all already created imports and create a new one (press "Create import feed" button to do that). 
+When you click this button or an existing feed you go to their submenu (see pictures below)
+
+![discussion-collapsed](_assets/connector/import_feed_window1.png)
+
+![discussion-collapsed](_assets/connector/import_feed_window2.png)
+
+In an "Overview" window you can set an import's name, description, how many successful import jobs (imports that were successful) will be stored (remembered by the system). Also you can set what to do with the data imported (create new, update, delete, create and update, create and delete, update and delete or create, update and delete).
+The next window (Import data settings) depends from the type of the source you import from. You can import from file, ftp or database.
+For a file and ftp csv and excel formats are supported. Also you will need to select a route to the source.
+"Feed settings" window is to set how to determine data in your source. It defines how the data is structured in the data source and allows the system to load it without errors.
+When you save import feed you will see "Configurator" menu. There you set what soureses of the PIM data fields are (see picture below). You do not have to set identical names of source and imported fields and don't have to import all the data.
+
+![discussion-collapsed](_assets/connector/import_feeds_configurator.png)
+
+Export feeds
+
+You can find this menu in your system (see picture below):
+
+![discussion-collapsed](_assets/connector/export_feeds_icon.png)
+
+By clicking Export feeds submenu you will find all already created imports and create a new one (press "Create export feed" button to do that). 
+When you click this button or an existing feed you go to their submenu (see pictures below)
+
+![discussion-collapsed](_assets/connector/export_feed_window1.png)
+
+![discussion-collapsed](_assets/connector/export_feed_window2.png)
+
+In an "Overview" window you can set an import's name, description, how many successful export jobs (exports that were successful) will be stored (remembered by the system). You can also set the maximum number of records you want to export.
+The next window (Export data settings) depends from the type of the source you import from. You can export to xlsx or csv files.
+"Feed settings" window is to set how to determine data in your file. It defines how the data is structured in it and allows the system to create it without errors and you to understand wth information there.
+When you save export feed you will see "Configurator" menu. There you set what PIM data fields you want to export (see picture below). You do not have to export all the data.
+
+![discussion-collapsed](_assets/connector/Export_feeds_configurator.png)
