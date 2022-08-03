@@ -1,0 +1,7 @@
+On your product page you can select "Generate PDF" submenu (see photo below). To do so you have to install additional module.
+
+![discussion-button](_assets/pdf_asset/pdf_asset.png)
+
+On this page you can create pdf regarding this product, download it. You can select language of the pdf and save is as an asset (to do it check the checkbox when generating pdf). PDf default name is similar to products name.
+
+![discussion-button](_assets/pdf_asset/pdf_asset2.png)
