@@ -1,0 +1,20 @@
+When exporting data from your PIM database you can modify them for a better user experience.
+The 
+
+trim - deletes extra spaces and program symbols from the information (from " La/Maison" to "La Maison")
+
+lover - converts all uppercase letters to lowercase (from "LA MAISON" to "la maison")
+
+capitalize - converts first letter from the information to uppercase (from "la maison" to "La maison")
+
+title - converts all first letters to uppercase (from "la maison" to "La Maison")
+
+date - converts data values to appropriate format (it is set in Angle brackets after date)
+
+preg_replace - custom formulas for your data
+
+![discussion-button](_assets/modificators/modificators.png)
+
+When processing modifiers, the system applies them from top to bottom. So, in the example below you can change from " LA MAISON" to "La maison".
+
+![discussion-button](_assets/modificators/modificators2.png)
