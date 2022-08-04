@@ -1,0 +1,3 @@
+When you are importing products instead of importing main image as it is ypu can import it as a add only mode (see picture below). This way the image will be added when importing only of the product is new or it has no main image. So, if you changed manually product's main image during you work cycle and then updated import job, you would not have to change it again in your updated products.
+
+![discussion-button](_assets/Main_imge_add_only_mode/Main_imge_add_only_mode.png)
