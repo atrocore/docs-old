@@ -1,0 +1,23 @@
+You can use attribute tabs to devide attribute values of your product into special groups. To find them go to Dashboard/Attribute Tabs. There you can edit existing or create new tabs.
+
+Creating new tab
+
+To create a new attribute tab press "Create attribute tab" button. There you set name (in different languages) and description. After saving it (or when opening existing tab) you will see menu on picture below:
+
+![discussion-button](_assets/attribute_tab/attribute_tab.png)
+
+Adding new attributes to an attribute tab. 
+
+Still, attributes in a tab are absent for a new tab. To add new attributes press "+" button and to add press select button (see picture below). You can select individual attributes or attribute groups.
+
+![discussion-button](_assets/attribute_tab/attribute_tab2.png)
+
+Attribute tab in product
+
+You can see attribute tab in product information (see picture below).
+
+![discussion-button](_assets/attribute_tab/attribute_tab3.png)
+
+Attributes you selected are viable to add to this tab of your product.
+
+![discussion-button](_assets/attribute_tab/attribute_tab4.png)

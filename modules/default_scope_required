@@ -1,0 +1,9 @@
+When editing attributes you can set default value, scope and required checkbox (see picture below in blue square).
+
+Default value - sets default value for an attribute. For the products you want another value you can change it in the product page.
+
+Scope - sets channel in which attribute value can be seen (you choose the channel in a "Channel" field right to the "Scope" field). By default attribute value is seen in all channels.
+
+Required checkbox - when it is checked the attribute value cannot be empty. By default it is unchecked.
+
+![discussion-button](_assets/default_scope_required/default_scope_required.png)
