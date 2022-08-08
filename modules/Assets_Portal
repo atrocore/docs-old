@@ -5,3 +5,11 @@ Here in "General" tab you can select Assets Portal's name, url you will need for
 In "Settings" tab you can select "Default currency" and "Locale" - currency and language of the of the yse ui.
 
 ![discussion-button](_assets/Assets_Portal/Assets_Portal.png)
+
+In user interface tab you san set what new user can do and see. First, you can select logo and theme.
+
+"Navigation menu" is all submenus user will be able to see (they will be available on his screen on the right). "Quick create list" is list of things user can create.
+
+![discussion-button](_assets/Assets_Portal/Assets_Portal2.png)
+
+In the pictures above you can see an example of such portal. Using this particular one a photographer, for example, can upload product photos as assets personally. No other functions are available so no harm to you product information will be done. 
