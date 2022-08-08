@@ -1,0 +1,11 @@
+You can use assosiated attributes to manage attributes. To set them go to attribute page (Dashboard/Attributes) and select an attribute. There you will see 2 tabs: "ASSOCIATING ATTRIBUTES" and "ASSOCIATED ATTRIBUTES" (see picture below).
+
+![discussion-button](_assets/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES.png)
+
+"ASSOCIATING ATTRIBUTES" tabs shows parent attributes. Yo can select (arrow) existing attribute, create new one (+), refresh. Each attribute can be unassosiated or unassosiated and deleted.
+
+"ASSOCIATED ATTRIBUTES" tabs shows children attributes. Yo can select (arrow) existing attribute, create new one (+), refresh. Each attribute can be unassosiated or unassosiated and deleted.
+
+In quick search you can see attribute hierarchy (see picture below).
+
+![discussion-button](_assets/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES2.png)
