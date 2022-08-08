@@ -1,0 +1,7 @@
+For users you do not want to give full access rights, you can provide them with Assets Portal. To see them go Administration/Assets Portal.
+
+Here in "General" tab you can select Assets Portal's name, url you will need for user and user role (see picture below).
+
+In "Settings" tab you can select "Default currency" and "Locale" - currency and language of the of the yse ui.
+
+![discussion-button](_assets/Assets_Portal/Assets_Portal.png)
