@@ -1,0 +1,5 @@
+Advanced data types module allows to add new data types for fields and attributes. You can see this module in Administration/Modules menu and find additional field types when editing entities in Administration/Entities menu.
+
+Included additional data types:
+
+Alias - Allows to have a link to another attribute.
