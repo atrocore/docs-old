@@ -1,4 +1,0 @@
-If the field you export has more than one value you can select how many of them you will export by using Limit and Offset values. Offset shows from what serial number to start counting (note that the first value has a serial number of 0). Offset shows how many values to export. For example, Offset 5 Limit 1 will export only one (6th) value. 
-When used by default these values will select all applicable results.
-
-![discussion-button](_assets/LimitOffset/LimitOffset.png)

@@ -23,6 +23,8 @@ Possible values are:
 - manually: means that the system will never translate the field or attribute value automatically
 - automatically: means that the system will translate the field or attribute value automatically directly after the value in original language is changed.
 
+If the language you want to translate to does not exist in translation rules when translating module will just copy information from a source box without translating it.
+
 ### "Translated" option configuration
 
 In the module settings you may enable an additional parameter for your multilingual text fields, namely the "translated" option. By default, its value is "false", however if you set this value to "true" you will be able to mark every multilingual field or attribute value as "translated". This value will be set automatically to "true" if the "automated translation" is enabled. You may set it to "false" if you are not happy with the quality of machine translation and want to edit it later. After the edition you may set the "translated" value to "true" manually to mark it as correctly translated.

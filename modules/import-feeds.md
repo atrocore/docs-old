@@ -242,6 +242,10 @@ If you create a rule only for Main Images and there will be no rule for other as
 
 > Marking an Image as a Main Image for a certain channel via import is currently not possible.
 
+Instead of importing main image as it is you can import it as an add only mode (see picture below). This way the image will be added when importing only if the product is new or it has no main image. So, if you changed manually product's main image during you work cycle and then updated import job, you would not have to change it again in your updated products.
+
+![discussion-button](_assets/Main_image_add_only_mode/Main_image_add_only_mode.png)
+
 Import of assets via local server path is currently not supported.
 
 ## Running Import Feed

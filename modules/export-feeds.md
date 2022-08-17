@@ -90,7 +90,7 @@ Please, note that by default the XLSX (Excel) file format is set and the `Header
 
 The export file parameters are configured on the `FEED SETTINGS` panel:
 
-![Export feed cfg file](_assets/export-feeds/export_feed_settings.jpg)
+![Export feed cfg file](_assets/export-feeds/export_feed_settings.png)
 
 - **Entity** – from the drop-down list of entities available in the system select the desired entity type, for which this export feed will be used.
 - **Language** - this value is inherited by creating a rule for some language specific attribute and has no impact on export itself.
@@ -138,6 +138,26 @@ To add more entity fields for export, select the `Add entity field` option from 
 ![Entity field adding](_assets/export-feeds/add-field.jpg)
 
 Here select the field from the drop-down list of all fields available in the system for the given entity, modify the `Column` value, if needed, and define whether data export should be made by ID or code (for those fields, where this option is available). 
+
+If the field you export has more than one value you can select how many of them you will export by using `Limit` and `Offset` values. `Offset` shows from what serial number to start counting (note that the first value has a serial number of 0). `Limit` shows how many values to export. For example, Offset 5 `Limit` 1 will export only one (6th) value. 
+When used by default these values will select all applicable results.
+
+![Limit and Offset values](_assets/LimitOffset/LimitOffset.png) 
+
+You can modify data from your PIM database for a better user experience in the exported file. Modificators are:
+
+- **trim** – deletes extra spaces and program symbols from the information (from " La/Maison" to "La Maison")
+- **lover** - converts all uppercase letters to lowercase (from "LA MAISON" to "la maison")
+- **capitalize** - converts first letter from the information to uppercase (from "la maison" to "La maison")
+- **title** - converts all first letters to uppercase (from "la maison" to "La Maison")
+- **date**  - converts data values to appropriate format (it is set in Angle brackets after date)
+- **preg_replace** - custom formulas for your data
+
+![discussion-button](_assets/modificators/modificators.png)
+
+> When processing modifiers, the system applies them from top to bottom. So, in the example below you can change from " LA MAISON" to "La maison".
+
+![discussion-button](_assets/modificators/modificators2.png)
 
 For the `Product categories` field there is also the ability to choose its scope level:
 
