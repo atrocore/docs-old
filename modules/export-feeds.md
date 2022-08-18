@@ -159,6 +159,16 @@ You can modify data from your PIM database for a better user experience in the e
 
 ![discussion-button](_assets/modificators/modificators2.png)
 
+When exporting attribute values, for better display of the values you would like to modify data. To do so, in `CONFIGURATOR` for value fields ve have `Value Modifier`. As you can see on a picture below it can have multiple modifiers for multiple values. Any value can have more then one or no modifier. Value codes are used for this in formulas (see picture below).
+
+![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue.png)
+
+Modifiers, their description and examples are in the table under the `Value Modifier` as the one you can see on the picture below.
+
+![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue2.png)
+
+> When exporting attribute values, you can also modify them, but, because one entity can have different attributes, attribute modifiers have to be written in formulas.
+
 For the `Product categories` field there is also the ability to choose its scope level:
 
 ![Product category scope](_assets/export-feeds/product-category-scope.jpg)

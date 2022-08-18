@@ -36,6 +36,10 @@ Generated PDF looks exactly as defined in your template:
 
 ![Generated PDF](./_assets/pdf-generator/generated-pdf.jpg)
 
+You can save pdf as an asset (to do it check the checkbox when generating pdf). PDf and asset default names are similar to products name.
+
+![discussion-button](_assets/pdf_asset/pdf_asset2.png) 
+
 ### PDF Creating for Item List (e.g. Product List)
 
 If a template for the generating of the PDF document for a list of items is created (e.g. product list for some offer etc.) you can select some items, than go actions and select "Generate PDF". 
