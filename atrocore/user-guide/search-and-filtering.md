@@ -135,6 +135,20 @@ Depending of the field type, you can apply the following filtering criteria:
 | *Image, File, Attachment Multiple*          | –                      | Filtering for these field types is not possible  (for now) |
 
 
+### Subfilters
+
+When adding filters to your search you can add additional subfilters. To add subfilter you have to filter data in the popup menu (see picture below) and then select `Select all results`.
+
+![Subfilters](../_assets/user-guide/subqerry/subqerry2.png)
+
+The search will be shown as on the picture below:
+
+![Subfilters](../_assets/user-guide/subqerry/subqerry.png) 
+
+This way is more accurate then selecting all appropriate results to subfilter because:
+- it is faster, especially when you have a lot of results
+- whenever database is updated you do not have to manually update the filter - it is automatically updated according to new information
+
 ### Predefined Search Filters
 
 Predefined search filters are available in the drop-down menu on the left of the search field on any entity list view page:

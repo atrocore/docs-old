@@ -120,6 +120,26 @@ To edit the attribute, click the `Edit` button on the [detail view](./views-and-
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
+Here you can set default value, scope and required checkbox (see picture below in blue square):
+
+- `Default value` - sets default value for an attribute. For the products you want another value you can change it in the product page.
+- `Scope` - sets channel in which attribute value can be seen (you choose the channel in a `Channel` field right to the `Scope` field). By default attribute value is seen in all channels.
+- `Required` checkbox - when it is checked the attribute value cannot be empty. By default it is unchecked.
+
+![default_scope_required](../_assets/user-guide/default_scope_required/default_scope_required.png)
+
+You can use associated attributes to manage attributes. To set them go to attribute page (Dashboard/Attributes) and select an attribute. There you will see 2 tabs: `ASSOCIATING ATTRIBUTES` and `ASSOCIATED ATTRIBUTES` (see picture below).
+
+![discussion-button](../_assets/user-guide/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES.png)
+
+- `ASSOCIATING ATTRIBUTES` tab shows parent attributes. You can select (arrow) existing attribute, create new one (+), refresh. Each attribute can be unassociated or unassociated and deleted.
+
+- `ASSOCIATED ATTRIBUTES` tab shows children attributes. You can select (arrow) existing attribute, create new one (+), refresh. Each attribute can be unassociated or unassociated and deleted.
+
+In quick search you can see attribute hierarchy (see picture below):
+
+![discussion-button](../_assets/user-guide/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES2.png)
+
 Besides, you can make changes in the attribute record via [in-line editing](./views-and-panels.md#in-line-editing) on its detail view page.
 
 Alternatively, make changes to the desired attribute record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attributes list view page:

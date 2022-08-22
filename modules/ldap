@@ -10,9 +10,7 @@ After the module is installed, a new LDAP panel is added in "Adminitration / Aut
 
 ![discussion-collapsed](_assets/Ldap/chrome_l1f6tQqXAV.png)
 
-## User Functions
-
-### Logging in
+## Logging in by a user
 
 To log in the user should use the Username (in blue square) and Password (in green square) stored on the LDAP Server. 
 ![discussion-collapsed](_assets/Ldap/chrome_AXXrNPTEZT.png)
