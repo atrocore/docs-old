@@ -328,3 +328,16 @@ To *duplicate* the existing export feed record, use the corresponding option fro
 You will be redirected to the export feed creation page and get all the values of the last chosen export feed record copied in the empty fields of the new feed record to be created. After save the mapping rules from the configurator will be copied too.
 
 To *remove* the export feed record, use the corresponding option from the action’s menu of your export feed.
+
+
+## Exporting from entity
+
+You can export directly selected data directly from different entities. To do so, go to entity, from which you want to export and select data you want to export. In an example below you can see exporting selected products. To export them, after selecting, press `Actions` and select `Export`.
+
+![data-record-action](_assets/export-feeds/export_from_entity.png)
+
+There you will see export menu 
+
+![data-record-action](_assets/export-feeds/export_from_entity2.png)
+
+Select existing export feed related to this entity and press `Export`. A new export job will be created. For the purposes of this job all the configuration will be taken from selected export job except filters (only the data you selected will be used).
