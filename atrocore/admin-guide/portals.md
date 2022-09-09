@@ -1,14 +1,17 @@
 # Portals
 
-## Portal goal
+## What is Portal?
 
-For users you do not want to give full access rights, you can provide them with `Portals`. To see them go to `Dashboard/Portals`. For this example we will use "Assets Portal". It will be used to give access rights to, for example, photographers to upload pictures of your products.
+Portals are intended to give external users limited access to your system. These externals could be your suppliers, partners, customers, photographers, copywriters, translators, etc. A Portal may have own users, called Portal Users. Different Portal Roles may be assigned to Portal Users.
 
-## How to create a portal
+Here we describe an "Assets Portal", which sould be used for external photographers to work with product images (which are Assets for us).
 
-To create a portal go to `Administration/Portals` and press `Create Portal` button. You will see a portal creation menu. Here in `General` tab you can select Portal's name, role, set it active and create url you will need for user (see picture below).
+## Creating a Portal
 
-In `Settings` tab you can select `Default currency` and `Locale` - currency and language of the of the user ui.
+To create a portal go to `Administration / Portals` and press `Create Portal` button. 
+
+On `General` panel you need to assign the Portal's name, role, set it active/inactive and assign an URL for the portal users to access it.
+On the `Settings` panel you can set the `Default currency` and the default `Locale` for the portal users.
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal.png)
 
@@ -19,6 +22,8 @@ In `user interface` tab you san set what entities new user can see. First, you c
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal2.png)
 
 In the pictures above you can see an example of such portal. Using this particular one a photographer, for example, can upload product photos as assets personally. No other functions are available so no harm to you product information will be done. 
+
+Portals can be also edited, duplicated or deleted.
 
 ## Portal Roles
 
