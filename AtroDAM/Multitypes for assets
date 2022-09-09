@@ -1,9 +1,0 @@
-An administrator can manage asset types in Administration/Asset Types menu. 
-
-![discussion-button](_assets/asset_types/asset_types.png)
-
-The "Name" menu states for the name of an asset type, "sort order" for the order in witch it will be shown. "Types to exclude" is a rule that prevents some asset types be presented together in one asset. If current Type is successfully assigned to an asset these types will be removed from it.
-If "Assign automatically" checkbox is checked, all new asset will be checked to have this asset type according to the validation rules.
-Validation rules set rule or rules that determine is an asset appropriate for this asset type. When a validation rule is changed, all assets are automatically recalculated according to their validation rules (see photo below).
-
-![discussion-button](_assets/asset_types/asset_types2.png)
