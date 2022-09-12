@@ -12,6 +12,6 @@ Here you can define asset types, which will unassigned from the asset, if curren
 ## Assign automatically ##
 If "Assign automatically" checkbox is checked, the system will check automatically, if a newly uploaded asset can receive this asset type automatically, provided the validation rules for this asset are complied with. 
 
-When a validation rule is changed, all assets are automatically re-validated according to the updated validation rules (see photo below).
+When a validation rule is changed, all assets are automatically re-validated according to the updated validation rules.
 
 ![discussion-button](_assets/asset_types/asset_types2.png)
