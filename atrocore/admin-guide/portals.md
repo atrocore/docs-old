@@ -4,20 +4,17 @@
 
 Portals are intended to give external users limited access to your system. These externals could be your suppliers, partners, customers, photographers, copywriters, translators, etc. A Portal may have own users, called Portal Users. Different Portal Roles may be assigned to Portal Users.
 
-Here we describe an "Assets Portal", which sould be used for external photographers to work with product images (which are Assets for us).
-
 ## Creating a Portal
 
-To create a portal go to `Administration / Portals` and press `Create Portal` button. 
+To create a portal, go to `Administration / Portals` and press `Create Portal` button. 
 
-On `General` panel you need to assign the Portal's name, role, set it active/inactive and assign an URL for the portal users to access it.
+On `General` panel you need to assign the Portal's name, role, set it active/inactive and assign an URL for the portal users to access it. Portal URL can use a subdomain, if this case this domain should be properly configured, or a subfolder, in this case you just need to define the subfolder directly here, no additional configuration is needed. 
+
 On the `Settings` panel you can set the `Default currency` and the default `Locale` for the portal users.
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal.png)
 
-In `user interface` tab you san set what entities new user can see. First, you can select logo and theme.
-
-`Navigation menu` is all submenus user will be able to see (they will be available on his screen on the right). `Quick create list` is list of things user can create.
+In `user interface` panel you select which entities should be accessible via navigation menu in the portal, select the logo, default theme and available entities for the Quick Create. First, you can select logo and theme.
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal2.png)
 
@@ -27,25 +24,37 @@ Portals can be also edited, duplicated or deleted.
 
 ## Portal Roles
 
-Portal roles set rules and restrictions for portal users. To set them go to `Dashboard/Portal Roles` and create a new role by pressing `Create Portal Role` or edit existing one by clicking it and then pressing `Edit` button (see picture below). In this example we will continue editing a photographer's portal.
+Portal Roles enables to define permissions and access rights for Portal Users. To set them go to `Administration / Portal Roles` and create a new role by clicking on the `Create Portal Role` button or edit existing one by clicking it and then pressing `Edit` button (see picture below). 
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal3.png)
 
-Here you can see entities and access rights of this role to them. Rights are entity-based (so you select them for each entity separately). They are:
+Here you can see all the entities in the system and access rights of this role to them. Rights are entity-based (so you select them for each entity separately). 
 
-- `Access` - rights to do anything in this entity. Without `Access` set to `enabled` there will be no rights you can see below (you can not do anything with the entity withot having access to it). You can set  `enabled`, `disabled` or `non-set`. `Non-set` sets default permissions according to `ACL Strict Mode` checkbox in `Administration/Settings` menu.
-- `Create` - rights to create data in this entity. Simply select yes or no.
-- `Read` - rights to read data in this entity. You can set all data in the entity to be readable, no data, only own data or account data (see square on the picture below). Account is all the data owned by n account that gave the rights.
-- `Edit` - rights to edit data in this entity. You can set all data in the entity to be editable, no data, only own data or account data. 
-- `Delete` - rights to delete data in this entity. You can set all data in the entity to be deletable, no data, only own data or account data. 
-- `Stream` - access to the panel that shows changes in the data and who changed.
+### Access
+To enable configuration of the permissions for an antity you need to set access option for this entity to "enabled". To disable access set this option to "disabled". "Not-set" means this entity uses the global configuration for "ALC Strict Mode" in the `Administration / Setting`. If it is activated "not-set" means that per default access is disabled, if not – than access is enabled.
+
+### Permissions
+
+- `Create` – permission to create new data records in the entity. Simply select yes or no.
+- `Read` – permission to read data records in this entity. Select all to ebable access to all data records.
+- `Edit` – permission to edit data records in this entity. Select all to ebable access to all data records.
+- `Delete` – permission to delete data records in this entity. Select all to ebable access to all data records.
+- `Stream` – permission to see the "Stream" panel, to be able to post comments, read comments, and the the changed within the data record – who have done the change, what was the old value and when it was done. 
+
+### Access levels 
+
+For Read, Edit and Delete permission you can select the access level by setting it to all, account own or no:
+- `All` – all data records can be accessible 
+- `Account` – only data records linked with the account can be accessible
+- `Own` – only the own data records can be accessible (where the Portal User is Assigned User or the Owner of the data record
+- `No` – no data records can be accessible.
 
 The example for our case is on the picture below:
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal4.png)
 
-Now when role is set we can select it for our portal.
+To set some Portal Roles as Default Roles in the Portal select these directly for the portal. In this case these Portal Roles will be automatically assigned to all Portal Users.
 
 ![discussion-button](../_assets/admin-guide/Assets_Portal/Assets_Portal5.png)
 
-> Please note, that one role can be selected for many portals (if they have same rights). If you have a role already set you can select it right away.
+> Please note, any configured Portal Role can be used in multiple portals.
