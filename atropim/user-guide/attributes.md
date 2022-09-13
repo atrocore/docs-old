@@ -18,6 +18,7 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 | Code *                   | Unique attribute code              |
 | Name (multi-lang) *      | Attribute name                     |
 | Attribute group          | Attribute group name               |
+| Attribute tab            | Attribute tab name                 |
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.
 
@@ -33,22 +34,20 @@ Attributes are automatically validated according to their type. The following at
 | Boolean                      | Checkbox for the product attribute				|
 | Date                         | Date picker with the calender and option to set up the date manually |
 | DateTime                     | Date and time picker						|
-| Enum                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
+| List                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
 | Float                        | Number with a decimal part		|
 | Int                          | Integer attribute					|
 | Multi-Enum                   | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
 | Text                         | Text area, for long multiline texts		|
 | Unit                         | Number with a measurement value selection  |
 | Url                          | URL with a hyperlink, which is automatically created |
-| Varchar                      | Short text attribute				|
+| String                    | Short text attribute				|
 | Varchar Multilang            | Short text attribute with separate values for each locale	|
 | Text Multilang               | Text area for long multiline texts with separate values for each locale   |
 | Enum Multilang               | Multilingual list of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute separately for each locale.  |
 | Multi-Enum Multilang         | Multilingual list of possible values, which is set up upon the attribute creation or editing, multiple values can be set for the product attribute separately for each locale. |
-| Array Multilang              | Multilingual data array, where each product attribute can get more than one value separately for each locale. No array values can be set upon the attribute creation or editing.   |
-| Wysiwyg                      | Text area for long multiline texts that contains a built-in text editor   |
-| Wysiwyg Multilang            | Text area for long multiline texts that contains a built-in text editor with separate values for each locale  |
-| Image				           | Image file attachment  |
+| HTML                      | Text area for long multiline texts that contains a built-in text editor   |
+| Asset			           | File attachment  |
 
 ## Creating
 
