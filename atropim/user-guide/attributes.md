@@ -15,10 +15,18 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 | **Field Name**           | **Description**                   |
 |--------------------------|-----------------------------------|
 | Type					   | Attribute types are predefined in the system and can be defined via the drop-down menu                |
-| Code *                   | Unique attribute code              |
-| Name (multi-lang) *      | Attribute name                     |
-| Attribute group          | Attribute group name               |
-| Attribute tab            | Attribute tab name                 |
+| Code *                   | Unique attribute code, consisting of small letters (a..z), numbers (0..9) and underscore symbol ("\_")        |
+| Name *      | Attribute name, can be set in different languages                    |
+| Attribute Group          | Attribute group name               |
+| Attribute Tab            | Attribute tab name                 |
+| Default value            | you can define a default value for an attribute of type "Unit". If the default value is set it will be applied automatically, as soon as an attribute is assigned to a product.|
+| Scope                    | The default scope can be set to "Global", or to "Channel", if the attribute should have a channel-specific value, in this case you also need to choose a Channel. Default Scope and Channel are applied to an attribute when the attribute is assigned to an Attribute Group or a Product directly.|
+| Required                 | When checked the attribute will be marked as required for an Attribute Group or for a Product, as soon as it is assigned.|
+
+> If multiple attributes are assigned to an Attribute Group or to a Product at once the default Scope, Channel and Required option are always applied.
+
+![default_scope_required](../_assets/user-guide/default_scope_required/default_scope_required.png)
+
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.
 
@@ -37,15 +45,11 @@ Attributes are automatically validated according to their type. The following at
 | List                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
 | Float                        | Number with a decimal part		|
 | Int                          | Integer attribute					|
-| Multi-Enum                   | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
+| Multi-value List             | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
 | Text                         | Text area, for long multiline texts		|
 | Unit                         | Number with a measurement value selection  |
 | Url                          | URL with a hyperlink, which is automatically created |
 | String                    | Short text attribute				|
-| Varchar Multilang            | Short text attribute with separate values for each locale	|
-| Text Multilang               | Text area for long multiline texts with separate values for each locale   |
-| Enum Multilang               | Multilingual list of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute separately for each locale.  |
-| Multi-Enum Multilang         | Multilingual list of possible values, which is set up upon the attribute creation or editing, multiple values can be set for the product attribute separately for each locale. |
 | HTML                      | Text area for long multiline texts that contains a built-in text editor   |
 | Asset			           | File attachment  |
 
@@ -119,13 +123,15 @@ To edit the attribute, click the `Edit` button on the [detail view](./views-and-
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
-Here you can set default value, scope and required checkbox (see picture below in blue square):
+Besides, you can make changes in the attribute record via [in-line editing](./views-and-panels.md#in-line-editing) on its detail view page.
 
-- `Default value` - sets default value for an attribute. For the products you want another value you can change it in the product page.
-- `Scope` - sets channel in which attribute value can be seen (you choose the channel in a `Channel` field right to the `Scope` field). By default attribute value is seen in all channels.
-- `Required` checkbox - when it is checked the attribute value cannot be empty. By default it is unchecked.
+Alternatively, make changes to the desired attribute record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attributes list view page:
 
-![default_scope_required](../_assets/user-guide/default_scope_required/default_scope_required.png)
+![Edit option](../_assets/user-guide/attributes/attribute-editing-popup.jpg)
+
+### Associated Attributes
+
+"Attributes" is a hierarchical entity. After a new record is created you can assign "Associated Attributes" and "Associating Attributes" to it.
 
 You can use associated attributes to manage attributes. To set them go to attribute page (Dashboard/Attributes) and select an attribute. There you will see 2 tabs: `ASSOCIATING ATTRIBUTES` and `ASSOCIATED ATTRIBUTES` (see picture below).
 
@@ -138,12 +144,6 @@ You can use associated attributes to manage attributes. To set them go to attrib
 In quick search you can see attribute hierarchy (see picture below):
 
 ![discussion-button](../_assets/user-guide/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES2.png)
-
-Besides, you can make changes in the attribute record via [in-line editing](./views-and-panels.md#in-line-editing) on its detail view page.
-
-Alternatively, make changes to the desired attribute record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attributes list view page:
-
-![Edit option](../_assets/user-guide/attributes/attribute-editing-popup.jpg)
 
 ## Removing
 
