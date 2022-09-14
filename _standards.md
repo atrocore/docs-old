@@ -2,11 +2,13 @@
 
 ## Using special characters
 
-- Name Breadcrumbs like "Dashboard / Brands".
+- Mention Breadcrumbs in backquotes like `Dashboard / Brands`.
 - Define actions and button names like `Action name`.
 - For entity names, panel names, field names and all other system-specific names – first letter of each word should be capitalized. 
 - Use double quotes only in exceptional cases, where other cases from these standards cannot be applied.
 - Do not use single quotes, can be used only as apostrophe.
+- Use double quotes to indicate words used ironically, with reservations, or in some unusual way.
+- Use double quotes to set off words used as words, eg the term "Entity" defines...
 
 ## General recommendations
 
