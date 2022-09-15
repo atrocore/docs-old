@@ -8,8 +8,8 @@
 - Use double quotes only in exceptional cases, where other cases from these standards cannot be applied.
 - Do not use single quotes, can be used only as apostrophe.
 - Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
-- Use double quotes to set off words used as words, terms etc, eg the term "Entity" defines...
-- Use "–", not "-", if dash is needed, eg "Field Name – description of the field name". 
+- Use double quotes to set off words used as words, terms etc, eg the term "Entity", "dash" charakter.
+- Use "–", not "-", if you need a "dash" character, eg "Field Name – description of the field name". 
 
 ## General recommendations
 
