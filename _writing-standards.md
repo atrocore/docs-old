@@ -6,12 +6,16 @@
 - Define actions and button names, eg `Action name`.
 - For entity names, panel names, field names and all other system-specific names – first letter of each word should be capitalized, eg Product Category, but Product data record. 
 - Use double quotes only in exceptional cases, where other cases from these standards cannot be applied.
-- Do not use single quotes, can be used only as apostrophe.
-- Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
-- Use double quotes to set off words used as words, terms etc, eg the term "Entity", "dash" charakter.
-- Use double quotes for module names, eg the module "Advanced data types".
+- Single quote can be used only as apostrophe, do not use it in other cases.
 - Use "–", not "-", if you need a "dash" character, eg "Field Name – description of the field name". 
 - Avoid using other special characters.
+
+## Using double quotes
+
+- To indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
+- To set off words used as words, terms, options etc, eg the term "Entity", "dash" charakter, select option "Relationship".
+- For module names, eg the module "Advanced data types".
+- To state options in select lists, eg please choose "Relationship" as a type.
 
 ## General recommendations
 
