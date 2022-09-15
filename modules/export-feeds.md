@@ -142,7 +142,7 @@ Here select the field from the drop-down list of all fields available in the sys
 If the field you export has more than one value you can select how many of them you will export by using `Limit` and `Offset` values. `Offset` shows from what serial number to start counting (note that the first value has a serial number of 0). `Limit` shows how many values to export. For example, Offset 5 `Limit` 1 will export only one (6th) value. 
 When used by default these values will select all applicable results.
 
-![Limit and Offset values](_assets/LimitOffset/LimitOffset.png) 
+![Limit and Offset values](_assets/limitoffset/limit_offset.png) 
 
 You can modify data from your PIM database for a better user experience in the exported file. Modificators are:
 

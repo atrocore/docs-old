@@ -18,7 +18,7 @@ A good example could be the entity "Product Channels", which is included in the 
 
 To find, create and edit them you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
 
-![Export feed cfg file](_assets/Relationship/Relationship3.png)
+![creating assets](_assets/Relationship/creating_assets.png)
 
 ### Creating and editing Relationship type entity
 
@@ -26,16 +26,16 @@ When creating a "Relationship" type entity, select "Relationship" as a Type. The
 
 This entity type, like any other entity type allows you enable/disable this entity, set Default Order, Text Filter Fields, etc. 
 
-![Export feed cfg file](_assets/Relationship/Relationship.png)
+![Relationship](_assets/Relationship/Relationship.png)
 
 ### Adding new fields
 
 To add additional fields for the entity of type "Relationship" go to `Administration / Entity` and press `Fields` for your entity. You see all the fields that this entity has. Some fields are generated automatically, you cannot edit or delete them. To add a new field click on `Add field` and choose the type for your new field.
 
-![Export feed cfg file](_assets/Relationship/Relationship2.png)
+![additional fields](_assets/Relationship/additional_fields.png)
 
 ### Adding new relations
 
 To add a new relation for your entity of type "Relationship"  go to `Administration / Entity` and press `Relationships`. You will see all relations of this entity. Some relationships are generated automatically, you cannot edit or delete them. They are needed for this entity type. To add a new Relationship press `Create link`.
 
-![Export feed cfg file](_assets/Relationship/Relationship4.png)
+![a new relation](_assets/Relationship/a_new_relation.png)

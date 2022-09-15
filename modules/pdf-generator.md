@@ -38,7 +38,7 @@ Generated PDF looks exactly as defined in your template:
 
 You can save pdf as an asset (to do it check the checkbox when generating pdf). PDf and asset default names are similar to products name.
 
-![discussion-button](_assets/pdf_asset/pdf_asset2.png) 
+![saving_pdf_as_an_asset](_assets/saving_pdf_as_an_asset/saving_pdf_as_an_asset_generate.png) 
 
 ### PDF Creating for Item List (e.g. Product List)
 
