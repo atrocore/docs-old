@@ -23,7 +23,7 @@
 - Use relative hyperlinks.
 - Do not use absolute hyperlinks.
 - Use of HTML is allowed only in exceptional cased.
-- Notes should be written in HTML syntax, eg <!-- this is some note –>. Notes can be used in reviews and to define "to do's" for improving of the Documentation in the future.
+- Notes should be written in HTML syntax, eg "<!-- this is some note –>". Notes can be used in reviews and to define "to do's" for improving of the Documentation in the future.
 - Use multi-level headings.
 - Use tables to highlight plain information structures.
 - Use bullet points for lists.
