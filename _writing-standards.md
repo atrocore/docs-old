@@ -9,6 +9,7 @@
 - Do not use single quotes, can be used only as apostrophe.
 - Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
 - Use double quotes to set off words used as words, terms etc, eg the term "Entity", "dash" charakter.
+- Use double quotes for module names, eg the module "Advanced data types".
 - Use "–", not "-", if you need a "dash" character, eg "Field Name – description of the field name". 
 - Avoid using other special characters.
 
