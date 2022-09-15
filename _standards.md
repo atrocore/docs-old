@@ -9,6 +9,7 @@
 - Do not use single quotes, can be used only as apostrophe.
 - Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
 - Use double quotes to set off words used as words, terms etc, eg the term "Entity" defines...
+- Use "–", not "-", if dash is needed, eg "Field Name – description of the field name". 
 
 ## General recommendations
 
@@ -16,8 +17,8 @@
 - Do not write sentences which can be deleted in full without losing the sense for the sentence.
 - Do not describe what is already so obvious, like "see the picture bellow".
 - Do not strart a note with "Please note" or with something similar.
-- Do not use fully capitalized words, like PANEL.
-- Use bold font to highlight important information.
+- Do not use fully capitalized words, eg "PANEL".
+- Use bold font to highlight important information, eg "**Channel** – is a destination for product information".
 - Use italic font only to highlight something in a different matter if bold font is already used.
 - Use relative hyperlinks.
 - Do not use absolute hyperlinks.
