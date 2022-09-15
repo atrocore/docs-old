@@ -2,13 +2,13 @@
 
 ## Using special characters
 
-- Mention Breadcrumbs in backquotes gggggggggggggggggggggggggggggggg like `Dashboard / Brands Dashboard / Brands   Dashboard / Brands     Dashboard / Brands`.
-- Define actions and button names like `Action name`.
-- For entity names, panel names, field names and all other system-specific names – first letter of each word should be capitalized. 
+- Mention Breadcrumbs in backquotes, eg `Dashboard / Brands Dashboard / Brands   Dashboard / Brands     Dashboard / Brands`.
+- Define actions and button names, eg `Action name`.
+- For entity names, panel names, field names and all other system-specific names – first letter of each word should be capitalized, eg Product Category, but Product data record. 
 - Use double quotes only in exceptional cases, where other cases from these standards cannot be applied.
 - Do not use single quotes, can be used only as apostrophe.
-- Use double quotes to indicate words used ironically, with reservations, or in some unusual way.
-- Use double quotes to set off words used as words, eg the term "Entity" defines...
+- Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
+- Use double quotes to set off words used as words, terms etc, eg the term "Entity" defines...
 
 ## General recommendations
 
@@ -22,7 +22,7 @@
 - Use relative hyperlinks.
 - Do not use absolute hyperlinks.
 - Use of HTML is allowed only in exceptional cased.
-- Notes should be written in HTML syntax, like "<!-- this is some note –>. Notes can be used in reviews and to defined "to do's" for improving of the Docs in the future.
+- Notes should be written in HTML syntax, eg <!-- this is some note –>. Notes can be used in reviews and to define "to do's" for improving of the Documentation in the future.
 - Use multi-level headings.
 - Use tables to highlight plain information structures.
 - Use bullet points for lists.
