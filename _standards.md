@@ -2,7 +2,7 @@
 
 ## Using special characters
 
-- Mention Breadcrumbs in backquotes, eg `Dashboard / Brands Dashboard / Brands   Dashboard / Brands     Dashboard / Brands`.
+- Mention Breadcrumbs in backquotes, eg `Dashboard / Brands`.
 - Define actions and button names, eg `Action name`.
 - For entity names, panel names, field names and all other system-specific names – first letter of each word should be capitalized, eg Product Category, but Product data record. 
 - Use double quotes only in exceptional cases, where other cases from these standards cannot be applied.
