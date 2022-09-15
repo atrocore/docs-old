@@ -1,6 +1,6 @@
 # Ldap authentication 
 
-The LDAP module allows you to control AtroCore users via your own DAP server. AtroCore always create user records, so If a new user is added via LDAP, a new record for this user will be created in AtroCore software autoamatically. For the new users a default role and a default team is assigned. Thease can still be changed via AtroCore Administration. 
+The LDAP module allows you to control AtroCore users via your own LDAP server. AtroCore always create user records, so If a new user is added via LDAP, a new record for this user will be created in AtroCore software autoamatically. For the new users a default role and a default team is assigned. Thease can still be changed via AtroCore Administration. 
 
 Users can login via credentials, stored on the LDAP server or with their login and password.
 
