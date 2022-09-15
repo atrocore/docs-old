@@ -34,4 +34,4 @@
 - Use tables to highlight plain information structures.
 - Use bullet points for lists.
 - Avoid using bullet points for multi-line sentences.
-- Use file names without extensions as labels for your images (which are in brackets), eg [attribute-tab-create](../_assets/user-guide/attribute_tab/attribute-tab-create.png)
+- Use file names without extensions as labels for your images (which are in brackets), eg \[attribute-tab-create\]\(../_assets/user-guide/attribute_tab/attribute-tab-create.png\)
