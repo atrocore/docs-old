@@ -10,6 +10,7 @@
 - Use double quotes to indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
 - Use double quotes to set off words used as words, terms etc, eg the term "Entity", "dash" charakter.
 - Use "–", not "-", if you need a "dash" character, eg "Field Name – description of the field name". 
+- Avoid using other special characters.
 
 ## General recommendations
 
@@ -27,3 +28,4 @@
 - Use multi-level headings.
 - Use tables to highlight plain information structures.
 - Use bullet points for lists.
+- Avoid using bullet points for multi-line sentences.
