@@ -25,3 +25,23 @@ Set the name, description and press the checkbox if you want it to be active. Th
 In the `Feeds` section you can add or unlink export or import feeds. To add one press arrow and select `Select: Import Feed` or `Select: Export Feed` for import and export feeds apparently. To unlink one press tree dots and select `Unlink`.
 
 You can also change the order of feeds to benefit your task. To do so, just grab and pull the feed.
+
+### Running connector jobs
+
+To run connector press `Execute`. This will launch all the feeds you set in `Feeds` section. The order of the feeds launched will be from the top feed down to the last. So, when and only when a previous feed is done as a success, a new one will start and so on to the last. If a result of a job is an error a new feed is not started and cancelled.
+
+![Job list](_assets/connector/job-list.png)
+
+![Running jobs](_assets/connector/running-jobs.png)
+
+This will make sure your intent is achieved.
+
+## Additional functions
+
+"Connector" module also has some additional functions to help ypu export and import more flexible. It includes additional filtering and value modifiers.
+
+### Additional filtering
+
+
+
+### Value Modifiers
