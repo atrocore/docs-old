@@ -144,31 +144,6 @@ When used by default these values will select all applicable results.
 
 ![Limit and Offset values](_assets/limitoffset/limit_offset.png) 
 
-You can modify data from your PIM database for a better user experience in the exported file. Modificators are:
-
-- **trim** – deletes extra spaces and program symbols from the information (from " La/Maison" to "La Maison")
-- **lover** - converts all uppercase letters to lowercase (from "LA MAISON" to "la maison")
-- **capitalize** - converts first letter from the information to uppercase (from "la maison" to "La maison")
-- **title** - converts all first letters to uppercase (from "la maison" to "La Maison")
-- **date**  - converts data values to appropriate format (it is set in Angle brackets after date)
-- **preg_replace** - custom formulas for your data
-
-![discussion-button](_assets/modificators/modificators.png)
-
-> When processing modifiers, the system applies them from top to bottom. So, in the example below you can change from " LA MAISON" to "La maison".
-
-![discussion-button](_assets/modificators/modificators2.png)
-
-When exporting attribute values, for better display of the values you would like to modify data. To do so, in `CONFIGURATOR` for value fields ve have `Value Modifier`. As you can see on a picture below it can have multiple modifiers for multiple values. Any value can have more then one or no modifier. Value codes are used for this in formulas (see picture below).
-
-![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue.png)
-
-Modifiers, their description and examples are in the table under the `Value Modifier` as the one you can see on the picture below.
-
-![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue2.png)
-
-> When exporting attribute values, you can also modify them, but, because one entity can have different attributes, attribute modifiers have to be written in formulas.
-
 For the `Product categories` field there is also the ability to choose its scope level:
 
 ![Product category scope](_assets/export-feeds/product-category-scope.jpg)
