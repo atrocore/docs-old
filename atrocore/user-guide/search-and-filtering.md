@@ -8,10 +8,13 @@ Searching works on the current entity records, while filtering works also on the
 
 Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels-core.md#list-view) view page:
 
-![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.jpg)
-*Search and filtering on the custom entities list view page*
+![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.png)
 
-To perform a search operation, enter your search query into the corresponding field and hit the `Enter` key on your keyboard or click the `Search` button.
+*Search and filtering on the products list view page*
+
+To perform a search operation, enter your search query into the corresponding field and hit the `Enter` key on your keyboard or click the `Apply filter` button (red squares). To reset all filters click the `Reset filter` button. You can have more than one filter at once - by clicking `Reset filter` button or cross on the right (blue squares) all of them will be reset. If you want to close one particular filer use cross in the top right of the filter you want to close.
+
+![Search and filtering](../_assets/user-guide/search-and-filtering/reset.png)
 
 Wildcards can be used for search, at any place in the search string, separately or in any combination.
 
