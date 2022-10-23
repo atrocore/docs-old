@@ -10,6 +10,14 @@
 - Use "–", not "-", if you need a "dash" character, eg "Field Name – description of the field name". 
 - Avoid using other special characters.
 
+## Using references
+- Do not describe same functionality on different places, choose the most appropriate place and describe this functionality there.
+- On all other places reference to that chapter by using relative links with heading anchors, not absolute links, eg
+```
+[Correcting errors by clearing system cache](../../atrocore/admin-guide/correcting-errors.md#clearing-system-cache)
+```
+- If the files are moved to other places of documentation structure is changed, check if references are still working.
+
 ## Using double quotes
 
 - To indicate words used ironically, with reservations, or in some unusual way, eg "right" choice.
