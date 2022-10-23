@@ -22,7 +22,7 @@
 - Use speaking file names, eg filter-apply-and-reset-buttons.jpg, NOT filter4.jpg.
 - Use only small latters in file names, eg filder.jpg, NOT Filter.jpg.
 - Do not use spaces, exchange spaces with "-" to separate works, eg reset-button.jpg.
-- Usually do not use underscore "\_" in the file names. Use it only in excentional cases to explicitely emphasize something in the file name, eg reset-button_2022.jpg.
+- Usually do not use underscore "\_" in the file names. Use it only in excentional cases to explicitly emphasize something in the file name, eg reset-button_2022.jpg.
 
 ## General recommendations
 
