@@ -17,6 +17,14 @@
 - For module names, eg the module "Advanced data types".
 - To state options in select lists, eg please choose "Relationship" as a type.
 
+## Internal comments
+- Internal comments can be used as reminder, for review comments about what should be improved, fixing "To Dos" etc.
+- use HTML comments to write internal comments, eg 
+<!–- To Do 
+1. add reference to xxxx
+2. add description about yyy
+–->
+
 ## File naming
 
 - Use speaking file names, eg filter-apply-and-reset-buttons.jpg, NOT filter4.jpg.
