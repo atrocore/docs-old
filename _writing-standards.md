@@ -18,8 +18,8 @@
 - To state options in select lists, eg please choose "Relationship" as a type.
 
 ## Internal comments
-- Internal comments can be used as reminder, for review comments about what should be improved, fixing "To Dos" etc.
-- use HTML comment markup to write internal comments, these are not visible to the readers, eg 
+- Internal comments can be used as reminder, for review comments about what should be improved, stating "To Dos" etc.
+- Use HTML comment markup for it, these are not visible to the readers, eg 
 ```
 <!-- To Do 20.10.22
 1. add reference to xxxx
