@@ -42,6 +42,7 @@
 - Do not use spaces, exchange spaces with "-" to separate works, eg reset-button.jpg.
 - Usually do not use underscore "\_" in the file names. Use it only in excentional cases to explicitly emphasize something in the file name, eg reset-button_2022.jpg.
 - Do not use special characters and specific language letters, like ä,ü,ß,ö and other.
+- Use file names without extensions as labels for your images (which are in brackets), eg \[attribute-tab-create\]\(../\_assets/user-guide/attribute_tab/attribute-tab-create.png\).
 
 ## General recommendations
 
@@ -59,6 +60,6 @@
 - Use tables to highlight plain information structures.
 - Use bullet points for lists.
 - Avoid using bullet points for multi-line sentences.
-- Use file names without extensions as labels for your images (which are in brackets), eg \[attribute-tab-create\]\(../_assets/user-guide/attribute_tab/attribute-tab-create.png\)
+
 
 In other topics follow the recommendations of this Guide: https://developers.google.com/style
