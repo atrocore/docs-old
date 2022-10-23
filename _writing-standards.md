@@ -41,6 +41,7 @@
 - Use only small latters in file names, eg filder.jpg, NOT Filter.jpg.
 - Do not use spaces, exchange spaces with "-" to separate works, eg reset-button.jpg.
 - Usually do not use underscore "\_" in the file names. Use it only in excentional cases to explicitly emphasize something in the file name, eg reset-button_2022.jpg.
+- Do not use special characters and specific language letters, like ä,ü,ß,ö and other.
 
 ## General recommendations
 
