@@ -101,6 +101,7 @@ The next panel is the settings panel:
 - **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
 - **Empty Value** – This symbol will be interpreted as "empty" value additionally to the empty cell, eg "" and "none" will be interpreted as "", if you define "none" as an empty value.
 - **Null value** – this value will be interpreted as "NULL" value.
+- **Allow repeated data record processing**  – this checkbox allows processing more than one value with same identifier. If your entity only replaces data it will be replaced with the last processed value. If your entity adds new data to existing one it allows such updates to exist.
 
 If you import product data, some products may have certain attributes, other not. If the value for some attribute is empty it is not clear, whether this attribute has an empty value, or this product does not have this attribute at all. That is why the **mark for a non-linked attribute** should be used, to mark clearly, which attribute should not be linked to a certain product.
 
@@ -149,6 +150,12 @@ To modify the mapping rule displayed on the `Configurator` panel, use the `Edit`
 For each field you can define whether it is the identifier or not. All identifiers are used together in search for a data record in the database. E.g. if you choose "Name" and "Brand" as identifier for an import to the product entity, the system will try to find such a product by using the cell values for these two fields. If some data record is found, it will be updated with the values which come from the import file. If more than one data record is found, you will get an error and import will not be executed.
 
 ![Configurator identifier](_assets/import-feeds/import-feeds-configurator-identifiers.png)
+
+> Please note, that, if you have not selected an identifier, you can not update data. System will not search for a data record in the database so it will only create new records if possible (You can see such example on the pictures below). 
+
+![No configurator identifier](_assets/import-feeds/exapmle-no-identifier.png)
+
+![No configurator identifier 2](_assets/import-feeds/exapmle-import-jobs.png)
 
 ### Default Value
 For any mapping rule the column(s) or default value or both should be filled. Thus, it is possible to set the default value without choosing the column(s). In this case this value will be applied to all data records. For example, you can set a value for a "Catalog". If you would import product data, all the products will be automatically assigned to the selected catalog, even if you import file have no column for a "Catalog". If "default value" is left empty or no value is set, no default value will be applied as value.
@@ -241,6 +248,10 @@ If you import some assets without assets for Main Images and your products have 
 If you create a rule only for Main Images and there will be no rule for other assets, assets for the Main Images will be created and linked additionally. All other assets will be preserved. The importing order is important. You can import assets and then import Main Images - in this case all imported assets will be linked to the products. If you will import Main Images initially and than all other assets, without using a rule for assets, which are assigned as Main Images, all the Main Images will be unlinked.
 
 > Marking an Image as a Main Image for a certain channel via import is currently not possible.
+
+Instead of importing main image as it is you can import it as an add only mode (see picture below). This way the image will be added when importing only if the product is new or it has no main image. So, if you changed manually product's main image during you work cycle and then updated import job, you would not have to change it again in your updated products.
+
+![discussion-button](_assets/main-image-add-only-mode/main-image-add-only-mode.png)
 
 Import of assets via local server path is currently not supported.
 

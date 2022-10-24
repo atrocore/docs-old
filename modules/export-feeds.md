@@ -27,13 +27,13 @@ The "Export Feeds" module also supports transferring export feeds data of separa
 
 To create a new export feed, go to the `Administration > Export Feeds` page or click `Export Feeds` in the navigation menu and then click the `Create Export Feed` button. The common creation pop-up will appear:
 
-![Export feed creating](_assets/export-feeds/export_feeds_new.png)
+![Export feed creating](_assets/export-feeds/export-feeds-new.png)
 
 Here enter the export feed name, select its type and define its owner. By default, the export feed type is **File**. In case you need to export the data to the other sources, the corresponding modules installation is required.
 
 You may also set up your export feed in the `Export Data Settings` panel and in the `Feed Settings` panel:
 
-![Export feed creating](_assets/export-feeds/export_feeds_new_panels.png)
+![Export feed creating](_assets/export-feeds/export-feeds-new-panels.png)
 
 In the `Export Data Settings` panel you should specify the format of the file where the data will be exported. The available formats are **CSV** and **Excel**.
 
@@ -61,7 +61,7 @@ In-line editing is supported here. So prior to making any changes, you have to c
 
 Overview panel enables you to define the main feed parameters (name, action, activity etc):
 
-![Export feed cfg](_assets/export-feeds/export_feed_overview_panel.png)
+![Export feed cfg](_assets/export-feeds/export-feed-overview-panel.png)
 
 The following settings are available here:
 
@@ -75,7 +75,7 @@ The following settings are available here:
 
 ### Export Data Settings
 
-![Export feed cfg](_assets/export-feeds/export_feed_data_settings.png)
+![Export feed cfg](_assets/export-feeds/export-feed-data-settings.png)
 
 - **File format** – from the drop-down list select the file type – CSV or XLSX (Excel) – in which the data export will be performed. 
 - **Header row** – leave the checkbox activated to include the column names in the export file or remove its selection to skip column names from exporting.
@@ -90,7 +90,7 @@ Please, note that by default the XLSX (Excel) file format is set and the `Header
 
 The export file parameters are configured on the `FEED SETTINGS` panel:
 
-![Export feed cfg file](_assets/export-feeds/export_feed_settings.jpg)
+![Export feed cfg file](_assets/export-feeds/export-feed-settings.png)
 
 - **Entity** – from the drop-down list of entities available in the system select the desired entity type, for which this export feed will be used.
 - **Language** - this value is inherited by creating a rule for some language specific attribute and has no impact on export itself.
@@ -138,6 +138,11 @@ To add more entity fields for export, select the `Add entity field` option from 
 ![Entity field adding](_assets/export-feeds/add-field.jpg)
 
 Here select the field from the drop-down list of all fields available in the system for the given entity, modify the `Column` value, if needed, and define whether data export should be made by ID or code (for those fields, where this option is available). 
+
+If the field you export has more than one value you can select how many of them you will export by using `Limit` and `Offset` values. `Offset` shows from what serial number to start counting (note that the first value has a serial number of 0). `Limit` shows how many values to export. For example, Offset 5 `Limit` 1 will export only one (6th) value. 
+When used by default these values will select all applicable results.
+
+![Limit and Offset values](_assets/limitoffset/limit-ffset.png) 
 
 For the `Product categories` field there is also the ability to choose its scope level:
 
@@ -223,17 +228,17 @@ When the channel export is used, the data is exported into a single archive with
 
 Click on `Export` button to export the data from your system. 
 
-![Run export option](_assets/export-feeds/export_button.png)
+![Run export option](_assets/export-feeds/export-button.png)
 
 Started export job is added to the Queue Manager, where you can see the current status:
 
-![Queue manager](_assets/export-feeds/export_queue_manager.png)
+![Queue manager](_assets/export-feeds/export-queue-manager.png)
 
 The new record is also added to the "Export Jobs" Panel with the state `Pending`. After the export job is successfully completed the state will be automatically changed to `Done`.
 
 While the export is running you may cancel it in the right-side menu:
 
-![Run import option](_assets/export-feeds/export_feed_cancel.png)
+![Run import option](_assets/export-feeds/export-feed-cancel.png)
 
 
 ## Export Jobs
@@ -243,11 +248,11 @@ Information about completed export jobs is displayed on the `Export Jobs` panel,
 Results of the data export can be viewed in two ways:
 - on the "Export Jobs" panel of the respective export feed, which shows the details on the export operations performed via the currently open export feed:
 
-![Queue manager](_assets/export-feeds/export_jobs_panel.png)
+![Queue manager](_assets/export-feeds/export-jobs-panel.png)
 
 - on the "Export Jobs List Page", which shows details on all export jobs performed in the system via export feeds. To open this page, click on the `Export Results` in your main navigation. 
 
-![Queue manager](_assets/export-feeds/export_jobs_list.png)
+![Queue manager](_assets/export-feeds/export-jobs-list.png)
 
 
 The Export Jobs details contain the following information:
@@ -293,8 +298,21 @@ After export job is done you can download the error file, correct your data, and
 
 To *duplicate* the existing export feed record, use the corresponding option from the actions menu on the detail view page of the desired export feed record:
 
-![Duplicate feed](_assets/export-feeds/export_feeds_dublicate.png)
+![Duplicate feed](_assets/export-feeds/export-feeds-dublicate.png)
 
 You will be redirected to the export feed creation page and get all the values of the last chosen export feed record copied in the empty fields of the new feed record to be created. After save the mapping rules from the configurator will be copied too.
 
 To *remove* the export feed record, use the corresponding option from the action’s menu of your export feed.
+
+
+## Exporting from entity
+
+You can export directly selected data directly from different entities. To do so, go to entity, from which you want to export and select data you want to export. In an example below you can see exporting selected products. To export them, after selecting, press `Actions` and select `Export`.
+
+![data-record-action](_assets/export-feeds/export-from-entity.png)
+
+There you will see export menu 
+
+![data-record-action](_assets/export-feeds/export-from-entity-menu.png)
+
+Select existing export feed related to this entity and press `Export`. A new export job will be created. For the purposes of this job all the configuration will be taken from selected export job except filters (only the data you selected will be used).
