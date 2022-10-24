@@ -24,4 +24,4 @@ You can set inheritance rules by the settings below. To set them go to Administr
 
 On your entity page you will see parents and children (see picture below). In this example you can see that a product has already a parent and a child. This is made to structure data even better.
 
-![discussion-button](../_assets/admin-guide/Inheritance/Inheritance2.png)
+![discussion-button](../_assets/admin-guide/Inheritance/Inheritance-viev.png)

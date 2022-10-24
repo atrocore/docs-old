@@ -20,4 +20,4 @@ After a User logs in for a first time a new user record for him is created in th
 
 ![team and role](_assets/Ldap/team-and-role.png)
 
-![base team and role](_assets/Ldap/team_and_role_base.png)
+![base team and role](_assets/Ldap/team-and-role-base.png)

@@ -18,7 +18,7 @@ A good example could be the entity "Product Channels", which is included in the 
 
 To find, create and edit them you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
 
-![creating assets](_assets/Relationship/creating_assets.png)
+![creating assets](_assets/Relationship/creating-assets.png)
 
 ### Creating and editing Relationship type entity
 
@@ -32,10 +32,10 @@ This entity type, like any other entity type allows you enable/disable this enti
 
 To add additional fields for the entity of type "Relationship" go to `Administration / Entity` and press `Fields` for your entity. You see all the fields that this entity has. Some fields are generated automatically, you cannot edit or delete them. To add a new field click on `Add field` and choose the type for your new field.
 
-![additional fields](_assets/Relationship/additional_fields.png)
+![additional fields](_assets/Relationship/additional-fields.png)
 
 ### Adding new relations
 
 To add a new relation for your entity of type "Relationship"  go to `Administration / Entity` and press `Relationships`. You will see all relations of this entity. Some relationships are generated automatically, you cannot edit or delete them. They are needed for this entity type. To add a new Relationship press `Create link`.
 
-![a new relation](_assets/Relationship/a_new_relation.png)
+![a new relation](_assets/Relationship/a-new-relation.png)

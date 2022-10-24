@@ -25,7 +25,7 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 
 > If multiple attributes are assigned to an Attribute Group or to a Product at once the default Scope, Channel and Required option are always applied.
 
-![default_scope_required](../_assets/user-guide/default_scope_required/default_scope_required.png)
+![default_scope_required](../_assets/user-guide/default-scope-required/default-scope-required.png)
 
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.

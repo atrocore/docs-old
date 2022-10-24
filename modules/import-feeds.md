@@ -251,7 +251,7 @@ If you create a rule only for Main Images and there will be no rule for other as
 
 Instead of importing main image as it is you can import it as an add only mode (see picture below). This way the image will be added when importing only if the product is new or it has no main image. So, if you changed manually product's main image during you work cycle and then updated import job, you would not have to change it again in your updated products.
 
-![discussion-button](_assets/Main_image_add_only_mode/Main_image_add_only_mode.png)
+![discussion-button](_assets/Main-image-add-only-mode/Main-image-add-only-mode.png)
 
 Import of assets via local server path is currently not supported.
 

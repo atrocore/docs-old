@@ -13,20 +13,20 @@ Attribute Tabs are also used to display the attribute values in our Web Catalog 
 
 To create a new Attribute Tab press `Create attribute tab` button. There you set the name (in different languages) and the description. After saving it (or when opening existing tab) you will see the panel with the assigned attributes, grouped by Attribute Group.
 
-![discussion-button](../_assets/user-guide/attribute_tab/attribute_tab.png)
+![discussion-button](../_assets/user-guide/attribute-tab/attribute-tab.png)
 
 ## Adding new attributes to an Attribute Tan
 
 To add new attributes, press `+` button or open a drop-down menu `▼` and then click on "Select" to select multiple attributes at once or click on "Select Attribute Group" to assign all the attributes of the respective selected Attribute Group (attributes which are assigned to this Attribute Group).
 
-![discussion-button](../_assets/user-guide/attribute_tab/attribute_tab2.png)
+![discussion-button](../_assets/user-guide/attribute-tab/attribute-tab-select.png)
 
 ## Attribute Tab on Product Detail page
 
 If configured by the Admin via section `Administration / Layouts / Products / Relation panels` Attribute Tabs will be shown on the Product Detail Page. These Panels will show values for the attributes which are assigned to the respective Attribute Tab.
 
-![discussion-button](../_assets/user-guide/attribute_tab/attribute_tab3.png)
+![discussion-button](../_assets/user-guide/attribute-tab/attribute-tab-viev.png)
 
 Via each Attribute Tab you can add only attributes to a product, which a assigned to this Tab. So make sure to use the proper Tab while assigned attributes to the products.
 
-![discussion-button](../_assets/user-guide/attribute_tab/attribute_tab4.png)
+![discussion-button](../_assets/user-guide/attribute-tab/attribute-tab-list.png)
