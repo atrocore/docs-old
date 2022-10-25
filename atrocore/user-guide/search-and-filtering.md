@@ -8,10 +8,13 @@ Searching works on the current entity records, while filtering works also on the
 
 Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels-core.md#list-view) view page:
 
-![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.jpg)
-*Search and filtering on the custom entities list view page*
+![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.png)
 
-To perform a search operation, enter your search query into the corresponding field and hit the `Enter` key on your keyboard or click the `Search` button.
+*Search and filtering on the products list view page*
+
+To perform a search operation, enter your search query into the corresponding field and hit the `Enter` key on your keyboard or click the `Apply filter` button (red squares). To reset all filters click the `Reset filter` button. You can have more than one filter at once - by clicking `Reset filter` button or cross on the right (blue squares) all of them will be reset. If you want to close one particular filer use cross in the top right of the filter you want to close.
+
+![Search and filtering](../_assets/user-guide/search-and-filtering/reset.png)
 
 Wildcards can be used for search, at any place in the search string, separately or in any combination.
 
@@ -137,7 +140,7 @@ Depending of the field type, you can apply the following filtering criteria:
 
 ### Subfilters
 
-When adding filters to your search you can add additional subfilters. To add subfilter you have to filter data in the popup menu (see picture below) and then select `Select all results`.
+When adding filters to your search you can add additional subfilters. To add subfilter you have to filter data in the popup menu (see picture below) and then check the checkbox in the header.
 
 ![Subfilters](../_assets/user-guide/subqerry/subqerry-resoult.png)
 
@@ -148,6 +151,10 @@ The search will be shown as on the picture below:
 This way is more accurate then selecting all appropriate results to subfilter because:
 - it is faster, especially when you have a lot of results
 - whenever database is updated you do not have to manually update the filter - it is automatically updated according to new information
+
+> When you select all results, you can not unselect individual results. To do so you have to manually select them. 
+
+> When using `select all results` option, all additional data that fit the filters will be automatically added if you reuse this filtering.
 
 ### Predefined Search Filters
 
