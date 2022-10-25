@@ -62,7 +62,7 @@
 - Avoid using bullet points for multi-line sentences.
 
 ## Using git branches for writing documentation
-- To describe a new or improve an existing topic always create a new branch from master branch.
+- To describe a new or improve an existing topic always create a new branch from master branch (in VSCode option "create branch from..").
 - If documentation is written for a certain issue, use the prefix "i-" and issue id as a branch name, eg "i-5ff5e2e73148ba911"-
 - A branch may be created for multiple issues, in this case mention all addressed issues, eg "i-5ff5e2e73148ba911-5ff5e2e73148ba912-5ff5e2e73148ba913".
 - A branch may be related to a whole milestone, in this case use the prefix "m-" and milestone id as a branch name, eg "m-5ff5e2e73148ba911".
