@@ -6,7 +6,7 @@ The "Connector" module allows you to orchestrate multiple import and export feed
 
 The "Connector" module was created primarily to be used together with Export and Import feeds, so further description of the module is given in the context of them.
 
-To go to connector menu visit Dashboard/Connectors. There you can see all existing connectors, edit them, delete or create new.
+Menu item "Connectors" should be added by your Administrator. From there you can see all existing connectors, edit them, delete or create new.
 
 ![Main menu](_assets/connector/main-menu.png)
 
@@ -28,7 +28,8 @@ You can also change the order of feeds to benefit your task. To do so, just grab
 
 ### Running connector jobs
 
-To run connector press `Execute`. This will launch all the feeds you set in `Feeds` section. The order of the feeds launched will be from the top feed down to the last. So, when and only when a previous feed is done as a success, a new one will start and so on to the last. If a result of a job is an error a new feed is not started and cancelled.
+<!-- TODO помоєму рома зробив, що зараз виконання може продовжитись, навіть, якщо попередній фід виконався з помилкою, це треба доописати -->
+To execute all import and export jobs assigned to a Connector press `Execute` button. This will launch all the feeds you selected in `Feeds` section. The order of the feeds launched will be from the top feed down to the last. So, when and only when a previous feed is successfully executed, a new one will start and so on to the last. If a result of a job is an error a new feed is not started and cancelled.
 
 ![Job list](_assets/connector/job-list.png)
 
@@ -48,10 +49,10 @@ You can filter by related fields (even one you do not export). This includes all
 
 ### Value Modifiers
 
-You can modify data from your PIM database for a better user experience. Modificators are:
+You can modify data from your PIM database for a better user experience. Possible modifiers are:
 
 - **trim** – deletes extra spaces and program symbols from the information (from " La/Maison" to "La Maison")
-- **lover** - converts all uppercase letters to lowercase (from "LA MAISON" to "la maison")
+- **lower** - converts all uppercase letters to lowercase (from "LA MAISON" to "la maison")
 - **capitalize** - converts first letter from the information to uppercase (from "la maison" to "La maison")
 - **title** - converts all first letters to uppercase (from "la maison" to "La Maison")
 - **date**  - converts data values to appropriate format (it is set in Angle brackets after date)
