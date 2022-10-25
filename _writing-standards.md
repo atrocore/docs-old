@@ -40,7 +40,7 @@
 - Use speaking file names, eg filter-apply-and-reset-buttons.jpg, NOT filter4.jpg.
 - Use only small letters in file names, eg filder.jpg, not Filter.jpg.
 - Do not use spaces, exchange spaces with "-" to separate works, eg reset-button.jpg.
-- Usually do not use underscore "\_" in the file names. Use it only in excentional cases to explicitly emphasize something in the file name, eg reset-button_2022.jpg.
+- Usually do not use underscore "\_" in the file names. Use it only in exceptional cases to explicitly emphasize something in the file name, eg reset-button_2022.jpg.
 - Do not use special characters and specific language letters, like ä,ü,ß,ö and other.
 - Use file names without extensions as labels for your images (which are in brackets), eg \[attribute-tab-create\]\(../\_assets/user-guide/attribute_tab/attribute-tab-create.png\).
 
