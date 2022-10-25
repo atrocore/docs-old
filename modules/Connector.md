@@ -45,7 +45,7 @@ This will make sure your intent is achieved.
 
 You can filter by related fields (even one you do not export). This includes all filters you can apply by using filter in main system.
 
-![Filter](_assets/connector/Filtering.png)
+![Filter](_assets/connector/filtering.png)
 
 ### Value Modifiers
 
@@ -62,14 +62,14 @@ You can modify data from your PIM database for a better user experience. Possibl
 
 > When processing modifiers, the system applies them from top to bottom. So, in the example below you can change from " LA MAISON" to "La maison".
 
-![discussion-button](_assets/connector/modificators2.png)
+![discussion-button](_assets/connector/modificators-next.png)
 
 When exporting attribute values, for better display of the values you would like to modify data. To do so, in `CONFIGURATOR` for value fields ve have `Value Modifier`. As you can see on a picture below it can have multiple modifiers for multiple values. Any value can have more then one or no modifier. Value codes are used for this in formulas (see picture below).
 
-![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue.png)
+![discussion-button](_assets/product-attribute-value/product-attribute-value.png)
 
 Modifiers, their description and examples are in the table under the `Value Modifier` as the one you can see on the picture below.
 
-![discussion-button](_assets/ProductAttributeValue/ProductAttributeValue2.png)
+![discussion-button](_assets/product-attribute-value/product-attribute-value-next.png)
 
 > When exporting attribute values, you can also modify them, but, because one entity can have different attributes, attribute modifiers have to be written in formulas.
