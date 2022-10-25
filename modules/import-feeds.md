@@ -155,7 +155,7 @@ For each field you can define whether it is the identifier or not. All identifie
 
 ![No configurator identifier](_assets/import-feeds/exapmle-no-identifier.png)
 
-![No configurator identifier 2](_assets/import-feeds/exapmle-no-identifier2.png)
+![No configurator identifier 2](_assets/import-feeds/exapmle-import-jobs.png)
 
 ### Default Value
 For any mapping rule the column(s) or default value or both should be filled. Thus, it is possible to set the default value without choosing the column(s). In this case this value will be applied to all data records. For example, you can set a value for a "Catalog". If you would import product data, all the products will be automatically assigned to the selected catalog, even if you import file have no column for a "Catalog". If "default value" is left empty or no value is set, no default value will be applied as value.
@@ -251,7 +251,7 @@ If you create a rule only for Main Images and there will be no rule for other as
 
 Instead of importing main image as it is you can import it as an add only mode (see picture below). This way the image will be added when importing only if the product is new or it has no main image. So, if you changed manually product's main image during you work cycle and then updated import job, you would not have to change it again in your updated products.
 
-![discussion-button](_assets/Main_image_add_only_mode/Main_image_add_only_mode.png)
+![discussion-button](_assets/main-image-add-only-mode/main-image-add-only-mode.png)
 
 Import of assets via local server path is currently not supported.
 

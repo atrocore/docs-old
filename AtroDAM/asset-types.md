@@ -2,7 +2,7 @@
 
 An administrator can manage asset types in Administration/Asset Types menu. 
 
-![discussion-button](_assets/asset_types/asset_types.png)
+![discussion-button](_assets/asset-types/asset-types.png)
 
 The "Name" menu states for the name of an asset type, "sort order" defines the sort order in witch these will be shown. 
 
@@ -14,4 +14,4 @@ If "Assign automatically" checkbox is checked, the system will check automatical
 
 When a validation rule is changed, all assets are automatically re-validated according to the updated validation rules.
 
-![discussion-button](_assets/asset_types/asset_types2.png)
+![discussion-button](_assets/asset-types/asset-types-validations.png)

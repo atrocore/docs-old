@@ -142,7 +142,7 @@ Depending of the field type, you can apply the following filtering criteria:
 
 When adding filters to your search you can add additional subfilters. To add subfilter you have to filter data in the popup menu (see picture below) and then check the checkbox in the header.
 
-![Subfilters](../_assets/user-guide/subqerry/subqerry2.png)
+![Subfilters](../_assets/user-guide/subqerry/subqerry-resoult.png)
 
 The search will be shown as on the picture below:
 
