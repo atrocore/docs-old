@@ -73,3 +73,5 @@ Modifiers, their description and examples are in the table under the `Value Modi
 ![discussion-button](_assets/product-attribute-value/product-attribute-value-next.png)
 
 > When exporting attribute values, you can also modify them, but, because one entity can have different attributes, attribute modifiers have to be written in formulas.
+
+
