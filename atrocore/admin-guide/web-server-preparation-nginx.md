@@ -197,7 +197,7 @@ server {
 
   client_max_body_size 50M;
   
-  location ~ (composer\.json)$ {
+  location ~ ((.*)\.sql|composer\.json)$ {
     deny all;
   }
   

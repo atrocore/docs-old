@@ -25,7 +25,7 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 
 > If multiple attributes are assigned to an Attribute Group or to a Product at once the default Scope, Channel and Required option are always applied.
 
-![default_scope_required](../_assets/user-guide/default_scope_required/default_scope_required.png)
+![default_scope_required](../_assets/user-guide/default-scope-required/default-scope-required.png)
 
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.
@@ -133,14 +133,14 @@ Alternatively, make changes to the desired attribute record in the [quick edit](
 
 The System has the functionality of automatic attribute linking to a Product Family or Product data record. If some attribute is assigned other related attributes will be assigned as well. This is realized with the help of hierarchies. Attributes is a hierarchical entity. After a new record is created you can assign Associated Attributes and Associating Attributes to it.
 
-![discussion-button](../_assets/user-guide/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES.png)
+![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes.png)
 
 - **Associating Attributes** – are "parent" attributes, assigning of which will cause automatic assiging of the current attribute. 
 - **Associated Attributes** – are "child" attributes, which will be automatically assigned if the current attribute is assigned.
 
 In the Tree Panel you can see the full attribute hierarchy and change it by using drag-and-drop.
 
-![discussion-button](../_assets/user-guide/ASSOCIATED_ATTRIBUTES/ASSOCIATED_ATTRIBUTES2.png)
+![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes-list.png)
 
 ## Removing
 
