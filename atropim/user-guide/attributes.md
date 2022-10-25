@@ -15,9 +15,18 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 | **Field Name**           | **Description**                   |
 |--------------------------|-----------------------------------|
 | Type					   | Attribute types are predefined in the system and can be defined via the drop-down menu                |
-| Code *                   | Unique attribute code              |
-| Name (multi-lang) *      | Attribute name                     |
-| Attribute group          | Attribute group name               |
+| Code *                   | Unique attribute code, consisting of small letters (a..z), numbers (0..9) and underscore symbol ("\_")        |
+| Name *      | Attribute name, can be set in different languages                    |
+| Attribute Group          | Attribute group name               |
+| Attribute Tab            | Attribute tab name                 |
+| Default value            | you can define a default value for an attribute of type "Unit". If the default value is set it will be applied automatically, as soon as an attribute is assigned to a product.|
+| Scope                    | The default scope can be set to "Global", or to "Channel", if the attribute should have a channel-specific value, in this case you also need to choose a Channel. Default Scope and Channel are applied to an attribute when the attribute is assigned to an Attribute Group or a Product directly.|
+| Required                 | When checked the attribute will be marked as required for an Attribute Group or for a Product, as soon as it is assigned.|
+
+> If multiple attributes are assigned to an Attribute Group or to a Product at once the default Scope, Channel and Required option are always applied.
+
+![default_scope_required](../_assets/user-guide/default-scope-required/default-scope-required.png)
+
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.
 
@@ -33,22 +42,16 @@ Attributes are automatically validated according to their type. The following at
 | Boolean                      | Checkbox for the product attribute				|
 | Date                         | Date picker with the calender and option to set up the date manually |
 | DateTime                     | Date and time picker						|
-| Enum                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
+| List                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
 | Float                        | Number with a decimal part		|
 | Int                          | Integer attribute					|
-| Multi-Enum                   | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
+| Multi-value List             | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
 | Text                         | Text area, for long multiline texts		|
 | Unit                         | Number with a measurement value selection  |
 | Url                          | URL with a hyperlink, which is automatically created |
-| Varchar                      | Short text attribute				|
-| Varchar Multilang            | Short text attribute with separate values for each locale	|
-| Text Multilang               | Text area for long multiline texts with separate values for each locale   |
-| Enum Multilang               | Multilingual list of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute separately for each locale.  |
-| Multi-Enum Multilang         | Multilingual list of possible values, which is set up upon the attribute creation or editing, multiple values can be set for the product attribute separately for each locale. |
-| Array Multilang              | Multilingual data array, where each product attribute can get more than one value separately for each locale. No array values can be set upon the attribute creation or editing.   |
-| Wysiwyg                      | Text area for long multiline texts that contains a built-in text editor   |
-| Wysiwyg Multilang            | Text area for long multiline texts that contains a built-in text editor with separate values for each locale  |
-| Image				           | Image file attachment  |
+| String                    | Short text attribute				|
+| HTML                      | Text area for long multiline texts that contains a built-in text editor   |
+| Asset			           | File attachment  |
 
 ## Creating
 
@@ -125,6 +128,19 @@ Besides, you can make changes in the attribute record via [in-line editing](./vi
 Alternatively, make changes to the desired attribute record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attributes list view page:
 
 ![Edit option](../_assets/user-guide/attributes/attribute-editing-popup.jpg)
+
+### Associated Attributes
+
+The System has the functionality of automatic attribute linking to a Product Family or Product data record. If some attribute is assigned other related attributes will be assigned as well. This is realized with the help of hierarchies. Attributes is a hierarchical entity. After a new record is created you can assign Associated Attributes and Associating Attributes to it.
+
+![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes.png)
+
+- **Associating Attributes** – are "parent" attributes, assigning of which will cause automatic assiging of the current attribute. 
+- **Associated Attributes** – are "child" attributes, which will be automatically assigned if the current attribute is assigned.
+
+In the Tree Panel you can see the full attribute hierarchy and change it by using drag-and-drop.
+
+![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes-list.png)
 
 ## Removing
 
