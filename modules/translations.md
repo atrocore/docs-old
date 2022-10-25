@@ -8,7 +8,7 @@ The "Translations" module is designed to create automated translations and enfor
 
 You can configure your "Translations" module by going to "Administration panel / Translations".
 
-![Translation module setup](_assets/translation/translation_module_setup.png) 
+![Translation module setup](_assets/translation/translation-module-setup.png) 
 
 - **Translation engine** – select the machine translation engine to provide the automated translations to your multilingual fields.
 - **Main Language** – set the main language: choose the language which you consider as a main language in your system.
@@ -35,11 +35,11 @@ Please note that any information concerning the "translated" parameter hereafter
 
 On the `Translation rules` panel all your translation configurations are reflected. To create a new translation rule, click the `+` button on your panel. For source and destination languages only, the languages supported by the chosen translation engine can be selected.
 
-![translation_rules_panel_create](_assets/translation/translation_rules_panel_create.png)  
+![translation_rules_panel_create](_assets/translation/translation-rules-panel-create.png)  
  
 In the side-popup window you will be able to set up your translation rule. Only after you configure and add the rule for a particular destination language it will be available for automated translation.
 
-![new_translation_rule](_assets/translation/new_translation_rule.png)  
+![new_translation_rule](_assets/translation/new-translation-rule.png)  
 
 - **Destination language** – the language to which the translation is made.
 - **Source language** – the language which is the source for the translation.
@@ -54,7 +54,7 @@ System always has a Main Language, which can be any language of your considerati
 
 To add a new language, go to "Administration panel / Languages". In the dropdown menu choose as many languages as you need.
 
-![available_languages](_assets/translation/available_languages.png) 
+![available_languages](_assets/translation/available-languages.png) 
 
 ## User functions
 
@@ -62,18 +62,18 @@ To add a new language, go to "Administration panel / Languages". In the dropdown
 
 Depending on the preconfigured parameters your multilingual text field may be marked with the following icons:
 
-![view_mode](_assets/translation/view_mode.png) 
+![view_mode](_assets/translation/view-mode.png) 
 
 The "Book" icon indicates that this field is not marked as "translated", and the "Magic wand" icon indicates the automatically translated fields.
 To switch to the edit mode, hover the mouse over the field you want to edit and click the pencil icon. 
 
-![edit_field](_assets/translation/edit_field.png)  
+![edit_field](_assets/translation/edit-field.png)  
 
 ### Edit mode
 
 After the "Translations" module is properly installed and configured additional meta data appears for each multilingual field:
 
-![translation_options](_assets/translation/translation_options.png) 
+![translation_options](_assets/translation/translation-options.png) 
 
 You have two checkboxes – `translated` and `translate automatically` as well as an additional button `Translate`.
 
@@ -116,11 +116,11 @@ These fields can be used for mass actions, import/export feeds and search and fi
 
 To apply an action to multiple entities simultaneously, choose the required entities by clicking the left checkbox on the list page, click the `Actions` dropdown menu and choose `Mass update` option.
 
-![mass_update](_assets/translation/mass_update.png)   
+![mass_update](_assets/translation/mass-update.png)   
 
 In the opened window click the `Select field` dropdown menu. For each multilingual field three actions are available.
 
-![mass_update_select_field](_assets/translation/mass_update_select_field.png)  
+![mass_update_select_field](_assets/translation/mass-update-select-field.png)  
 
 Possible additional choices are:
 - **"Field name": translate automatically** – choose this field and set/unset the checkbox to change the meta data value `translate automatically` for the field "Field name" for the selected data records.
