@@ -14,3 +14,4 @@
 - [Product Variants](./product-variants.md)
 - [Revisions](./revisions.md)
 - [Workflows](./workflows.md)
+- [LDAP](./ldap.md)
