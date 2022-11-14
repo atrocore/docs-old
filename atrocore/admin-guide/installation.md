@@ -94,7 +94,7 @@ crontab -e -u www-data
 ``` 
    6.2. Add the following configuration:
 ```      
-* * * * * /usr/bin/php /var/www/my-atrocore-project/index.php cron 
+* * * * * /usr/bin/php /var/www/my-atrocore-project/index.php cron
 ```
 > Please consider that `/usr/bin/php` is the correct path to PHP in our case. You may have other path. "cron" is the required parameter and should be definitely included for appropriate functioning.
 
