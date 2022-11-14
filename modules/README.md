@@ -11,7 +11,6 @@
 - [Pricing](./pricing.md)
 - [Product Bundles](./product-bundles.md)
 - [Product Preview](./product-preview.md)
-- [Product Variants](./product-variants.md)
 - [Revisions](./revisions.md)
 - [Workflows](./workflows.md)
 - [LDAP](./ldap.md)
