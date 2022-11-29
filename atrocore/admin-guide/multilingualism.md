@@ -14,6 +14,8 @@ To enable the function for inputting the field values in multiple languages, sel
 
 To change the languages for which the multilingual fields must be filled (e.g. delete the previously defined locales, add new ones), also use the `Input Language List` setting.
 
+To change the sorting order of your languages, e.g. for list options, use the drag-and-drop for this field. 
+
 When turning off a certain language, the input field and its value will be removed both from the database and system interface. You will be notified about it with the following warning message:
 
 ![Warning](../_assets/admin-guide/multilingualism/warning.jpg)
