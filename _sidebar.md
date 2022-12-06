@@ -22,3 +22,4 @@
    - [Product Variants](/modules/product-variants.md)
    - [Revisions](/modules/revisions.md)
    - [Workflows](/modules/workflows.md)
+   - [LDAP](/modules/ldap.md)

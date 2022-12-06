@@ -22,19 +22,15 @@ If you want to make changes to the channel entity, e.g. add new fields, or modif
 
 To create a new channel record, click `Channels` in the navigation menu to get to the channel [list view](#listing), and then click the `Create Channel` button. The common creation window will open:
 
-![Channel creation](../_assets/user-guide/channels/channels-create.jpg)
+![Channel creation](../_assets/user-guide/channels/channels-create.png)
 
-Here enter the desired name for the channel record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. Define the currencies to be used in prices for the given channel using the corresponding drop-down list. The channel description is an optional field and can be left empty.
+Here enter the desired name for the channel record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. The channel description is an optional field and can be left empty.
 
 *Please, note that the `Currencies` list is set up by the administrator.*
 
 Click the `Save` button to finish the channel record creation or `Cancel` to abort the process.
 
 If the channel code is not unique, the error message will appear notifying you about it.
-
-Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the channel creation pop-up that appears:
-
-![Creation pop-up](../_assets/user-guide/channels/creation-popup.jpg)
 
 ## Listing
 
@@ -83,7 +79,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the channel, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open channel record; the following editing window will open:
 
-![Channel editing](../_assets/user-guide/channels/channel-edit.jpg)
+![Channel editing](../_assets/user-guide/channels/channel-edit.png)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -91,17 +87,19 @@ Besides, you can make changes in the channel record via [in-line editing](./view
 
 Alternatively, make changes to the desired channel record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the channels list view page:
 
-![Editing pop-up](../_assets/user-guide/channels/channel-editing-popup.jpg)
+![Editing pop-up button](../_assets/user-guide/channels/channel-editing-popup-button.png)
+
+![Editing pop-up](../_assets/user-guide/channels/channel-editing-popup.png)
 
 ## Removing
 
-To remove the channel record, use the `Remove` option from the actions menu on its detail view page
+To remove the channel record, use the `Delete` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/channels/remove-details.jpg)
+![Remove1](../_assets/user-guide/channels/remove-details.png)
 
 or from the single record actions menu on the channels list view page:
 
-![Remove2](../_assets/user-guide/channels/remove-list.jpg)
+![Remove2](../_assets/user-guide/channels/remove-list.png)
 
 ## Duplicating
 
@@ -109,42 +107,30 @@ Use the `Duplicate` option from the actions menu to go to the channel creation p
 
 ## Working With Products Related to Channels
 
-Products that are linked to the channel are displayed on its [detail view](./views-and-panels.md#detail-view) page on the `PRODUCTS` panel and include the following table columns:
- - Name
- - SKU
- - Type
+Products that are linked to the channel are displayed on its [detail view](./views-and-panels.md#detail-view) page on the `CHANNEL PRODUCTS` panel and include the following table columns:
+ - Product
  - Active
 
-![Channel products](../_assets/user-guide/channels/channel-products.jpg)
+![Channel products](../_assets/user-guide/channels/channel-products.png)
 
 If this panel is missing, please, contact your administrator as to your access rights configuration. Also, to be able to relate more entities to product families, please, contact your administrator.
 
-To create a new product record for the given channel, use the `+` button located on the `PRODUCTS` panel and enter the necessary data in the product creation pop-up that appears:
+To create a new product record for the given channel, use the `+` button located on the `CHANNEL PRODUCTS` panel and enter the necessary data in the product creation pop-up that appears:
 
-![Creating products](../_assets/user-guide/channels/channels-create-product.jpg)
+![Creating products](../_assets/user-guide/channels/channels-create-product.png)
 
-To link the already existing product records with the given channel, use the `Select` option from the actions menu located in the upper right corner of the `PRODUCTS` panel. Then in the "Products" pop-up window choose one or several products you would like to assign to this channel and click the `Select` button.
+![Creating products](../_assets/user-guide/channels/channels-create-product-popup.png)
 
-To see all product records linked to the given channel, use the `Show full list` option:
-
-![Channel products](../_assets/user-guide/channels/show-full-option.jpg)
-
-Then the "Products" page opens, where all product records [filtered](./search-and-filtering.md) by the given channel are displayed:
-
-![Products full list](../_assets/user-guide/channels/products-full-list.jpg)
+To link the already existing product records with the given channel, use the `Select` option from the actions menu located in the upper right corner of the `CHANNEL PRODUCTS` panel. Then in the "Products" pop-up window choose one or several products you would like to assign to this channel and click the `Select` button.
 
 To view the channel related product record, click its name in the products list or select the `View` option from the single record actions menu for the appropriate record:
 
-![View product](../_assets/user-guide/channels/products-view.jpg)
+![View product](../_assets/user-guide/channels/products-view.png)
 
 To edit the product, use the `Edit` option from the single record actions menu for the appropriate record. In the editing pop-up window that appears make changes in the desired fields, where possible. Click the `Save` button to apply your changes.
 
-Use the `Unlink` option from the single record actions menu to unlink the desired record from the channel and confirm your decision in the pop-up that appears:
+To delete the product, select the `Delete` option from the single record actions drop-down list for the appropriate record.
 
-![Unlink confirmation](../_assets/user-guide/channels/unlink-confirmation.jpg)
-
-To remove the product, select the `Remove` option from the single record actions drop-down list for the appropriate record.
-
-To view the channel related product record from the `PRODUCTS` panel, click its name in the products list. The [detail view](./views-and-panels.md#detail-view) page of the given product will open, where you can perform further actions according to your access rights, configured by the administrator. 
+To view the channel related product record from the `CHANNEL PRODUCTS` panel, click its name in the products list. The [detail view](./views-and-panels.md#detail-view) page of the given product will open, where you can perform further actions according to your access rights, configured by the administrator. 
 
 *Please, note that the **"Pricing"** module greatly extends the channels functionality. To learn more about the module and its features, please, visit our [store](https://atropim.com/store/pricing).*
