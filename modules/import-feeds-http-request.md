@@ -1,6 +1,6 @@
 # Import Feeds: HTTP Request
 
-When you don't want to download files every time and import them you may use `Import Feeds: HTTP Request` module. It will import data from place you provide using HTTP protocol and convert to exeptable for ATRO format.
+When you don't want to download files every time and import them you may use `Import Feeds: HTTP Request` module. It will import data from place you provide using HTTP protocol and convert to acceptable for ATRO format
 
 > Note that you will still need `Import Feeds` module to import anything.
 
