@@ -27,5 +27,4 @@ After a User logs in for a first time a new user record for him is created in th
 Please refer to filter examples here:
 - [ldapwiki.com – LDAP Query Examples](https://ldapwiki.com/wiki/LDAP%20Query%20Examples)
 - [atlassian.com – How to write LDAP search filters](https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html)
-
-
+- [theitbros.com – Active Directory LDAP Query Examples](https://theitbros.com/ldap-query-examples-active-directory/)
