@@ -21,3 +21,11 @@ After a User logs in for a first time a new user record for him is created in th
 ![team and role](_assets/Ldap/team-and-role.png)
 
 ![base team and role](_assets/Ldap/team-and-role-base.png)
+
+## LDAP Filter Queries
+
+Please refer to filter examples here:
+- https://ldapwiki.com/wiki/LDAP%20Query%20Examples
+- https://ldapwiki.com/wiki/LDAP%20Query%20Examples
+
+
