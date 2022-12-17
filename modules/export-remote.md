@@ -1,10 +1,10 @@
-# Export Feeds: HTTP Request
+# Export Feeds: Remote File
 
-When you don't want to export files every time and upload them to the web you may use the `Export Feeds: HTTP Request` module. It will export data from your ATRO system to you using HTTP protocol. It also will do it in  in appropriate for you form.
+When you don't want to export files every time and upload them to the web you may use the `Export Feeds: Remote File` module. It will export data from your ATRO system to you using HTTP protocol in appropriate form.
 
 > Note that you will still need `Export Feeds` module to export anything.
 
-## Creating HTTP Request feed
+## Creating Remote File feed
 
 To create export feed using HTTP Request select `HTTP Request` as a `Type`. You may need to adjust `Maximum Number of Records per Iteration *` option or leave it default. Then proceed as normal up to `FEED SETTINGS` tab.
 
