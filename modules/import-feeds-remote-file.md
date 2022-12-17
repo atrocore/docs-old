@@ -28,13 +28,17 @@ Although you import by (s)FTP you will still need a sample file for configurator
 
 ### Path
 
-You can upload file by using `Dir Path` and `File Name / File Name Mask *` or attach file as usual for field settings in configurator.
+You can upload file to be used for configurator rules by stating `Dir Path` and `File Name / File Name Mask *`. Alternatively you can attach a file as usual.
+<!-- для чого іконка стрілочки? --> 
 
 ![IMPORT DATA SETTINGS tab with path option](_assets/import-feeds-remote-file/import-feeds-remote-file-path.png)
 
 - `Dir Path` – path (link) to the file/files
+<!-- має починатись з чого? абсолютний чи відосний шлях? -->
 - `File Name / File Name Mask *` – if you know exact name of the file write it down. If you know the logic of naming or have multiple files with similar names you can use mask (part of name/names) to find all corresponding files
 - `Delete Original File After Import` checkbox - an option to clear all successfully imported files from original place (to not use them again in future imports).
+
+<!-- цих 3 пункти уже було описано вище, навіщо ще раз? -->
 
 ### Connection menu
 
