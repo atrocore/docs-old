@@ -1,23 +1,24 @@
 # Export Feeds: Remote File
 
-When you don't want to export files every time and upload them to the web you may use the `Export Feeds: Remote File` module. It will export data from your ATRO system to you using HTTP protocol in appropriate form.
+This module extends the functionality of the module Export Feeds and enables you to automate export process by storing your exported files to a certain location on any (s)FTP Server.
 
-> Note that you will still need `Export Feeds` module to export anything.
+> Note that you will still need `Export Feeds` module to be installed.
 
 ## Creating Remote File feed
 
-To create remote file export feed select `(s)FTP` as a `Type`. You may need to adjust `Maximum Number of Records per Iteration *` option or leave it default. Then proceed as normal up to `EXPORT DATA SETTINGS` tab.
+To create remote file export feed select `(s)FTP` as a `Type`. 
+You may need to adjust `Maximum Number of Records per Iteration *` option to limit the amount of records to be exported to one file. 
 
 ![Selecting HTTP request](_assets/export-feeds-remote-file/export-feeds-remote-file-create.png)
 
-## EXPORT DATA SETTINGS tab
+## Export Data Settings
 
-Select a format you want data to be exported in. You can use CSV, XLS, JSON or XML. For JSON or XML there is a `Template` to be set. After that fill the required fields.
+Select a format you want data to be exported in. You can select CSV, XLS, JSON or XML. For JSON or XML there is a `Template` to be defined. After that fill the required fields.
 
 - `Connection ` – select established connections or create a new one
-- `File path *` – select url where request will go. It is mesured from the `Connection `.
+- `File path *` – select url where request will go.
 
-![Selecting HTTP request](_assets/export-feeds-remote-file/export-feeds-remote-file-settings.png)
+![export-feeds-remote-file-settings](_assets/export-feeds-remote-file/export-feeds-remote-file-settings.png)
 
 ### Connection menu
 
