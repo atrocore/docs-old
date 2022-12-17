@@ -1,4 +1,4 @@
-# Ldap authentication 
+# LDAP authentication 
 
 The LDAP module allows you to control AtroCore users via your own LDAP server. AtroCore always create user records, so If a new user is added via LDAP, a new record for this user will be created in AtroCore software autoamatically. For the new users a default role and a default team is assigned. Thease can still be changed via AtroCore Administration. 
 
@@ -20,11 +20,23 @@ To connect to your ldap server you have to set it up in the settings menu. You c
 - **Password** – the password of an admin user to get access to the LDAP server.
 - **Security** – you can choose SSL or TSL protocol.
 - **Base** - the default base DN which is used for searching users. On the demo it belongs to example.com.
-- **Filter** - the filter which allows to restrict users who are able to use AtroCore.
+- **Filter** - the filter whichis used to select LDAP users who should be able to login into AtroCore software.
 
 Then you can test connection by clicking `Test Connection` button. If all is good, you will see `Connected` in the pop-up.
 
-When user enters our system you can set his personal info to be automatically updated from ldap server. To do so use `Field Mapping` menu.
+### LDAP Filter Queries
+
+In the field `Filter` you can define any filter how to select LDAP users from your LDAP server. The standard LDAP query syntax is to be used.
+Please refer to some examples here:
+- [ldapwiki.com – LDAP Query Examples](https://ldapwiki.com/wiki/LDAP%20Query%20Examples)
+- [atlassian.com – How to write LDAP search filters](https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html)
+- [theitbros.com – Active Directory LDAP Query Examples](https://theitbros.com/ldap-query-examples-active-directory/)
+
+## Field Mapping
+
+Here you can specify field mapping rules which are applied to user records in the AtroCore software. Here you can define, which LDAP field value should be written to which User fields, eg value in LDAP field "name" can be written as "Surname" for the user account.
+
+The information is updated automatically each time the user logins in.
 
 ![field mapping](_assets/Ldap/field-mapping.png)
 
@@ -45,10 +57,3 @@ After a User logs in for a first time a new user record for him is created in th
 ![team and role](_assets/Ldap/team-and-role.png)
 
 ![base team and role](_assets/Ldap/team-and-role-base.png)
-
-## LDAP Filter Queries
-
-Please refer to filter examples here:
-- [ldapwiki.com – LDAP Query Examples](https://ldapwiki.com/wiki/LDAP%20Query%20Examples)
-- [atlassian.com – How to write LDAP search filters](https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html)
-- [theitbros.com – Active Directory LDAP Query Examples](https://theitbros.com/ldap-query-examples-active-directory/)
