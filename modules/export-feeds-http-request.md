@@ -1,6 +1,6 @@
 # Export Feeds: HTTP Request
 
-When you don't want to export files every time and upload them to the web you may use `Export Feeds: HTTP Request` module. It will expot data from to you provide using HTTP protocol in appropriate form.
+When you don't want to export files every time and upload them to the web you may use the `Export Feeds: HTTP Request` module. It will export data from to you provide using HTTP protocol in appropriate form.
 
 > Note that you will still need `Export Feeds` module to import anything.
 
