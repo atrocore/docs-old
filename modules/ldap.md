@@ -10,7 +10,7 @@ After the module is installed, a new LDAP panel is added in "Adminitration / Aut
 
 ![ldap setting](_assets/Ldap/ldap-setting.png)
 
-To connect to your ldap server you have to set it up in the settings menu. You can find all the information you need in your ldap server. The ldap server used for demo is ldap test server. The information thee is free and easy to use. To better see ir please visit https://www.forumsys.com/2022/05/10/online-ldap-test-server/.
+To connect to your ldap server you have to set it up in the settings menu. You can find all the information you need in your ldap server configuration. The ldap server used for demo is ldap test server. For more information please visit: https://www.forumsys.com/2022/05/10/online-ldap-test-server/.
 
 ![ldap advanced setting](_assets/Ldap/ldap-advanced-settings.png)
 
