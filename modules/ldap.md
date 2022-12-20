@@ -1,4 +1,4 @@
-# Ldap authentication 
+# LDAP authentication 
 
 The LDAP module allows you to control AtroCore users via your own LDAP server. AtroCore always create user records, so If a new user is added via LDAP, a new record for this user will be created in AtroCore software autoamatically. For the new users a default role and a default team is assigned. Thease can still be changed via AtroCore Administration. 
 
@@ -9,6 +9,42 @@ Users can login via credentials, stored on the LDAP server or with their login a
 After the module is installed, a new LDAP panel is added in "Adminitration / Authentification". LDAP Authentification should be activated. After it you will be able to configure the connection to your LDAP Server. 
 
 ![ldap setting](_assets/Ldap/ldap-setting.png)
+
+To connect to your ldap server you have to set it up in the settings menu. You can find all the information you need in your ldap server configuration. The ldap server used for demo is ldap test server. For more information please visit: https://www.forumsys.com/2022/05/10/online-ldap-test-server/.
+
+![ldap advanced setting](_assets/Ldap/ldap-advanced-settings.png)
+
+- **Host** – LDAP IP or host name of your ldap server.
+- **Port** – connection port of your ldap server. The port on which your directory server is listening.
+- **Bind DN** - The distinguished name (DN) of the user that the application will use when connecting to the directory server. This recommended as an admin user with read-only mode, so it can search all your ldap users but not modify them.
+- **Password** – the password of an admin user to get access to the LDAP server.
+- **Security** – you can choose SSL or TSL protocol.
+- **Base** - the default base DN which is used for searching users. On the demo it belongs to example.com.
+- **Filter** - the filter whichis used to select LDAP users who should be able to login into AtroCore software.
+
+Then you can test connection by clicking `Test Connection` button. If all is good, you will see `Connected` in the pop-up.
+
+### LDAP Filter Queries
+
+In the field `Filter` you can define any filter how to select LDAP users from your LDAP server. The standard LDAP query syntax is to be used.
+Please refer to some examples here:
+- [ldapwiki.com – LDAP Query Examples](https://ldapwiki.com/wiki/LDAP%20Query%20Examples)
+- [atlassian.com – How to write LDAP search filters](https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html)
+- [theitbros.com – Active Directory LDAP Query Examples](https://theitbros.com/ldap-query-examples-active-directory/)
+
+## Field Mapping
+
+Here you can specify field mapping rules which are applied to user records in the AtroCore software. Here you can define, which LDAP field value should be written to which User fields, eg value in LDAP field "name" can be written as "Surname" for the user account.
+
+The information is updated automatically each time the user logins in.
+
+![field mapping](_assets/Ldap/field-mapping.png)
+
+You can select any field from user profile to be updated. Just select a field in your system and a correspondent field of your ldap server.
+
+![field mapping menu](_assets/Ldap/field-mapping-menu.png)
+
+> Please note, you will be able to select any field on ldap because they can be custom, but validation can fail. So, please, use it wisely.
 
 ## Logging in by a user
 
