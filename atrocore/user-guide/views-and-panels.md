@@ -175,9 +175,9 @@ Other modules can add more panels to the side view panel. Please, visit our [sto
 
 The create view is the entity record creation page that has its own layout, which can be configured by the administrator. To get to the create view page, click the `Create 'Entity'` button on the entity records list view page and fill in the record details:
 
-![Create view](../_assets/user-guide/views-and-panels/create-view.jpg)
+![Create view](../_assets/user-guide/views-and-panels/create-view.png)
 
-Click the `Save` button to complete the record creation or `Cancel` to abort the operation.
+Click the `Save` button to complete the record creation, `Save and Create` to complete the record creation and start a new one or `Cancel` to abort the operation.
 
 In all other cases, i.e. when the `+` button is used, you will be taken to the [quick create view](#quick-create-view) page that will be opened in a pop-up window.
 
