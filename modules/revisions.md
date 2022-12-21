@@ -48,6 +48,12 @@ Confirm your decision by pressing the `Restore` button in the  pop-up warning th
 
 The revert itself is logged similarly to manual changing of this field, i.e. a new change entry is added to the stream (with the information about the date and time, old and new field values and the user who made the revert).
 
+### History of record changes in the Stream 
+
+"Revisions" module allows you to track changes in post and comments in the stream. Select the arrow to summon a menu tracking changes to posts in a stream.
+
+![Changes in the Stream](./_assets/revisions/stream-changes.png)
+
 ## User Functions
 
 By design, user has access to the revision functionality for the field and [attribute](https://atropim.com/help/attributes) values only, but not the Stream.
