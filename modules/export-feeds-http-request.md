@@ -1,8 +1,8 @@
 # Export Feeds: HTTP Request
 
-When you don't want to export files every time and upload them to the web you may use the `Export Feeds: HTTP Request` module. It will export data from your ATRO system to you using HTTP protocol. It also will do it in an appropriate form for you.
+This module extends the functionality of the module Export Feeds and enables you to automate export process by storing your exported files to a certain location on any server by utilizng HTTP.
 
-> Note that you will still need `Export Feeds` module to export anything.
+> Note that you will still need `Export Feeds` module to be installed.
 
 ## Creating HTTP Request feed
 
