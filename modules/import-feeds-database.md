@@ -1,8 +1,8 @@
 # Import Feeds: Database
 
-When working with import feeds module you can import not only separate files but a whole database. To do so you will need `Import Feeds: Database` module.
+This module extends the functionality of the module `Import Feeds` and enables you to automate import process by importing files from a certain database in the web.
 
->To do so you will stil need `Import Feeds` module.
+> Module `Import Feeds` is required for this module to work.
 
 ## Importing database
 
