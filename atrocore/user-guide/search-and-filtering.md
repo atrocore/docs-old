@@ -214,3 +214,18 @@ After clicking on the search results, the appropriate filter will be set automat
 | Numbers, e.g. "123"     | Auto-increment, Currency, Integer, Float     | Is                          |
 | Date, e.g. "12.12.2018" | Date, DateTime                               | On                          |
 
+## Hierarchy Panel
+
+For entities with `Hierarchy` type there is additional panel where you can search and filter records. You can select a category to show by (if there is any).
+
+![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-options.png)
+
+You can see the entity by its hierarchy, as a tree. Press arrows to proceed down by hierarchy and `Show more` to get more records to see. Selecting a record here is opens details menu. In the details menu hierarchy panel shows the way to the record. If you are showing by, for example, category - it will show you the category the product is in. If there is no such it will show you the general tree.
+
+![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-panel.png)
+
+You can select inheritance in the hierarchy panel. To do so, go to `Administration/Entities` then `Edit` and check the the `Drag & Drop` checkbox.
+
+If you are searching then the hierarchy panel adjusts to the filters implied. If there is a filter in a Hierarchy Panel then it will not be overwritten.
+
+![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-panel-search.png)
