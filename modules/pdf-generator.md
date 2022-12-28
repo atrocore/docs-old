@@ -26,7 +26,7 @@ Click on "Generate PDF" to open the new window, where you have additional config
 
 ![pdf-generator-popup](./_assets/pdf-generator/pdf-generator-popup.png)
 
-Here you can select the template (if you have more than one), which is/are created for you, select the language for PDF file to be generated (if enabled in the template), select the channel (if enabled in the template), for which the PDF file is determined, and set the file name. You can open the pdf document in a new tab or download it directly with the fine name you have defined previously.
+Here you can select the template (if you have more than one), which can be created for or by you. You can open the pdf document in a new tab or download it directly with the fine name you have defined previously.
 
 It is also possible to create PDF directly from list page. Open the actions menu for the respective record and choose "generate PDF" for that.
 
@@ -42,12 +42,21 @@ You can save pdf as an asset (to do it check the checkbox when generating pdf). 
 
 > Please note, saving PDF as an asset fastens generating new PDFs for this product because new PDFs will be created from an asset.
 
-### PDF Creating for Item List (e.g. Product List)
+### PDF Templates
 
-If a template for the generating of the PDF document for a list of items is created (e.g. product list for some offer etc.) you can select some items, than go actions and select "Generate PDF". 
+PDF Templates are usually created by out team but if you want to do it yourself there is such an option. To get acsses to the templates go to `Administration/PdfTemplate`. Here you can see all templates created and edit/create one. PDF templates use TWIG template engine. Please check https://twig.symfony.com/ for syntax. CSS and HTML are also supported for editing PDF styles.
 
-![generate-pdf-for-selected-items](./_assets/pdf-generator/generate-pdf-for-selected-items.png)
+![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template.png) 
 
-In the new window you can select the template for PDF generation (if you have more than one) and download your PDF:
+Select an `Entity type *` for a template. Each template has an input language configured in syntax. For different languages of the same entity you will need different templates.
 
-![pdf-generator-popup-for-list](./_assets/pdf-generator/pdf-generator-popup-for-list.png)
+If your template is too big so you are afraid of timeouts, use `Use queue manager` - now PDF will be created anyway (but it will be in queue manager).
+
+![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template-top.png) 
+
+`PDF template` field is your main body of a template. If you need additionally generated header and footer 
+`Page number markup in the header` and `Page number markup in the footer` are there. They are configured same as `PDF template` field. So, if you need, for example, number of pages you can use pageNumber in the footer.
+
+Table of contents is not available by manual configuring but we can program it additionally.
+
+![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template-bottom.png) 
