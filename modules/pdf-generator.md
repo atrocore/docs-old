@@ -44,7 +44,7 @@ You can save pdf as an asset (to do it check the checkbox when generating pdf). 
 
 ### PDF Templates
 
-PDF Templates are usually created by out team but if you want to do it yourself there is such an option. To get acsses to the templates go to `Administration/PdfTemplate`. Here you can see all templates created and edit/create one. PDF templates use TWIG template engine. Please check https://twig.symfony.com/ for syntax. CSS and HTML are also supported for editing PDF styles.
+PDF Templates are usually created by our team but if you want to do it yourself there is such an option. To get acsses to the templates go to `Administration/PdfTemplate`. Here you can see all templates created and edit/create one. PDF templates use TWIG template engine. Please check https://twig.symfony.com/ for syntax. CSS and HTML are also supported for editing PDF styles.
 
 ![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template.png) 
 
