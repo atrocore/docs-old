@@ -25,7 +25,6 @@
   }
   .skiptranslate div {
     display:inline; 
-    margin-right:12px;
   }
   h1.app-name {
     padding-top:20px;
@@ -37,7 +36,7 @@
     display:none;
   }
   .goog-te-gadget {
-    padding-right:80px;
+    padding-right:40px;
   }
 
   div.skiptranslate iframe {
@@ -45,6 +44,12 @@
   }
   div.skiptranslate iframe html body table {
     background:#d2dde4;
+  }
+  div.skiptranslate {
+    visibility: hidden;
+  }
+  div[id$="targetLanguage"] {
+    visibility: visible;
   }
 </style>
 <div id="google_translate_element"></div>  
