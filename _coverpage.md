@@ -14,5 +14,5 @@
 
 Please use the search bar in the top left corner to find something specific!
 
-[GitHub](https://github.com/atrocore)
+[Our Website](https://atrocore.com)
 [Get Started](#atrocore-help-center)
