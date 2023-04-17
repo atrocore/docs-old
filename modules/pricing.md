@@ -97,4 +97,105 @@ You can select `View` to see in the side popup all the information about a certa
 
 To remove a price entry, click on the option `Remove`.
 
+## How Twig Fields Should be used for Price Calculation
+
+When using the Twig type field, you have full flexibility in defining your calculation conditions or your calculation formula in the "Calculation Profile," as well as your minimum or maximum price validation on the "Price Profile" page.
+
+
+### For Calculation Conditions and Formulae in "calculation profile":
+When you choose the Twig type field for a calculation condition or formula in the Calculation Profile, you'll see something like the following by default:
+
+{% set proceed = true %}
+{% set calculatedPrice = productPrice.price %}
+
+The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
+
+#### Example Calculation Conditions
+Here are some examples of how you can define your calculation conditions using Twig:
+
+Example 1: Affecting a True or False Value
+
+{% set proceed = false %}
+This condition will never be met, so the formula will never be applied.
+
+Example 2: Dynamic Value
+
+{% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
+The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
+
+Example 3: Complex Condition
+
+{% if product.tax >= 10 and product.tax <= 25 %}
+    {% set proceed = true %}
+{% elseif productPrice.price < 50 %}
+    {% set proceed = false %}
+{% endif %}
+This example defines a condition based on tax and price. If the tax is between 10 and 25, proceed will be set to true. Otherwise, if the price is less than 50, proceed will be set to false.
+
+#### Example Calculation Formulae
+Here are some examples of how you can define your calculation formulae using Twig:
+
+Example 1: Taking the Purchase Price as Base
+
+{% set calculatedPrice = productPrice.price %}
+This example sets the calculated price equal to the purchase price.
+
+Example 2: Fixed Value
+
+{% set calculatedPrice = 150 %}
+This example sets the calculated price to a fixed value of 150.
+
+Example 3: Dynamic Calculated Price
+
+{% if product.brand is empty %}
+    {% set calculatedPrice = 10 + product.tax * productPrice.price * 1.2 %}
+{% elseif product.tax < 30 %}
+    {% set calculatedPrice = (1 + product.tax) * productPrice.price * 1.15 %}
+{% elseif 'Computer' in product.categories %}
+    {% set calculatedPrice = (1.4 * productPrice.price) | ceil - 2 %}
+{% endif %}
+In the first case, if the brand is empty, the formula will be 10 + product.tax * productPrice.price * 1.2. In the second case, if the tax is less than 30, we have another formula. In the last case, we round the value of 1.4 * price then subtract 2.
+
+Example 4: Calculated Price from Another PriceProfile
+
+{% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
+{% set calculatedPrice = getProductPrice.price * 1.2 %}
+In this example, you can define a price related to a price profile; you can use it throught the getPrice function, which needs 3 parameters: 
+------------ the id of the product you target(in this case, it is the same product), the name 
+------------ the name of the profile you target (in this case it is 'b2b usd profile'), you can copy and paste it in quotes
+------------ the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
+Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price  
+
+
+### For "minimum validation price" or "maximum validation price"
+When creating a new "price profile," you will see default validation values. By default, the minimum validation price is set to {% set validationPrice = 0.2 * productPrice.price %}, and the maximum validation price is set to {% set validationPrice = 2 * productPrice.price %}. These values ensure that the calculated price falls within a certain range based on the product price. For example, if the product price is 10, the minimum acceptable price will be 0.2*10 = 2, and the maximum acceptable price will be 2*10 = 20. If the calculated price falls outside of this range when the "recalculatePrice" function is executed, the calculated price will not be set, and the date at which the price validation failed will be recorded according to the minimum acceptable price.
+
+You can also set a fixed value that is not dependent on the product price by setting {% set validationPrice = 10 %}. This means that the minimum/maximum acceptable price for any price will be 10. If a price less than 10 is set, it will fail, and the date will be registered in "Calculated price validation failure."
+
+To access the fields of the product and product price, you can use the following syntax:
+
+productPrice.price: Price amount in the entity Product Price
+productPrice.calculatedPrice: Calculated price amount in the entity Product Price, which is to be recalculated
+productPrice.amount: amount of the product
+productPrice.priceCurrency: currency of the price
+product.Price: Purchase price amount in the entity Product
+product.brand: Brand of the product
+product.tax: Tax of the product
+With these elements, you can combine and define your minimum/maximum validation dynamically. Here are some examples:
+
+#### Example for minimum and maximum price validation
+Example 1 (taking the purchase price as a base):
+{% set validationPrice = 0.2 * productPrice.price %}
+
+Example 2 (setting a fixed value for price validation):
+{% set validationPrice = 10 %}
+
+Example 3 (dynamic price validation with condition):
+{% if product.brand is empty %}
+{% set validationPrice = 10 + product.tax * productPrice.price %}
+{% elseif product.tax < 20 %}
+{% set validationPrice = (1 + product.tax) * productPrice.price %}
+{% elseif 'Computer' in product.categories %}
+{% set validationPrice = 1.4 * productPrice.price %}
+{% endif %}
 
