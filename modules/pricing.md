@@ -167,14 +167,18 @@ In this example, you can define a price related to a price profile; you can use 
 Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price  
 
 Example 5: Smooth your price
-{% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, false, false) %}
-In this example, you can define a smoothyPrice; smoothyPrice is price like 14.99$, 29.99$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the value to redure or add; the third parameter is a boolean to tell if we should round price first or not(true or false; by default it is false); the last parameter is a boolean to tell if we should round up , by default it is false, so we round down);
-if productPrice.price = 10, in this example, we are going to have calculatedPrice = 9.99$ as 9.99 = 10 - 0.01;
-if we have smoothyPrice(12.65, 0.01, false, false) , calculatedPrice = 12.64
-if we have smoothyPrice(12.65, 0.01, true, false) , calculatedPrice = 13 - 0.01 = 12.99
-if we have smoothyPrice(12.65, 0.99, true, true) , calculatedPrice = 13 + 0.99 = 13.99
-if we have smoothyPrice(12.35, 0.01, true, false) , calculatedPrice = 12 - 0.01 = 11.99
-if we have smoothyPrice(12.35, 0.9, true, true) , calculatedPrice = 12 + 0.9 = 12.9
+{% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
+In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to redure or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
+
+if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
+if we have smoothyPrice(12.65, -0.01, 1, 'down') = 11.99; first we round 12.65 according to multiplier 1 and direction 'down', we have 12, then 12 -0.01 = 11.99
+if we have smoothyPrice(12.65, -0.01, 1) = 12.99; first we round 12.65 according to multiplier 1 and direction 'normal', we have 13, then 13 -0.01 = 12.99
+if we have smoothyPrice(12.65, -0.01, 0.5, 'up') = 12.99; first we round 12.65 according to multiplier 0.5 and direction 'up', we have 13, then 13 -0.01 = 12.99
+if we have smoothyPrice(12.65, -0.01, 0.5, 'down') = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'down', we have 12.5, then 12.5 -0.01 = 12.49
+if we have smoothyPrice(12.65, -0.01, 0.5) = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'normal', we have 12.5, then 12.5 -0.01 = 12.49
+if we have smoothyPrice(12.65, -0.01, 10, 'up') = 12.49; first we round 12.65 according to multiplier 10 and direction 'up', we have 20, then 20 - 0.01 = 19.99
+if we have smoothyPrice(12.65, -0.01, 10, 'down') = 12.49; first we round 12.65 according to multiplier 10 and direction 'down', we have 10, then 10 - 0.01 = 9.99
+if we have smoothyPrice(12.65, -0.01, 10, 'normal') = 12.49; first we round 12.65 according to multiplier 10 and direction 'normal', we have 10, then 10 - 0.01 = 9.99
 You can use this function at the last line to smooth your final price value;
 
 ### For "minimum validation price" or "maximum validation price"
