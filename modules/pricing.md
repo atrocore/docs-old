@@ -101,6 +101,14 @@ To remove a price entry, click on the option `Remove`.
 
 When using the Twig type field, you have full flexibility in defining your calculation conditions or your calculation formula in the "Calculation Profile," as well as your minimum or maximum price validation on the "Price Profile" page.
 
+Price Profile page, pay attention to minimum and maximum price validation fields
+
+![prices](./_assets/pricing/price-profile-add.png)
+
+Calculation Profile page, pay attention to calculation conditions and formulae fields
+
+![prices](./_assets/pricing/calculation-profile-add.png)
+
 
 ### For Calculation Conditions and Formulae in "calculation profile":
 When you choose the Twig type field for a calculation condition or formula in the Calculation Profile, you'll see something like the following by default:
@@ -109,6 +117,17 @@ When you choose the Twig type field for a calculation condition or formula in th
 {% set calculatedPrice = productPrice.price %}
 
 The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
+In calculation profile, you can use calculation parameter you have defined, calculation parameter allows you to define global value which can be used in your calculation profile twig. 
+
+![prices](./_assets/pricing/calculation-parameter-add.png)
+
+To use your calculation parameter in the twig fields, you just have to use your key as the identifier : calculationParameter.key; for example, let's assume that i have added these three calculation parameters:
+- name: "german taxes", key: "germanTaxes", value: 22.32
+- name: "retail margin", key: "retailMargin", value: 7
+- name: "shipping rates", key: "shippingRates", value: 20
+
+to get one of value, i simply write calculationParameter.germanTaxes for german taxes; calculationParameter.retailMargin for retail margin, 
+calculationParameter.shippingRates; 
 
 #### Example Calculation Conditions
 Here are some examples of how you can define your calculation conditions using Twig:
@@ -123,7 +142,17 @@ Example 2: Dynamic Value
 {% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
 The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
 
-Example 3: Complex Condition
+Example 3: With Calculation Parameter
+
+{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
+    {% set proceed = true %}
+{% else %}
+    {% set proceed = false %}
+{% endif %}
+
+In this example, we check if the product.tax is more or equal than our global calculation parameter german taxes identify by our key germanTaxes, and if the product quantity is less or equal than the minimum number for reseller identify by our key minimumForReseller then we set proceed to true
+
+Example 4: Complex Condition
 
 {% if product.tax >= 10 and product.tax <= 25 %}
     {% set proceed = true %}
@@ -145,7 +174,17 @@ Example 2: Fixed Value
 {% set calculatedPrice = 150 %}
 This example sets the calculated price to a fixed value of 150.
 
-Example 3: Dynamic Calculated Price
+Example 3: With Calculation Parameter
+
+{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
+    {% set calculatedPrice = productPrice.price*(1 + calculationParameter.globalTaxes) + calculationParameter.retailProfit %}
+{% else %}
+    {% set calculatedPrice = productPrice.price*calculationParameter.generalProfit %}
+{% endif %}
+
+In this example, we used our global calculation parameter to check condition and set calculatedPrice value
+
+Example 4: Dynamic Calculated Price
 
 {% if product.brand is empty %}
     {% set calculatedPrice = 10 + product.tax * productPrice.price * 1.2 %}
@@ -156,7 +195,7 @@ Example 3: Dynamic Calculated Price
 {% endif %}
 In the first case, if the brand is empty, the formula will be 10 + product.tax * productPrice.price * 1.2. In the second case, if the tax is less than 30, we have another formula. In the last case, we round the value of 1.4 * price then subtract 2.
 
-Example 4: Calculated Price from Another PriceProfile
+Example 5: Calculated Price from Another PriceProfile
 
 {% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
 {% set calculatedPrice = getProductPrice.price * 1.2 %}
