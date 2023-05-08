@@ -101,11 +101,11 @@ To remove a price entry, click on the option `Remove`.
 
 When using the Twig type field, you have full flexibility in defining your calculation conditions or your calculation formula in the "Calculation Profile," as well as your minimum or maximum price validation on the "Price Profile" page.
 
-Price Profile page, pay attention to minimum and maximum price validation fields
+On Price Profile page, pay attention to minimum and maximum price validation fields.
 
 ![prices](./_assets/pricing/price-profile-add.png)
 
-Calculation Profile page, pay attention to calculation conditions and formulae fields
+On Calculation Profile page, pay attention to calculation conditions and formulae fields.
 
 ![prices](./_assets/pricing/calculation-profile-add.png)
 
@@ -117,11 +117,11 @@ When you choose the Twig type field for a calculation condition or formula in th
 {% set calculatedPrice = productPrice.price %}
 
 The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
-In calculation profile, you can use calculation parameter you have defined, calculation parameter allows you to define global value which can be used in your calculation profile twig. 
+In calculation profile, you can use calculation parameter you have defined, it allows you to define global value which can be used in your calculation profile twig.
 
 ![prices](./_assets/pricing/calculation-parameter-add.png)
 
-To use your calculation parameter in the twig fields, you just have to use your key as the identifier : calculationParameter.key; for example, let's assume that i have added these three calculation parameters:
+To use your calculation parameter in the twig fields, use it's key as the identifier : calculationParameter.key; for example, let's assume that i have added these three calculation parameters:
 - name: "german taxes", key: "germanTaxes", value: 22.32
 - name: "retail margin", key: "retailMargin", value: 7
 - name: "shipping rates", key: "shippingRates", value: 20
