@@ -126,6 +126,8 @@ To use your calculation parameter in the twig fields, use it's key as the identi
 - name: "retail margin", key: "retailMargin", value: 7
 - name: "shipping rates", key: "shippingRates", value: 20
 
+To use your currency rate in the twig fields, you just need to call the currency you want like the parameter of the object currencyRate; let's assume that you have currency EUR, USD in your system, so you can call : currencyRate.EUR, currencyRate.USD; if the currency does not exist, it will return 0.
+
 to get one of value, i simply write calculationParameter.germanTaxes for german taxes; calculationParameter.retailMargin for retail margin, 
 calculationParameter.shippingRates; 
 
@@ -152,7 +154,17 @@ Example 3: With Calculation Parameter
 
 In this example, we check if the product.tax is more or equal than our global calculation parameter german taxes identify by our key germanTaxes, and if the product quantity is less or equal than the minimum number for reseller identify by our key minimumForReseller then we set proceed to true
 
-Example 4: Complex Condition
+Example 4: With currency rate
+
+{% if currencyRate.EUR*productPrice.price > 100 %}
+    {% set proceed = true %}
+{% else %}
+    {% set proceed = false %}
+{% endif %}
+
+In this example, we check if the EURO currency rate multiply by the price of the productPrice is more than 100
+
+Example 5: Complex Condition
 
 {% if product.tax >= 10 and product.tax <= 25 %}
     {% set proceed = true %}
@@ -174,12 +186,12 @@ Example 2: Fixed Value
 {% set calculatedPrice = 150 %}
 This example sets the calculated price to a fixed value of 150.
 
-Example 3: With Calculation Parameter
+Example 3: With Calculation Parameter and Currency Rate
 
 {% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
     {% set calculatedPrice = productPrice.price*(1 + calculationParameter.globalTaxes) + calculationParameter.retailProfit %}
 {% else %}
-    {% set calculatedPrice = productPrice.price*calculationParameter.generalProfit %}
+    {% set calculatedPrice = productPrice.price*calculationParameter.generalProfit + currencyRate.EUR %}
 {% endif %}
 
 In this example, we used our global calculation parameter to check condition and set calculatedPrice value
