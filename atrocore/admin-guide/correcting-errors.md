@@ -16,5 +16,6 @@ Metadata and frontend are usually cached. In very seldom case it may results in 
 Than click on the Function `Clear Cache` in the system section in the Administration. To be sure you have no problems with the database structure click on `Rebuild Database` in the same section.
 After everything is done you can activate the use of cache again, go to go to "Administration > System > Settings" for that.
 
+13
 
 
