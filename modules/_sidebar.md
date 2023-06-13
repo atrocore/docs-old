@@ -14,3 +14,5 @@
     - [Product Variants](./product-variants.md)
     - [Revisions](./revisions.md)
     - [Workflows](./workflows.md)
+    - [LDAP](./ldap.md)
+    - [EasyCatalog Adapter](./easycatalog-adapter.md)
