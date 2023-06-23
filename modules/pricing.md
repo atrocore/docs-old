@@ -217,19 +217,20 @@ In this example, you can define a price related to a price profile; you can use 
 ------------ the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
 Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price  
 
-Example 5: Smooth your price
+Example 6: Smooth your price
+
 {% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
 In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to redure or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
 
-if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
-if we have smoothyPrice(12.65, -0.01, 1, 'down') = 11.99; first we round 12.65 according to multiplier 1 and direction 'down', we have 12, then 12 -0.01 = 11.99
-if we have smoothyPrice(12.65, -0.01, 1) = 12.99; first we round 12.65 according to multiplier 1 and direction 'normal', we have 13, then 13 -0.01 = 12.99
-if we have smoothyPrice(12.65, -0.01, 0.5, 'up') = 12.99; first we round 12.65 according to multiplier 0.5 and direction 'up', we have 13, then 13 -0.01 = 12.99
-if we have smoothyPrice(12.65, -0.01, 0.5, 'down') = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'down', we have 12.5, then 12.5 -0.01 = 12.49
-if we have smoothyPrice(12.65, -0.01, 0.5) = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'normal', we have 12.5, then 12.5 -0.01 = 12.49
-if we have smoothyPrice(12.65, -0.01, 10, 'up') = 12.49; first we round 12.65 according to multiplier 10 and direction 'up', we have 20, then 20 - 0.01 = 19.99
-if we have smoothyPrice(12.65, -0.01, 10, 'down') = 12.49; first we round 12.65 according to multiplier 10 and direction 'down', we have 10, then 10 - 0.01 = 9.99
-if we have smoothyPrice(12.65, -0.01, 10, 'normal') = 12.49; first we round 12.65 according to multiplier 10 and direction 'normal', we have 10, then 10 - 0.01 = 9.99
+-if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
+-if we have smoothyPrice(12.65, -0.01, 1, 'down') = 11.99; first we round 12.65 according to multiplier 1 and direction 'down', we have 12, then 12 -0.01 = 11.99
+-if we have smoothyPrice(12.65, -0.01, 1) = 12.99; first we round 12.65 according to multiplier 1 and direction 'normal', we have 13, then 13 -0.01 = 12.99
+-if we have smoothyPrice(12.65, -0.01, 0.5, 'up') = 12.99; first we round 12.65 according to multiplier 0.5 and direction 'up', we have 13, then 13 -0.01 = 12.99
+-if we have smoothyPrice(12.65, -0.01, 0.5, 'down') = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'down', we have 12.5, then 12.5 -0.01 = 12.49
+-if we have smoothyPrice(12.65, -0.01, 0.5) = 12.49; first we round 12.65 according to multiplier 0.5 and direction 'normal', we have 12.5, then 12.5 -0.01 = 12.49
+-if we have smoothyPrice(12.65, -0.01, 10, 'up') = 12.49; first we round 12.65 according to multiplier 10 and direction 'up', we have 20, then 20 - 0.01 = 19.99
+-if we have smoothyPrice(12.65, -0.01, 10, 'down') = 12.49; first we round 12.65 according to multiplier 10 and direction 'down', we have 10, then 10 - 0.01 = 9.99
+-if we have smoothyPrice(12.65, -0.01, 10, 'normal') = 12.49; first we round 12.65 according to multiplier 10 and direction 'normal', we have 10, then 10 - 0.01 = 9.99
 You can use this function at the last line to smooth your final price value;
 
 ### For "minimum validation price" or "maximum validation price"
