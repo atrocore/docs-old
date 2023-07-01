@@ -72,7 +72,8 @@
    - [Revisions](/modules/revisions.md)
    - [Workflows](/modules/workflows.md)
    - [LDAP](/modules/ldap.md)
-   - [EasyCatalog Adapter](/modules/easycatalog-adapter.md)
+   - [EasyCatalog Adapter for InDesign](/modules/easycatalog-adapter.md)
+
 
 
 **This work is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)**.
