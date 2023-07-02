@@ -12,11 +12,11 @@ On `General` panel you need to assign the Portal's name, role, set it active/ina
 
 On the `Settings` panel you can set the `Default currency` and the default `Locale` for the portal users.
 
-![discussion-button](../_assets/admin-guide/assets-portal/assets-portal.png)
+![discussion-button](./_assets/assets-portal/assets-portal.png)
 
 In `user interface` panel you select which entities should be accessible via navigation menu in the portal, select the logo, default theme and available entities for the Quick Create. First, you can select logo and theme.
 
-![discussion-button](../_assets/admin-guide/assets-portal/assets-portal-ui.png)
+![discussion-button](./_assets/assets-portal/assets-portal-ui.png)
 
 In the pictures above you can see an example of such portal. Using this particular one a photographer, for example, can upload product photos as assets personally. No other functions are available so no harm to you product information will be done. 
 
@@ -26,7 +26,7 @@ Portals can be also edited, duplicated or deleted.
 
 Portal Roles enables to define permissions and access rights for Portal Users. To set them go to `Administration / Portal Roles` and create a new role by clicking on the `Create Portal Role` button or edit existing one by clicking it and then pressing `Edit` button (see picture below). 
 
-![discussion-button](../_assets/admin-guide/assets-portal/assets-portal-edit.png)
+![discussion-button](./_assets/assets-portal/assets-portal-edit.png)
 
 Here you can see all the entities in the system and access rights of this role to them. Rights are entity-based (so you select them for each entity separately). 
 
@@ -51,10 +51,10 @@ For Read, Edit and Delete permission you can select the access level by setting 
 
 The example for our case is on the picture below:
 
-![discussion-button](../_assets/admin-guide/assets-portal/assets-portal-settings.png)
+![discussion-button](./_assets/assets-portal/assets-portal-settings.png)
 
 To set some Portal Roles as Default Roles in the Portal select these directly for the portal. In this case these Portal Roles will be automatically assigned to all Portal Users.
 
-![discussion-button](../_assets/admin-guide/assets-portal/assets-portal-roles.png)
+![discussion-button](./_assets/assets-portal/assets-portal-roles.png)
 
 > Please note, any configured Portal Role can be used in multiple portals.

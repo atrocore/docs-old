@@ -8,17 +8,17 @@ To install a module:
 
 2. Open the drop-down menu of the module to be installed:
 
-   ![call_dropdown](../_assets/admin-guide/module-manager/module_manager_drondown_en.png)
+   ![call_dropdown](./_assets/module-manager/module_manager_drondown_en.png)
 
 3. Click the "Install" button.
 
-   ![install_module](../_assets/admin-guide/module-manager/module_manager_install_en.png)
+   ![install_module](./_assets/module-manager/module_manager_install_en.png)
    
    Having clicked "Install", AtroCore generates a schema with chosen module(s) and their dependencies for further installation.
 
 4. To start the module(s) installation process, click on the button "Update" and confirm the action: 
    
-   ![confirm_install](../_assets/admin-guide/module-manager/module_manager_confirm_en.png)
+   ![confirm_install](./_assets/module-manager/module_manager_confirm_en.png)
 
    During the update, you will see realtime logs to get actual information about the process.
 
@@ -50,7 +50,7 @@ After you have purchased a module contact our support and provide your system ID
 
 In case of successful activation, the needed module will be switched to "available" within a few several minutes.
     
-![settings_page](../_assets/admin-guide/module-manager/module_manager_settings_en.png)
+![settings_page](./_assets/module-manager/module_manager_settings_en.png)
 
 ### Purchase Conditions
 The price stated on the website does not include VAT. For the price stated you will get the module including updates and upgrades for one year. After that, you may still use your last version of the module, or purchase the module again with a 50% discount, which gives you a right to updates and upgrades for an additional year. Furthermore, our [EULA](https://atropim.com/eula) (End-User License Agreement) will apply.

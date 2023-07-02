@@ -65,7 +65,7 @@ You can do a spot check right away to verify that everything went as planned by 
 http://your_server_ip 
 ```
 You’ll see the default Ubuntu 20.04 Apache web page. It should look something like this:
-![apache_default](../_assets/admin-guide/server-preparation/apache_default.png)
+![apache_default](./_assets/server-preparation/apache_default.png)
 
 ## 2. Installing MySQL
 Now, after you have the web server up and running, you need to install the database system to be able to store and manage data for your web application. MySQL is a popular database management system used within PHP environments.
@@ -235,7 +235,7 @@ http://your_domain
 
 You’ll see a page like this:
 
-![hello-world](../_assets/admin-guide/server-preparation/hello-world.png)
+![hello-world](./_assets/server-preparation/hello-world.png)
 
 If you see this page, it means your Apache virtual host is working as expected. 
 

@@ -60,7 +60,7 @@ You can do a spot check right away to verify that everything went as planned by 
 http://your_server_ip 
 ```
 You’ll see the default Ubuntu 20.04 Nginx web page. It should look something like this:
-![nginx_default](../_assets/admin-guide/server-preparation/nginx_default.png)
+![nginx_default](./_assets/server-preparation/nginx_default.png)
 
 ## 2. Install MySQL
 Now that you have a web server up and running, you need to install the database system to be able to store and manage data for your site. MySQL is a popular database management system used within PHP environments.
@@ -253,7 +253,7 @@ http://your_domain
 
 You’ll see a page like this:
 
-![hello-world](../_assets/admin-guide/server-preparation/hello-world.png)
+![hello-world](./_assets/server-preparation/hello-world.png)
 
 If you see this page, it means your Nginx server block is working as expected. 
 

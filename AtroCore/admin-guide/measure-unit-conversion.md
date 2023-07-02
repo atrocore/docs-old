@@ -6,21 +6,21 @@ AtroCore allows you to manage different Measures (e.g length or weight) and Meas
  
 To manage this data go to `Administration > Measures`. Here you see the list of Measures, which are currently available on your system.
  
-![measure-list](../_assets/admin-guide/measure-unit-conversion/measure-list.png)
+![measure-list](./_assets/measure-unit-conversion/measure-list.png)
  
 To create a new Measure, click on `Create Measure`. A popup window opens, here you can set the name of your new Measure and save the record.
  
-![measure-create](../_assets/admin-guide/measure-unit-conversion/measure-create.png)
+![measure-create](./_assets/measure-unit-conversion/measure-create.png)
  
 > Measure is used for the fields and product attributes of the type "unit". You can define multiple Measures of a similar kind if you plan to use different Units for different attributes or fields. Thus, you may create the Measure "Length 1" with "mm" and "cm" as Units and the Measure "Length 2" with "mm", "m" and "km" as Units and assign each Measure to different fields or attributes.
  
 After the Measure is created you can create and assign Units to it. These are visible in the "Units" panel.
  
-![measures-units](../_assets/admin-guide/measure-unit-conversion/measures-units.png)
+![measures-units](./_assets/measure-unit-conversion/measures-units.png)
  
 To create a new Unit, click on the "+" icon in the top right corner of this panel.
  
-![unit-create](../_assets/admin-guide/measure-unit-conversion/unit-create.png)
+![unit-create](./_assets/measure-unit-conversion/unit-create.png)
  
 Here you can
 - define a name for the new Unit e.g. "mm" or "cm",
@@ -33,26 +33,26 @@ If you create the very first Unit for some Measure, this Unit is automatically m
  
 To edit a data record, use its menu. On the "Edit View" you can set a new Unit as a "default" Unit. In this case its "Multiplier" is set to 1, and all other "Multipliers" will be adjusted accordingly. The Unit marked as "default" cannot be deleted.
  
-![unit-create](../_assets/admin-guide/measure-unit-conversion/unit-edit.png)
+![unit-create](./_assets/measure-unit-conversion/unit-edit.png)
  
 > The "Default" Unit is a base Unit on which all other Units for the current Measure are based. This is the only purpose of this setting.
  
 ## Localized Measure Units
 In AtroCore you can create and use multiple Locales. For each Locale, you may decide whether you want to enable Measure Unit localization or not. This is done by adding a measure to the Locale and setting which units should be available for this measure. Click on the "Select" button to do this.
  
-![locale-measure-select](../_assets/admin-guide/measure-unit-conversion/locale-measure-select.png)
+![locale-measure-select](./_assets/measure-unit-conversion/locale-measure-select.png)
  
 In the popup window select the measures for which you want to enable localized units and click on "Select".
  
-![locale-measure-select-popup](../_assets/admin-guide/measure-unit-conversion/locale-measure-select-popup.png)
+![locale-measure-select-popup](./_assets/measure-unit-conversion/locale-measure-select-popup.png)
  
 After a Measure is added it will appear in the "Measures" panel for your Locale.
  
-![locale-measures-list](../_assets/admin-guide/measure-unit-conversion/locale-measures-list.png)
+![locale-measures-list](./_assets/measure-unit-conversion/locale-measures-list.png)
  
 Per default all Units for the Measure are automatically added. To remove any of them open the appropriate data record for editing.
  
-![locale-measures-list](../_assets/admin-guide/measure-unit-conversion/locale-measures-edit.png)
+![locale-measures-list](./_assets/measure-unit-conversion/locale-measures-edit.png)
  
 Here you leave only Units, which should be available for the current Locale. You must also choose a default Measure Unit for the Locale.
  
