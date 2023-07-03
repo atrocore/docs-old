@@ -11,7 +11,7 @@
 - How To's
 - FAQs
 
-- Developer Guides
+- Developer Guides and more...
 
 Please use the search bar in the top left corner to find something specific!
 
