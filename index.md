@@ -13,6 +13,5 @@
 Please use the search bar in the top left corner to find something specific!
 
 [Our Website](https://atrocore.com)
-[Get Started](#atrocore-help-center)
 
 **This work is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)**.
