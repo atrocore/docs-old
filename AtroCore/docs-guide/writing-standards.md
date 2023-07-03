@@ -73,6 +73,6 @@
 
 In other topics follow the recommendations of this Guide: https://developers.google.com/style
 
+## Writing Release Notes
 
-
-qqq
+- Please follow: https://keepachangelog.com/en/1.1.0/
