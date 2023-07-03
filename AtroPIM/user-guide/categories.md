@@ -47,7 +47,7 @@ If you want to make changes to the category entity, e.g. add new fields, or modi
 
 To create a new category record, click `Categories` in the navigation menu to get to the category records [list view](#listing), and then click the `Create Category` button. The common creation window will open:
 
-![Categories creation](../_assets/user-guide/categories/categories-create.jpg)
+![Categories creation](./_assets/categories/categories-create.jpg)
 
 Here enter the desired name for the category record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. Click the select button in the `Parent category` field to assign one to the given category, if needed. The category description is an optional field and can be left empty.
 
@@ -59,13 +59,13 @@ The new record will be added to the categories list. You can configure it right 
 
 Alternatively, use the [quick create](./user-interface.md#quick-create)  button on any AtroPIM page and fill in the required fields in the category creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/categories/creation-popup.jpg)
+![Creation pop-up](./_assets/categories/creation-popup.jpg)
 
 ## Listing
 
 To open the list of category records available in the system, click the `Categories` option in the navigation menu:
 
-![Categories list view page](../_assets/user-guide/categories/categories-list-view.jpg)
+![Categories list view page](./_assets/categories/categories-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for category records:
  - Name
@@ -90,7 +90,7 @@ The following mass actions are available for category records on the list view p
 - Add relation
 - Remove relation
 
-![Categories mass actions](../_assets/user-guide/categories/categories-mass-actions.jpg)
+![Categories mass actions](./_assets/categories/categories-mass-actions.jpg)
 
 For details on these actions, refer to the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -102,7 +102,7 @@ The following single record actions are available for category records on the li
 - Edit
 - Remove
 
-![Categories single record actions](../_assets/user-guide/categories/categories-single-actions.jpg)
+![Categories single record actions](./_assets/categories/categories-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -110,7 +110,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the category, click the `Edit` button on the detail view page of the currently open category record; the following editing window will open:
 
-![Categories editing](../_assets/user-guide/categories/categories-edit.jpg)
+![Categories editing](./_assets/categories/categories-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -118,17 +118,17 @@ Besides, you can make changes in the category record via [in-line editing](./vie
 
 Alternatively, make changes to the desired category record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the categories list view page:
 
-![Editing popup](../_assets/user-guide/categories/categories-editing-popup.jpg)
+![Editing popup](./_assets/categories/categories-editing-popup.jpg)
 
 ## Removing
 
 To remove the category record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/categories/remove-details.jpg)
+![Remove1](./_assets/categories/remove-details.jpg)
 
 or from the single record actions menu on the categories list view page:
 
-![Remove2](../_assets/user-guide/categories/remove-list.jpg)
+![Remove2](./_assets/categories/remove-list.jpg)
 
 By default, it is not possible to remove the category, if it has child categories in any [product](./products.md#product-categories) associated with it.
 
@@ -139,11 +139,11 @@ Use the `Duplicate` option from the actions menu to go to the category creation 
 ## Category Tree
 
 AtroPIM offers you a dynamic display of all categories available in the system in a tree view. To see this, click the `Tree View` button on the categories list view:              
-![Tree view button](../_assets/user-guide/categories/tree-view-button.jpg)
+![Tree view button](./_assets/categories/tree-view-button.jpg)
 
 In this view, parent–child relations are more explicit, and category trees are built (modified) via simple drag-and-drop of categories:
 
-![Tree view](../_assets/user-guide/categories/tree-view.jpg)
+![Tree view](./_assets/categories/tree-view.jpg)
 
 ## Working With Entities Related to Categories
 
@@ -159,23 +159,23 @@ Images that are linked to the currently open category record are displayed on it
 - Scope
 - Channels
 
-![Images panel](../_assets/user-guide/categories/images-panel.jpg)
+![Images panel](./_assets/categories/images-panel.jpg)
 
 On this panel, you can link images to the given category record by selecting the existing ones or creating new image records.
 
 To create new image records to be linked to the currently open category record, click the `+` button located in the upper right corner of the `IMAGES` panel and enter the necessary data in the image creation pop-up that appears:
 
-![Image creation](../_assets/user-guide/categories/image-creation.jpg)
+![Image creation](./_assets/categories/image-creation.jpg)
 
 The following *image uploading types* are available in the AtroPIM system by default:
 - **File** / **Files** – image files that are stored locally (on your PC or other device). When the `File` type is selected on the image creation step, the desired image file is  uploaded as an attachment. To attach several image files at the same time, the `Files` type is to be defined accordingly.
 - **Link** – the URL to the image file, which is stored on the external server. When this type is selected on the image creation step, the image link must be entered in the corresponding field:
 
-	![Image URL](../_assets/user-guide/categories/image-url.jpg)
+	![Image URL](./_assets/categories/image-url.jpg)
 
 By default, the defined image has the `Global` scope, but you can change it to `Channel` and select the desired channel (or channels) in the added field:
 
-![Channel image](../_assets/user-guide/categories/image-channel.jpg)
+![Channel image](./_assets/categories/image-channel.jpg)
 
 Click the `Save` button to complete the image record creation process or `Cancel` to abort it.
 
@@ -183,27 +183,27 @@ Please, note that once the image record is created within the product, it is dis
 
 To assign an image (or several images) to the category record, use the `Select` option from the actions menu located in the upper right corner of the `IMAGES` panel:
 
-![Adding images](../_assets/user-guide/categories/images-select.jpg)
+![Adding images](./_assets/categories/images-select.jpg)
 
 In the "Images" pop-up that appears, choose the desired image (or images) from the list and press the `Select` button to link the item(s) to the category record.
 
 To see all image records linked to the given category, use the `Show full list` option:
 
-![Show full option](../_assets/user-guide/categories/show-full-option.jpg)
+![Show full option](./_assets/categories/show-full-option.jpg)
 
 Then the "Images" page opens, where all image records [filtered](./search-and-filtering.md) by the given category are displayed:
 
-![Images full list](../_assets/user-guide/categories/images-full-list.jpg)
+![Images full list](./_assets/categories/images-full-list.jpg)
 
 To open the pop-up with the preview of the images that are listed on the `IMAGES` panel, click the desired one in the `Image` column in the image records list.
 
 Images linked to the given category record can be viewed, edited, or removed via the corresponding options from the single record actions menu on the `IMAGES` panel:
 
-![Images actions](../_assets/user-guide/categories/images-actions-menu.jpg)
+![Images actions](./_assets/categories/images-actions-menu.jpg)
 
 On the `IMAGES` panel you can also define image records order within the given category record via their drag-and-drop:
 
-![Images order](../_assets/user-guide/categories/images-order.jpg)
+![Images order](./_assets/categories/images-order.jpg)
 
 The changes are saved on the fly.
 
@@ -218,15 +218,15 @@ To view the category related image record from the `IMAGES` panel, click its nam
  - Scope
  - Channels
 
-![Product categories panel](../_assets/user-guide/categories/product-categories-panel.jpg)
+![Product categories panel](./_assets/categories/product-categories-panel.jpg)
 
 It is possible to link products to a category by creating new product categories. To do this for the currently open category, click the `+` button located in the upper right corner of the `PRODUCT CATEGORIES` panel and enter the necessary data in the product category creation pop-up that appears:
 
-![Creating categories](../_assets/user-guide/categories/create-product-category.jpg)
+![Creating categories](./_assets/categories/create-product-category.jpg)
 
 By default, the defined category has the `Global` scope, but you can change it to `Channel` and select the desired channel (or channels) in the added field:
 
-![Channel category](../_assets/user-guide/categories/category-channel.jpg)
+![Channel category](./_assets/categories/category-channel.jpg)
 
 Click the `Save` button to complete the category creation process or `Cancel` to abort it.
 
@@ -236,5 +236,5 @@ Please, note that you can link both root and child product categories. The only 
 
 Product categories can be viewed, edited, or removed via the corresponding options from the single record actions menu on the `PRODUCT CATEGORIES` panel:
 
-![Categories actions](../_assets/user-guide/categories/product-categories-actions-menu.jpg)
+![Categories actions](./_assets/categories/product-categories-actions-menu.jpg)
 

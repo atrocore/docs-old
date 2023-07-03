@@ -33,7 +33,7 @@ If you want to make changes to the product family entity, e.g. add new fields, o
 
 To create a new product family record, click `Product Families` in the navigation menu to get to the product family [list view](#listing), and then click the `Create Product Family` button. The common creation window will open:
 
-![PF creation](../_assets/user-guide/product-families/pf-create.jpg)
+![PF creation](./_assets/product-families/pf-create.jpg)
 
 Here enter the desired name for the product family record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. The product family description is an optional field and can be left empty.
 
@@ -43,13 +43,13 @@ If the product family code is not unique, the error message will appear notifyin
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the product family creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/product-families/creation-popup.jpg)
+![Creation pop-up](./_assets/product-families/creation-popup.jpg)
 
 ## Listing
 
 To open the list of product family records available in the system, click the `Product Families` option in the navigation menu:
 
-![PF list view page](../_assets/user-guide/product-families/pf-list-view.jpg)
+![PF list view page](./_assets/product-families/pf-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for product family records:
  - Name
@@ -72,7 +72,7 @@ The following mass actions are available for product family records on the list 
 - Add relation
 - Remove relation
 
-![PF mass actions](../_assets/user-guide/product-families/pf-mass-actions.jpg)
+![PF mass actions](./_assets/product-families/pf-mass-actions.jpg)
 
 For details on these actions, refer to the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -84,7 +84,7 @@ The following single record actions are available for product family records on 
 - Edit
 - Remove
 
-![PF single record actions](../_assets/user-guide/product-families/pf-single-actions.jpg)
+![PF single record actions](./_assets/product-families/pf-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -92,7 +92,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the product family, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open product family record; the following editing window will open:
 
-![PF editing](../_assets/user-guide/product-families/pf-edit.jpg)
+![PF editing](./_assets/product-families/pf-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -100,17 +100,17 @@ Besides, you can make changes in the product family record via [in-line editing]
 
 Alternatively, make changes to the desired product family record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the product families list view page:
 
-![Editing popup](../_assets/user-guide/product-families/pf-editing-popup.jpg)
+![Editing popup](./_assets/product-families/pf-editing-popup.jpg)
 
 ## Removing
 
 To remove the product family record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/product-families/remove-details.jpg)
+![Remove1](./_assets/product-families/remove-details.jpg)
 
 or from the single record actions menu on the product families list view page:
 
-![Remove2](../_assets/user-guide/product-families/remove-list.jpg)
+![Remove2](./_assets/product-families/remove-list.jpg)
 
 By default, it is not possible to remove the product family, if it is used in products.
 
@@ -132,27 +132,27 @@ Attributes that are linked to the product family record are shown on the `PRODUC
  - Scope
  - Channels
 
-![PF attributes panel](../_assets/user-guide/product-families/pf-attributes-panel.jpg)
+![PF attributes panel](./_assets/product-families/pf-attributes-panel.jpg)
 
 On this panel, you can link attributes to the given product family record by selecting the existing ones or creating new attributes.
 
 To create new attributes to be linked to the currently open product family record, click the `+` button located in the upper right corner of the `PRODUCT FAMILY ATTRIBUTES` panel:
 
-![Creating attributes](../_assets/user-guide/product-families/pf-attribute-create.jpg)
+![Creating attributes](./_assets/product-families/pf-attribute-create.jpg)
 
 In the product family attribute creation pop-up that appears, click the select action button to open the "Attributes" pop-up and select the attribute from the existing ones by clicking its name or use the `Create Attribute` button to create a new attribute:
 
-![Creating attributes](../_assets/user-guide/product-families/pf-attributes-popup.jpg)
+![Creating attributes](./_assets/product-families/pf-attributes-popup.jpg)
 
 Return to the product family attribute creation pop-up, define the owner and assigned user for the selected attribute and make it required by setting the corresponding checkbox, if needed. By default, the defined attribute has the `Global` scope, but you can change it to `Channel` and select the desired channel (or channels) in the added field:
 
-![Channel attribute](../_assets/user-guide/product-families/pf-attribute-channel.jpg)
+![Channel attribute](./_assets/product-families/pf-attribute-channel.jpg)
 
 Click the `Save` button to complete the product family attribute creation process or `Cancel` to abort it.
 
 Please, note that you can link the same attribute to the product family record more than once, but with different scopes (`Global` / `Channel`), and same channel can be used only once:
 
-![PF attribute scope](../_assets/user-guide/product-families/pf-attribute-scope.jpg)
+![PF attribute scope](./_assets/product-families/pf-attribute-scope.jpg)
 
 Please, note that when the attribute is linked to the product family record, it is automatically linked to all [products](./products.md) belonging to the given product family. 
 
@@ -166,13 +166,13 @@ When you are trying to link to the product family record the attribute, which is
     - two `Channel` attribute records appear in the product record, when you select *less channels* to the product family attribute than there are in the product record attribute. The first attribute is created with the same channels as in the product family record, but without the value, and the second attribute is left with the preserved value with the channels that are left, i.e. this attribute remains custom;
     - two `Channel` attribute records appear in the product record, when you select *more channels* to the product family attribute than there are in the product record attribute. The initial custom attribute remains with the preserved value, but without channel name, and the second attribute is created with channel names used in the product family, but without values. 
 
-![PF-product-attributes](../_assets/user-guide/product-families/pf-product-attributes.jpg)
+![PF-product-attributes](./_assets/product-families/pf-product-attributes.jpg)
 
 Please, note that attributes, which are added to the product family record, are of higher priority, whereas custom product attributes adapt to the changes made in the product family attributes. <!--The interrelations between product families and product records can be configured and structured even more with the help of the **Advanced Classification** module. For more details, please, visit our [store](https://atropim.com/store). -->  *<!--Unclose this note when the module is described-->*
 
 To assign an existing attribute (or several attributes) to the product family record, use the `Select` option from the actions menu:
 
-![Adding attributes](../_assets/user-guide/product-families/attributes-select.jpg)
+![Adding attributes](./_assets/product-families/attributes-select.jpg)
 
 In the "Attributes" pop-up that appears, choose the desired attribute (or attributes) from the list and press the `Select` button to link the item(s) to the product family record. The linked attributes have the `Global` scope by default.
 
@@ -182,19 +182,19 @@ Please, note that attributes linked to product families are arranged by attribut
 
 Attributes linked to the given product family record can be viewed, edited, unlinked or removed via the corresponding options from the single record actions menu on the `PRODUCT FAMILY ATTRIBUTES` panel:
 
-![Attributes actions](../_assets/user-guide/product-families/attributes-actions-menu.jpg)
+![Attributes actions](./_assets/product-families/attributes-actions-menu.jpg)
 
 When the attribute is unlinked from the product family record, it still remains in the product record. However, when you unlink the *required* attribute from the family record, the given attribute becomes non-required in the product record.
 
 The attribute record is removed from the product family only after the action is confirmed:
 
-![Removal confirmation](../_assets/user-guide/product-families/attribute-remove-confirmation.jpg)
+![Removal confirmation](./_assets/product-families/attribute-remove-confirmation.jpg)
 
 Please, beware that removing the attribute record from the product family leads to removing it from the product record as well.
 
 Additionally, you can unlink attribute groups on the `PRODUCT FAMILY ATTRIBUTES` panel. To do this, use the `Unlink` option from the attribute group actions menu located to the right of the desired attribute group name, and confirm your decision in the pop-up that appears:
 
-![AG unlink](../_assets/user-guide/product-families/ag-unlink.jpg)
+![AG unlink](./_assets/product-families/ag-unlink.jpg)
 
 To view the attribute/attribute group record from the `PRODUCT FAMILY ATTRIBUTES` panel, click its name in the attributes list. The [detail view](./views-and-panels.md#detail-view) page of the given attribute/attribute group will open, where you can perform further actions according to your access rights, configured by the administrator. 
 
@@ -206,11 +206,11 @@ Products that are linked to the product family are displayed on its detail view 
  - Type
  - Active
 
-![PF products](../_assets/user-guide/product-families/pf-products.jpg)
+![PF products](./_assets/product-families/pf-products.jpg)
 
 On this panel, you can create new products within the currently open product family record. To do this, click the `+` button and enter the necessary data in the product creation pop-up that appears:
 
-![Creating products](../_assets/user-guide/product-families/pf-create-product.jpg)
+![Creating products](./_assets/product-families/pf-create-product.jpg)
 
 Click the `Save` button to complete the product record creation process or `Cancel` to abort it.
 
@@ -218,15 +218,15 @@ Please, note that once the product record is created within the product family, 
 
 To see all product records linked to the given product family, use the `Show full list` option:
 
-![Show full option](../_assets/user-guide/product-families/show-full-option.jpg)
+![Show full option](./_assets/product-families/show-full-option.jpg)
 
 Then the "Products" page opens, where all product records [filtered](./search-and-filtering.md) by the given product family are displayed:
 
-![Products full list](../_assets/user-guide/product-families/products-full-list.jpg)
+![Products full list](./_assets/product-families/products-full-list.jpg)
 
 Products linked to the given product family record can be viewed, edited, unlinked or removed via the corresponding options from the single record actions menu on the `PRODUCTS` panel:
 
-![Products actions](../_assets/user-guide/product-families/products-actions-menu.jpg)
+![Products actions](./_assets/product-families/products-actions-menu.jpg)
 
 To view the family related product record from the `PRODUCTS` panel, click its name in the products list. The [detail view](./views-and-panels.md#detail-view) page of the given product will open, where you can perform further actions according to your access rights, configured by the administrator. 
 

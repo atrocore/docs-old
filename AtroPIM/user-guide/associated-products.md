@@ -30,7 +30,7 @@ If you want to make changes to the associated product entity, e.g. add new field
 
 To create a new associated product record, click `Associated Products` in the navigation menu to get to the associated products [list view](#listing), and then click the `Create Associated Product` button. The common creation  pop-up will appear:
 
-![Associated product creation](../_assets/user-guide/associated-products/ap-create-popup.jpg)
+![Associated product creation](./_assets/associated-products/ap-create-popup.jpg)
 
 Here fill in all the required fields for the entry being created. Select the `Both directions` checkbox to make the association **two-way** – when product A is associated with product B; and vice versa, product B is associated with product A. Leave this checkbox unselected to make the association **one-way** – when product A is associated with product B, but not vice versa.
 
@@ -42,7 +42,7 @@ Alternatively, use `+` button on the `ASSOCIATED PRODUCTS` panel of the [product
 
 To open the list of associated products available in the system, click `Associated Products` in the navigation menu:
 
-![Associated products list view page](../_assets/user-guide/associated-products/ap-list-view.jpg)
+![Associated products list view page](./_assets/associated-products/ap-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for the associated product records:
 
@@ -65,7 +65,7 @@ The following mass actions are available for associated product records:
 - Mass update
 - Export
 
-![AP mass actions](../_assets/user-guide/associated-products/ap-mass-actions.jpg)
+![AP mass actions](./_assets/associated-products/ap-mass-actions.jpg)
 
 For details on these actions, please, see the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -76,7 +76,7 @@ The following single record actions are available for the associated product rec
 - Edit
 - Remove
 
-![AP single record actions](../_assets/user-guide/associated-products/ap-single-record-actions.jpg)
+![AP single record actions](./_assets/associated-products/ap-single-record-actions.jpg)
   
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -84,7 +84,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the associated product, use the `Edit` option from the single record actions menu for the appropriate record on the associated products list view page; the following editing pop-up will appear:
 
-![AP editing](../_assets/user-guide/associated-products/ap-edit.jpg)
+![AP editing](./_assets/associated-products/ap-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -94,10 +94,10 @@ Alternatively, make changes to the desired associated product record in the [qui
 
 To remove the associated product record, select the `Remove` option from the single record actions menu for the appropriate record on the `ASSOCIATED PRODUCTS` panel of the product detail view page 
 
-![AP removing](../_assets/user-guide/associated-products/ap-remove-panel.jpg)
+![AP removing](./_assets/associated-products/ap-remove-panel.jpg)
 
 or on the associated product records list view page:
 
-![AP removing](../_assets/user-guide/associated-products/ap-remove-list.jpg)
+![AP removing](./_assets/associated-products/ap-remove-list.jpg)
 
 

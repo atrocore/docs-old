@@ -25,7 +25,7 @@ The attribute entity comes with the following preconfigured fields; mandatory ar
 
 > If multiple attributes are assigned to an Attribute Group or to a Product at once the default Scope, Channel and Required option are always applied.
 
-![default_scope_required](../_assets/user-guide/default-scope-required/default-scope-required.png)
+![default_scope_required](./_assets/default-scope-required/default-scope-required.png)
 
 
 If you want to make changes to the attribute entity (e.g. add new fields, or modify attribute views), please contact your administrator.
@@ -34,7 +34,7 @@ If you want to make changes to the attribute entity (e.g. add new fields, or mod
 
 Attributes are automatically validated according to their type. The following attribute types are available in the AtroPIM system:
 
-![Attribute types](../_assets/user-guide/attributes/attribute-types-list.jpg)
+![Attribute types](./_assets/attributes/attribute-types-list.jpg)
 
 | **Attribute Type**           | **Description**                   |
 |------------------------------|-----------------------------------|
@@ -57,7 +57,7 @@ Attributes are automatically validated according to their type. The following at
 
 To create a new attribute record, click `Attributes` in the navigation menu to get to the attribute [list view](#listing) and then click the `Create Attribute` button. The common creation pop-up window will appear:
 
-![Attributes creation](../_assets/user-guide/attributes/attributes-create.jpg)
+![Attributes creation](./_assets/attributes/attributes-create.jpg)
 
 Here enter the attribute name and code and select its type from the `Attribute Type` drop-down list. Define its attribute group using the corresponding select button, if needed. Your username is loaded to the `Owner` and `Assigned user` fields by default. You can change them via the corresponding select buttons, as well as define the team, if needed. Click the `Save` button to finish the attribute record creation or `Cancel` to abort the process.
 
@@ -67,17 +67,17 @@ Please, note that attribute type cannot be changed after the attribute is create
 
 When creating attribute records of the `Enum`, `Multi-Enum`, `Enum Multilang`, and `Multi-Enum Multilang` types, their attribute values should also be defined:
 
-![Enum values list](../_assets/user-guide/attributes/enum-values-list.jpg)
+![Enum values list](./_assets/attributes/enum-values-list.jpg)
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the attribute creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/attributes/creation-popup.jpg)
+![Creation pop-up](./_assets/attributes/creation-popup.jpg)
 
 ## Listing
 
 To open the list of attribute records available in the system, click the `Attributes` option in the navigation menu:
 
-![Attributes list view](../_assets/user-guide/attributes/attributes-list-view.jpg)
+![Attributes list view](./_assets/attributes/attributes-list-view.jpg)
 
 By default, the following fields are displayed on the list view page for attribute records:
 - Attribute name
@@ -100,7 +100,7 @@ The following mass actions are available for attribute records:
 - Add relation
 - Remove relation
 
-![Attributes mass actions](../_assets/user-guide/attributes/attributes-mass-actions.jpg)
+![Attributes mass actions](./_assets/attributes/attributes-mass-actions.jpg)
 
 For details on these actions, please, see the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -111,7 +111,7 @@ The following single record actions are available for attribute records:
 - Edit
 - Remove
  
-![Attributes single record actions](../_assets/user-guide/attributes/attributes-single-record-actions.jpg)
+![Attributes single record actions](./_assets/attributes/attributes-single-record-actions.jpg)
  
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -119,7 +119,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the attribute, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open attribute record; the following editing window will open:
 
-![Attributes editing](../_assets/user-guide/attributes/attributes-edit.jpg)
+![Attributes editing](./_assets/attributes/attributes-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -127,34 +127,34 @@ Besides, you can make changes in the attribute record via [in-line editing](./vi
 
 Alternatively, make changes to the desired attribute record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attributes list view page:
 
-![Edit option](../_assets/user-guide/attributes/attribute-editing-popup.jpg)
+![Edit option](./_assets/attributes/attribute-editing-popup.jpg)
 
 ### Associated Attributes
 
 The System has the functionality of automatic attribute linking to a Product Family or Product data record. If some attribute is assigned other related attributes will be assigned as well. This is realized with the help of hierarchies. Attributes is a hierarchical entity. After a new record is created you can assign Associated Attributes and Associating Attributes to it.
 
-![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes.png)
+![discussion-button](./_assets/assosiated-attributes/assosiated-attributes.png)
 
 - **Associating Attributes** – are "parent" attributes, assigning of which will cause automatic assiging of the current attribute. 
 - **Associated Attributes** – are "child" attributes, which will be automatically assigned if the current attribute is assigned.
 
 In the Tree Panel you can see the full attribute hierarchy and change it by using drag-and-drop.
 
-![discussion-button](../_assets/user-guide/assosiated-attributes/assosiated-attributes-list.png)
+![discussion-button](./_assets/assosiated-attributes/assosiated-attributes-list.png)
 
 ## Removing
 
 To remove the attribute record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/attributes/remove-details.jpg)
+![Remove1](./_assets/attributes/remove-details.jpg)
 
 or from the single record actions menu on the attributes list view page:
 
-![Remove1](../_assets/user-guide/attributes/remove-list.jpg)
+![Remove1](./_assets/attributes/remove-list.jpg)
 
 By default, it is not possible to remove the attribute if there is any product or product family linked with this attribute. The following confirmation pop-up appears:
 
-![Attribute removal confirmation](../_assets/user-guide/attributes/remove-attribute.jpg)
+![Attribute removal confirmation](./_assets/attributes/remove-attribute.jpg)
 
 Select the checkbox to unlink the attribute record from other entities and click `Remove` to complete the operation. Click `Cancel` to abort the process. 
 

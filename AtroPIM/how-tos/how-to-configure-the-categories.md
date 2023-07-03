@@ -8,15 +8,15 @@ Only one parent category can be entered for each category. With the help of such
 
 If several root categories are created for the categories, the user will work with several category trees.
 
-![](../_assets/how-tos/how-to-configure-the-categories/image58.png)
+![](./_assets/how-to-configure-the-categories/image58.png)
 
 In the view of a category tree (view `Tree View`) you can clearly see all available category trees.
 
-![](../_assets/how-tos/how-to-configure-the-categories/image40.png)
+![](./_assets/how-to-configure-the-categories/image40.png)
 
 Using the drag-and-drop function, you can quickly make changes to the structure of any tree.
 
-![](../_assets/how-tos/how-to-configure-the-categories/image18.png)
+![](./_assets/how-to-configure-the-categories/image18.png)
 
 For better usability and acceleration of the customer journey, we recommend not creating more than 3 category levels. Of course, every user has their own specific needs, but one has to consider the following: the simpler the category tree, the more likely it is that the customer will find exactly what they are looking for.
 

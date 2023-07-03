@@ -21,13 +21,13 @@ If you want to make changes to the association entity (e.g. add new fields, or m
 
 To create a new association record, click `Associations` in the navigation menu to get to the association records [list view](#listing) and then click the `Create Association` button. The common creation window will open:
 
-![Associations creation](../_assets/user-guide/associations/associations-create.jpg)
+![Associations creation](./_assets/associations/associations-create.jpg)
 
 Here enter the association name and description (optional); activate the new association, if needed. Define its backward association using the corresponding select button. Click the `Save` button to finish the association record creation or `Cancel` to abort the process.
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the association creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/associations/creation-popup.jpg)
+![Creation pop-up](./_assets/associations/creation-popup.jpg)
 
 For more details on backward associations, please, refer to the [**Associated Products**](./associated-products.md) article in this user guide.
 
@@ -35,7 +35,7 @@ For more details on backward associations, please, refer to the [**Associated Pr
 
 To open the list of association records available in the system, click the `Associations` option in the navigation menu:
 
-![Associations list view page](../_assets/user-guide/associations/associations-list-view.jpg)
+![Associations list view page](./_assets/associations/associations-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for association records:
  - Name
@@ -57,7 +57,7 @@ The following mass actions are available for association records on the list vie
 - Add relation
 - Remove relation
 
-![Associations mass actions](../_assets/user-guide/associations/associations-mass-actions.jpg)
+![Associations mass actions](./_assets/associations/associations-mass-actions.jpg)
 
 For details on these actions, please, see the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -68,7 +68,7 @@ The following single record actions are available for association records on the
 - Edit
 - Remove
 
-![Associations single record actions](../_assets/user-guide/associations/associations-single-actions.jpg)
+![Associations single record actions](./_assets/associations/associations-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -76,7 +76,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the association, click the `Edit` button on the detail view page of the currently open association record; the following editing window will open:
 
-![Associations editing](../_assets/user-guide/associations/associations-edit.jpg)
+![Associations editing](./_assets/associations/associations-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -84,17 +84,17 @@ Besides, you can make changes in the association record via [in-line editing](./
 
 Alternatively, make changes to the desired association record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the associations list view page:
 
-![Edit option](../_assets/user-guide/associations/association-editing-popup.jpg)
+![Edit option](./_assets/associations/association-editing-popup.jpg)
 
 ## Removing
 
 To remove the association record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/associations/remove-details.jpg)
+![Remove1](./_assets/associations/remove-details.jpg)
 
 or from the single record actions menu on the associations list view page:
 
-![Remove2](../_assets/user-guide/associations/remove-list.jpg)
+![Remove2](./_assets/associations/remove-list.jpg)
 
 By default, it is not possible to remove the association, if there is any product associated with it.
 
@@ -110,7 +110,7 @@ Use the `Duplicate` option from the actions drop-down menu to go to the associat
  - Related product
  - Association
 
-![Associated products panel](../_assets/user-guide/associations/associated-products-panel.jpg)
+![Associated products panel](./_assets/associations/associated-products-panel.jpg)
 
 AtroPIM also offers you the ability to add associations to all the products (or as many as needed) simultaneously via the [mass actions](./views-and-panels.md#mass-actions) menu.
 

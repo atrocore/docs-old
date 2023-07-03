@@ -8,13 +8,13 @@ Searching works on the current entity records, while filtering works also on the
 
 Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels-core.md#list-view) view page:
 
-![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.png)
+![Search and filtering](./_assets/search-and-filtering/search-filter.png)
 
 *Search and filtering on the products list view page*
 
 To perform a search operation, enter your search query into the corresponding field and hit the `Enter` key on your keyboard or click the `Apply filter` button (red squares). To reset all filters click the `Reset filter` button. You can have more than one filter at once - by clicking `Reset filter` button or cross on the right (blue squares) all of them will be reset. If you want to close one particular filer use cross in the top right of the filter you want to close.
 
-![Search and filtering](../_assets/user-guide/search-and-filtering/reset.png)
+![Search and filtering](./_assets/search-and-filtering/reset.png)
 
 Wildcards can be used for search, at any place in the search string, separately or in any combination.
 
@@ -49,7 +49,7 @@ For InnoDB tables the following operators are available:
 
 To filter your entity records, open the filter drop-down list and set the desired checkbox(es):
 
-![Search and Filtering Panel](../_assets/user-guide/search-and-filtering/search-and-filtering-panel.jpg)
+![Search and Filtering Panel](./_assets/search-and-filtering/search-and-filtering-panel.jpg)
 
 To clear all filters, click the `Reset` button, located to the right of the search field.
 
@@ -142,11 +142,11 @@ Depending of the field type, you can apply the following filtering criteria:
 
 When adding filters to your search you can add additional subfilters. To add subfilter you have to filter data in the popup menu (see picture below) and then check the checkbox in the header.
 
-![Subfilters](../_assets/user-guide/subqerry/subqerry-resoult.png)
+![Subfilters](./_assets/subqerry/subqerry-resoult.png)
 
 The search will be shown as on the picture below:
 
-![Subfilters](../_assets/user-guide/subqerry/subqerry.png) 
+![Subfilters](./_assets/subqerry/subqerry.png) 
 
 This way is more accurate then selecting all appropriate results to subfilter because:
 - it is faster, especially when you have a lot of results
@@ -160,7 +160,7 @@ This way is more accurate then selecting all appropriate results to subfilter be
 
 Predefined search filters are available in the drop-down menu on the left of the search field on any entity list view page:
 
-![Search filters list](../_assets/user-guide/search-and-filtering/search-filters-list.jpg)
+![Search filters list](./_assets/search-and-filtering/search-filters-list.jpg)
 
 To filter the records, select the desired checkbox or several checkboxes. 
 
@@ -170,11 +170,11 @@ To extend the list, please contact your developer.
 
 To save a custom search filter, select the `Add filter > 'desired filter'` option from the filtering drop-down list:
 
-![Filters list](../_assets/user-guide/search-and-filtering/filter-list.jpg)
+![Filters list](./_assets/search-and-filtering/filter-list.jpg)
 
 The selected filter will be added to the current page:
 
-![Added filter](../_assets/user-guide/search-and-filtering/filter-added.jpg)
+![Added filter](./_assets/search-and-filtering/filter-added.jpg)
 
 If needed, click the `X` button to remove the added filter.
 
@@ -184,15 +184,15 @@ If needed, click the `X` button to remove the added filter.
 
 You can create custom search filter templates. To do this, add the desired filters as described above and select the `Save filter` option from the filtering drop-down list:
 
-![Save filter option](../_assets/user-guide/search-and-filtering/save-filter-option.jpg)
+![Save filter option](./_assets/search-and-filtering/save-filter-option.jpg)
 
 On the "Save filters" page that appears, enter the name for the filter(s) and click the `Save` button to create the template. As a result, your search filter template will be added to the filtering drop-down list and set as a currently applied filter: 
 
-![Filter saved](../_assets/user-guide/search-and-filtering/filter-saved.jpg)
+![Filter saved](./_assets/search-and-filtering/filter-saved.jpg)
 
 To remove your custom search filter template, use the `Remove filter` option from the filtering drop-down list:
 
-![Remove filter option](../_assets/user-guide/search-and-filtering/remove-filter-option.jpg)
+![Remove filter option](./_assets/search-and-filtering/remove-filter-option.jpg)
 
 To complete the action, confirm your decision in the confirmation box that appears on top of the page.
 
@@ -218,14 +218,14 @@ After clicking on the search results, the appropriate filter will be set automat
 
 For entities with `Hierarchy` type there is additional panel where you can search and filter records. You can select a category to show by (if there is any).
 
-![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-options.png)
+![Remove filter option](./_assets/search-and-filtering/hierarchy-options.png)
 
 You can see the entity by its hierarchy, as a tree. Press arrows to proceed down by hierarchy and `Show more` to get more records to see. Selecting a record here is opens details menu. In the details menu hierarchy panel shows the way to the record. If you are showing by, for example, category - it will show you the category the product is in. If there is no such it will show you the general tree.
 
-![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-panel.png)
+![Remove filter option](./_assets/search-and-filtering/hierarchy-panel.png)
 
 You can select inheritance in the hierarchy panel. To do so, go to `Administration/Entities` then `Edit` and check the the `Drag & Drop` checkbox.
 
 If you are searching then the hierarchy panel adjusts to the filters implied. If there is a filter in a Hierarchy Panel then it will not be overwritten.
 
-![Remove filter option](../_assets/user-guide/search-and-filtering/hierarchy-panel-search.png)
+![Remove filter option](./_assets/search-and-filtering/hierarchy-panel-search.png)

@@ -21,11 +21,11 @@ AtroPIM has flexible filters of the following types:
 
 To use filters, you have to open the menu with filters to the left of the search field. You can also save custom filters here after the filters have been set.
 
-![](../_assets/how-tos/how-to-select-unfinished-products-quickly/image10.png)
+![](./_assets/how-to-select-unfinished-products-quickly/image10.png)
 
 To select configured filters, click on `Add Filter`. The fields that are configured for filtering in the `Layout Manager` are displayed in the popup. To add a filter, you have to select the appropriate option and enter the required values.
 
-![](../_assets/how-tos/how-to-select-unfinished-products-quickly/image9.png)
+![](./_assets/how-to-select-unfinished-products-quickly/image9.png)
 
 ### Built-in filters
 
@@ -48,11 +48,11 @@ Using the options `Add Filter` and` Add Attribute Filter` you can configure any 
 
 For quick navigation to products that still need to be edited, we also recommend using the dashboard. For convenience, you can set the dashboard to display the `General Statistics` dashlet. All summarized information about your products can be viewed here. The information according to built-in filters is displayed on this dashlet. To see the respective products, you simply have to click on the corresponding position in the dashlet.
 
-![](../_assets/how-tos/how-to-select-unfinished-products-quickly/image22.png)
+![](./_assets/how-to-select-unfinished-products-quickly/image22.png)
 
 If you don't have this dashlet, click the `✚` icon in the top right corner of the dashboard, below the taskbar.
 
-![](../_assets/how-tos/how-to-select-unfinished-products-quickly/image38.png)
+![](./_assets/how-to-select-unfinished-products-quickly/image38.png)
 
 ## Use of status and other fields of type enum or multi-enum
 
@@ -64,7 +64,7 @@ The use of multi-enum fields, e.g. `Tags`, is a very flexible tool for specifyin
 
 The use of filters by `tags` and ` status` (or similar fields) helps different employees to do their work faster and more qualitatively.
 
-![](../_assets/how-tos/how-to-select-unfinished-products-quickly/image55.png)
+![](./_assets/how-to-select-unfinished-products-quickly/image55.png)
 
 The use of `Enum` and `Multi-Enum` fields makes the work of your employees easier and helps to find incomplete, finished and other required products faster.
 

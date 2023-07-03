@@ -8,7 +8,7 @@ Before product categorization, you have to make sure that all necessary categori
 
 To assign the product to one or more categories, click on the `▼` icon in the `Product Categories` panel and then click on` Select`. In the opened popup you have to select the required categories and click on the `Select` button. It is a good idea to refer to the category code as the category names of different trees can be duplicated.
 
-![](../_assets/how-tos/how-to-categorize-the-products/image21.png)
+![](./_assets/how-to-categorize-the-products/image21.png)
 
 The product is automatically assigned to the channels to which the category tree of the selected category is assigned.
 
@@ -16,14 +16,14 @@ The product is automatically assigned to the channels to which the category tree
 
 You can add new products to a category directly on the category page. To do this, click on the `▼` icon in the `Category Products` panel and select all the products that should be added.
 
-![](../_assets/how-tos/how-to-categorize-the-products/image14.png)
+![](./_assets/how-to-categorize-the-products/image14.png)
 
 ## Mass addition, change or decoupling of the categories for selected products
 
 On the product list page, you can add or delete a relationship to several categories at the same time for selected products (e.g. after filtering) thanks to the `Add Relation` and` Remove Relation` functions.
 
-![](../_assets/how-tos/how-to-categorize-the-products/image33.png)
+![](./_assets/how-to-categorize-the-products/image33.png)
 
 To do this, click on `Add Relation` or` Remove Relation`, select `Product Categories` in the opened popup in the ` Select Entity` field and then the necessary categories. As a result, the relationship from the selected category to the preselected products is added or deleted.
 
-![](../_assets/how-tos/how-to-categorize-the-products/image4.png)
+![](./_assets/how-to-categorize-the-products/image4.png)

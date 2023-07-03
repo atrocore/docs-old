@@ -4,7 +4,7 @@ The product families can be used when creating a product. The product family det
 
 After a product family has been specified for a product, the product automatically inherits all attributes of the product family. For example, televisions can be considered a family of products. Every television that belongs to this product family is identified by the same attributes and can be described with these - for example, weight, screen size, connection options (ports), screen technology, etc.
 
-![](../_assets/how-tos/how-to-create-the-product-families/image20.png)
+![](./_assets/how-to-create-the-product-families/image20.png)
 
 ## Determine the necessary product families
 
@@ -27,7 +27,7 @@ The following mandatory fields are required to create a new product family:
 - `Name` - the name of the product family.
 - `Code` - the inner code of the product family, which is unique. Only numbers, lowercase letters and the underscore may be used.
 
-![](../_assets/how-tos/how-to-create-the-product-families/image30.png)
+![](./_assets/how-to-create-the-product-families/image30.png)
 
 We would recommend naming the product families clearly and meaningfully so that it is clear which attributes are used there.
 
@@ -35,7 +35,7 @@ If you name product families with the same or similar names, you can describe in
 
 When creating new product families, the existing product family can be duplicated; all attributes of the product family are copied as well.
 
-![](../_assets/how-tos/how-to-create-the-product-families/image24.png)
+![](./_assets/how-to-create-the-product-families/image24.png)
 
 Unnecessary attributes can be removed from the product family after they have been created, the new ones are added. Using this option allows you to save a lot of time in system configuration.
 

@@ -19,7 +19,7 @@ If you want to make changes to the attribute group entity (e.g. add new fields, 
 
 To create a new attribute group record, click `Attribute Groups` in the navigation menu to get to the attribute groups [list view](#listing), and then click the `Create Attribute Group` button. The common creation window will open:
 
-![AG creation](../_assets/user-guide/attribute-groups/ag-create.jpg)
+![AG creation](./_assets/attribute-groups/ag-create.jpg)
 
 Here enter the desired name for the attribute group record being created and its sort order number. its code is automatically generated based on the entered name, but you can change it via the keyboard. The attribute group description is an optional field and can be left empty. Click the `Save` button to finish the attribute group creation or `Cancel` to abort the process.
 
@@ -27,13 +27,13 @@ If the attribute group code is not unique, the error message will appear notifyi
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the attribute group creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/attribute-groups/creation-popup.jpg)
+![Creation pop-up](./_assets/attribute-groups/creation-popup.jpg)
 
 ## Listing
 
 To open the list of attribute group records available in the system, click the `Attribute groups` option in the navigation menu:
 
-![AP list view page](../_assets/user-guide/attribute-groups/ag-list-view.jpg)
+![AP list view page](./_assets/attribute-groups/ag-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for attribute group records:
 - Group name
@@ -55,7 +55,7 @@ The following mass actions are available for attribute group records:
 - Add relation
 - Remove relation
 
-![AG mass actions](../_assets/user-guide/attribute-groups/ag-mass-actions.jpg)
+![AG mass actions](./_assets/attribute-groups/ag-mass-actions.jpg)
 
 For details on these actions, please, see the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -66,7 +66,7 @@ The following single record actions are available for attribute group records:
 - Edit
 - Remove
 
-![AG single record actions](../_assets/user-guide/attribute-groups/ag-single-actions.jpg)
+![AG single record actions](./_assets/attribute-groups/ag-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -74,7 +74,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the attribute group, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open attribute group record; the following editing window will open:
 
-![AG editing](../_assets/user-guide/attribute-groups/ag-editing.jpg)
+![AG editing](./_assets/attribute-groups/ag-editing.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -82,17 +82,17 @@ Besides, you can make changes in the attribute group record via [in-line editing
 
 Alternatively, make changes to the desired attribute group record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the attribute groups list view page:
 
-![Editing pop-up](../_assets/user-guide/attribute-groups/ag-editing-popup.jpg)
+![Editing pop-up](./_assets/attribute-groups/ag-editing-popup.jpg)
 
 ## Removing
 
 To remove the attribute group record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/attribute-groups/remove-details.jpg)
+![Remove1](./_assets/attribute-groups/remove-details.jpg)
 
 or from the single record actions menu on the attribute groups list view page:
 
-![Remove2](../_assets/user-guide/attribute-groups/remove-list.jpg)
+![Remove2](./_assets/attribute-groups/remove-list.jpg)
 
 If you are removing the attribute group that contains related attributes, these attributes will be unlinked from this attribute group.
 
@@ -107,17 +107,17 @@ Attributes that are linked to the attribute group record are displayed on its [d
 - Code
 - Attribute type
 
-![Attributes panel](../_assets/user-guide/attribute-groups/attributes-panel.jpg)
+![Attributes panel](./_assets/attribute-groups/attributes-panel.jpg)
 
 If this panel is missing, please, contact your administrator as to your access rights configuration. Also, to be able to relate more entities to attribute groups, please, contact your administrator.
 
 To create a new [attribute](./attributes.md) record, сlick the `+` button  located on the `ATTRIBUTES` panel and fill in the fields in the attribute creation pop-up that appears:
 
-![AG create attribute](../_assets/user-guide/attribute-groups/ag-create-attribute.jpg)
+![AG create attribute](./_assets/attribute-groups/ag-create-attribute.jpg)
 
 To link the already existing attribute(s) with the open attribute group record, use the `Select` option:
 
-![Selecting attributes](../_assets/user-guide/attribute-groups/attributes-select.jpg)
+![Selecting attributes](./_assets/attribute-groups/attributes-select.jpg)
 
 In the "Attributes" pop-up window that appears, select one or several attributes you would like to assign to this attribute group and click the `Select` button to complete the action.
 
@@ -125,11 +125,11 @@ In the "Attributes" pop-up window that appears, select one or several attributes
 
 Attributes linked to the given attribute group record can be viewed, edited, unlinked, or removed via the corresponding options from the single record actions menu on the `ATTRIBUTES` panel:
 
-![Attributes menu](../_assets/user-guide/attribute-groups/attributes-menu.jpg) 
+![Attributes menu](./_assets/attribute-groups/attributes-menu.jpg) 
 
 On this panel, you can also define attribute records order within the given attribute group record via their drag-and-drop:
 
-![Attributes order change](../_assets/user-guide/attribute-groups/attributes-order-change.jpg)
+![Attributes order change](./_assets/attribute-groups/attributes-order-change.jpg)
 
 The changes are saved on the fly.
 

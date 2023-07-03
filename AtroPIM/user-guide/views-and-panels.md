@@ -37,13 +37,13 @@ The list view page shows a table of records with main fields configured for each
 - *[search and filtering panel](./search-and-filtering.md) (4);*
 - *records list (5).* 
 
-![Default List View](../_assets/user-guide/views-and-panels/default-list-view.jpg)
+![Default List View](./_assets/views-and-panels/default-list-view.jpg)
 
 Here you can change entity records order in the list by clicking any sortable column title; this will sort the column either ascending or descending. Please, note that the default order of entity records is predefined in the Entity Manager. To change it, please, contact the administrator.
 
 A total number of entity records may or may not be shown on the list view page:
 
-![Total number displayed](../_assets/user-guide/views-and-panels/total-number.jpg)
+![Total number displayed](./_assets/views-and-panels/total-number.jpg)
 
 By default, the total number is not displayed. In order to see it, please, contact the administrator.
 
@@ -53,11 +53,11 @@ On the list view page, you can perform actions with separate or multiple entity 
 
 Mass actions are to be applied to several (or all) selected entity records, i.e. records with set checkboxes. To select all entity records, click the checkbox located on the left of the `Name` column title. If the number of entity records exceeds one page, use the `Select all results` option from the actions menu:
 
-![Select all option](../_assets/user-guide/views-and-panels/select-all-option.jpg)
+![Select all option](./_assets/views-and-panels/select-all-option.jpg)
 
 The following mass actions are available in the AtroPIM system: 
 
-![Mass Actions](../_assets/user-guide/views-and-panels/mass-actions.jpg)
+![Mass Actions](./_assets/views-and-panels/mass-actions.jpg)
 
 - **Remove** – to remove the selected entity records.
 - **Merge** – to merge the selected entity records.
@@ -76,7 +76,7 @@ To modify the mass actions list, please, contact your administrator.
 
 To see the actions available for the records in the list, click the single record actions menu icon located on the right of the record:
 
-![Single Record Actions](../_assets/user-guide/views-and-panels/single-record-actions.jpg)
+![Single Record Actions](./_assets/views-and-panels/single-record-actions.jpg)
 
 By default, the following actions are available for all entities:
 - **View** – to go to the detail view of the record.
@@ -89,7 +89,7 @@ To modify the single record actions list, please, contact your administrator.
 
 The plate view is a variant of the [list view](#list-view), in which all entity records are displayed as plates:
 
-![Plate view](../_assets/user-guide/views-and-panels/plate-view.jpg)
+![Plate view](./_assets/views-and-panels/plate-view.jpg)
 
 To switch to this view, click the plates icon located in the upper right corner of the list view page of entity records.
 
@@ -97,7 +97,7 @@ The [mass actions](#mass-actions) and [singe record actions](#single-record-acti
 
 You can configure the plate view layout by selecting the desired item number to be displayed in a row (1–6) and defining the record field to be used for sorting via the corresponding drop-down menus:
 
-![Plate view cfg](../_assets/user-guide/views-and-panels/plate-view-cfg.jpg)
+![Plate view cfg](./_assets/views-and-panels/plate-view-cfg.jpg)
 
 Within the AtroPIM system the plate view is available only for [products](./products.md).
 
@@ -108,7 +108,7 @@ Small list views are panels and pop-up windows with data on the entities related
 The following actions are available for the small list view panels:
 
 - **General actions** – applicable to all records on the related entities panel:
-  ![Related entity global actions](../_assets/user-guide/views-and-panels/related-entity-actions-global.jpg)
+  ![Related entity global actions](./_assets/views-and-panels/related-entity-actions-global.jpg)
   - *Refresh* – to refresh the related entities list on the panel;
   - *Create* – to create a new record for the related entity;
   - *Select* – to create a relation between the entity record, which is opened in the main window and the entity record, which was chosen in the pop-up window. 
@@ -116,7 +116,7 @@ The following actions are available for the small list view panels:
 *Please, keep in mind that choosing some record in the pop-up window will reassign it to the entity record, which is opened in the main window. The previous relation will be dropped, if the relation is one-to-many.*
 
 - **Single record actions** – applicable to each record of the related entities separately. The list of actions here is usually the same as on the list view for this entity.
-  ![Related entity single actions](../_assets/user-guide/views-and-panels/related-entity-actions-single.jpg)
+  ![Related entity single actions](./_assets/views-and-panels/related-entity-actions-single.jpg)
 
 ## Detail View
 
@@ -130,17 +130,17 @@ The detail view page shows detailed information about the selected entity record
 - *actions and tabs panel (4);*
 - *record details, where detailed information about the currently open entity record is displayed (5).* 
 
-![Detail View](../_assets/user-guide/views-and-panels/detail-view.jpg)
+![Detail View](./_assets/views-and-panels/detail-view.jpg)
 
 The detail view page may also include:
 
 - the `OVERVIEW` panel and some other panels that are either default for a certain entity or configured by the administrator:
 
-  ![Detail View Page](../_assets/user-guide/views-and-panels/overview-panel.jpg)
+  ![Detail View Page](./_assets/views-and-panels/overview-panel.jpg)
 
 - several *small list views* for the related records, if these were configured by the administrator:
   
-  ![Related Entity Panel](../_assets/user-guide/views-and-panels/related-entity-panel.jpg)
+  ![Related Entity Panel](./_assets/views-and-panels/related-entity-panel.jpg)
 
 - *side view* with additional information concerning record management and activity stream, if activated for the entity.
   
@@ -152,13 +152,13 @@ You can start following the entity record right on the detail view page. To do t
 
 [Filtering](./search-and-filtering.md) the record data display by fields, locales, and scopes is available on the [products](./products.md) detail view page only via the corresponding drop-down menus:
 
-![Product filters](../_assets/user-guide/views-and-panels/product-filters.jpg)
+![Product filters](./_assets/views-and-panels/product-filters.jpg)
 
 Keep in mind that the locales filter appears when the "Multi-Languages" module is installed and input language options are configured by your administrator. Go to our [store](https://atropim.com/store/multi-languages) to learn more about the "Multi-Languages" module and its features.
 
 Navigation through the existing entity records can be done on the detail view pages using the corresponding buttons: 
 
-![Record navigation buttons](../_assets/user-guide/views-and-panels/record-navigation-buttons.jpg)
+![Record navigation buttons](./_assets/views-and-panels/record-navigation-buttons.jpg)
 
 To edit the fields data on the detail view page, use [in-line editing](#in-line-editing).
 
@@ -166,7 +166,7 @@ To edit the fields data on the detail view page, use [in-line editing](#in-line-
 
 The following actions are available for all entity records by default:
 
-![Main actions](../_assets/user-guide/views-and-panels/main-actions.jpg)
+![Main actions](./_assets/views-and-panels/main-actions.jpg)
 
 - **Edit** – click the `Edit` button to make changes in the given record.
 - **Remove** – select the `Remove` option from the actions menu to remove the given record.
@@ -176,7 +176,7 @@ The following actions are available for all entity records by default:
 
 The quick detail view is shown in a pop-up window:
 
-![Quick detail view](../_assets/user-guide/views-and-panels/quick-detail-view.jpg)
+![Quick detail view](./_assets/views-and-panels/quick-detail-view.jpg)
 
 It is usually used to display the record details for some related entity or after using the `View` option from the single record actions menu on the list view page.
 
@@ -186,7 +186,7 @@ In the quick detail pop-up, click the `Full Form` button to open the common [det
 
 The side view panel is used to show additional information and is shown in the main window always together with the detail (or quick detail) view panels:
 
-![Side view](../_assets/user-guide/views-and-panels/side-view.jpg)
+![Side view](./_assets/views-and-panels/side-view.jpg)
 
 The following information is available by default on the side view panel:
 
@@ -205,7 +205,7 @@ Other modules can add more panels to the side view panel. Please, visit our [sto
 
 The create view is the entity record creation page that has its own layout, which can be configured by the administrator. To get to the create view page, click the `Create 'Entity'` button on the entity records [list view](#list-view) page and fill in the record details:
 
-![Create view](../_assets/user-guide/views-and-panels/create-view.jpg)
+![Create view](./_assets/views-and-panels/create-view.jpg)
 
 Click the `Save` button to complete the record creation or `Cancel` to abort the operation.
 
@@ -215,7 +215,7 @@ In all other cases, i.e. when the `+` button is used, you will be taken to the [
 
 The quick create view is shown in a pop-up window and uses the layout of the [quick detail view](#quick-detail-view-small-detail-view) page. It is usually applicable for creating records for the related entities or appears when the [quick create](./user-interface.md#quick-create) button is used on any AtroPIM page:
 
-![Quick create view](../_assets/user-guide/views-and-panels/quick-create-view.jpg)
+![Quick create view](./_assets/views-and-panels/quick-create-view.jpg)
 
 Click the `Full Form` button in the quick create pop-up to get to the [create view](#create-view) page.
 
@@ -223,7 +223,7 @@ Click the `Full Form` button in the quick create pop-up to get to the [create vi
 
 The edit view page is shown in the main window and uses the layout of the [detail view](#detail-view) page. To get to it, click the `Edit` button on the detail view page:
 
-![Edit view](../_assets/user-guide/views-and-panels/edit-view.jpg)
+![Edit view](./_assets/views-and-panels/edit-view.jpg)
 
 On the `OVERVIEW` panel, you can edit only the fields of the given entity, i.e. no fields of the related entities can be edited here.
 
@@ -233,7 +233,7 @@ If you are on the quick edit view page, click the `Full Form` button to get to t
 
 The quick edit view is shown in a pop-up window and uses the layout of the [quick detail view](#quick-detail-view-small-detail-view) page. It is usually used to edit records for the related entities or to edit records via the `Edit` option from the single record actions menu on the [list view](#list-view) page:
 
-![Quick edit view](../_assets/user-guide/views-and-panels/quick-edit-view.jpg)
+![Quick edit view](./_assets/views-and-panels/quick-edit-view.jpg)
 
 Click the `Full Form` button to get to the [edit view](#edit-view) page.
 
@@ -243,6 +243,6 @@ With in-line editing you can change values *on the fly*. This ensures quick chan
 
 Currently in-line editing is available on the [detail view](#detail-view) pages only. To edit the record information on these pages using the in-line editing, click the pencil icon located in the upper right corner of the field you want to edit:
 
-![In-line editing](../_assets/user-guide/views-and-panels/inline-editing.jpg)
+![In-line editing](./_assets/views-and-panels/inline-editing.jpg)
 
 

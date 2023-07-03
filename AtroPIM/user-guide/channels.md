@@ -22,7 +22,7 @@ If you want to make changes to the channel entity, e.g. add new fields, or modif
 
 To create a new channel record, click `Channels` in the navigation menu to get to the channel [list view](#listing), and then click the `Create Channel` button. The common creation window will open:
 
-![Channel creation](../_assets/user-guide/channels/channels-create.png)
+![Channel creation](./_assets/channels/channels-create.png)
 
 Here enter the desired name for the channel record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. The channel description is an optional field and can be left empty.
 
@@ -36,7 +36,7 @@ If the channel code is not unique, the error message will appear notifying you a
 
 To open the list of channel records available in the system, click the `Channels` option in the navigation menu:
 
-![Channels list view page](../_assets/user-guide/channels/channels-list-view.jpg)
+![Channels list view page](./_assets/channels/channels-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for channel records:
  - Name
@@ -59,7 +59,7 @@ The following mass actions are available for channel records on the list view pa
 - Add relation
 - Remove relation
 
-![Channels mass actions](../_assets/user-guide/channels/channels-mass-actions.jpg)
+![Channels mass actions](./_assets/channels/channels-mass-actions.jpg)
 
 For details on these actions, refer to the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -71,7 +71,7 @@ The following single record actions are available for channel records on the lis
 - Edit
 - Remove
 
-![Сhannels single record actions](../_assets/user-guide/channels/channels-single-actions.jpg)
+![Сhannels single record actions](./_assets/channels/channels-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -79,7 +79,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the channel, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open channel record; the following editing window will open:
 
-![Channel editing](../_assets/user-guide/channels/channel-edit.png)
+![Channel editing](./_assets/channels/channel-edit.png)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -87,19 +87,19 @@ Besides, you can make changes in the channel record via [in-line editing](./view
 
 Alternatively, make changes to the desired channel record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the channels list view page:
 
-![Editing pop-up button](../_assets/user-guide/channels/channel-editing-popup-button.png)
+![Editing pop-up button](./_assets/channels/channel-editing-popup-button.png)
 
-![Editing pop-up](../_assets/user-guide/channels/channel-editing-popup.png)
+![Editing pop-up](./_assets/channels/channel-editing-popup.png)
 
 ## Removing
 
 To remove the channel record, use the `Delete` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/channels/remove-details.png)
+![Remove1](./_assets/channels/remove-details.png)
 
 or from the single record actions menu on the channels list view page:
 
-![Remove2](../_assets/user-guide/channels/remove-list.png)
+![Remove2](./_assets/channels/remove-list.png)
 
 ## Duplicating
 
@@ -111,21 +111,21 @@ Products that are linked to the channel are displayed on its [detail view](./vie
  - Product
  - Active
 
-![Channel products](../_assets/user-guide/channels/channel-products.png)
+![Channel products](./_assets/channels/channel-products.png)
 
 If this panel is missing, please, contact your administrator as to your access rights configuration. Also, to be able to relate more entities to product families, please, contact your administrator.
 
 To create a new product record for the given channel, use the `+` button located on the `CHANNEL PRODUCTS` panel and enter the necessary data in the product creation pop-up that appears:
 
-![Creating products](../_assets/user-guide/channels/channels-create-product.png)
+![Creating products](./_assets/channels/channels-create-product.png)
 
-![Creating products](../_assets/user-guide/channels/channels-create-product-popup.png)
+![Creating products](./_assets/channels/channels-create-product-popup.png)
 
 To link the already existing product records with the given channel, use the `Select` option from the actions menu located in the upper right corner of the `CHANNEL PRODUCTS` panel. Then in the "Products" pop-up window choose one or several products you would like to assign to this channel and click the `Select` button.
 
 To view the channel related product record, click its name in the products list or select the `View` option from the single record actions menu for the appropriate record:
 
-![View product](../_assets/user-guide/channels/products-view.png)
+![View product](./_assets/channels/products-view.png)
 
 To edit the product, use the `Edit` option from the single record actions menu for the appropriate record. In the editing pop-up window that appears make changes in the desired fields, where possible. Click the `Save` button to apply your changes.
 

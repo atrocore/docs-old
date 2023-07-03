@@ -2,7 +2,7 @@
 
 Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels.md#list-view) or [plate](./views-and-panels.md#plate-view) view page:
 
-![Search and filtering](../_assets/user-guide/search-and-filtering/search-filter.jpg)
+![Search and filtering](./_assets/search-and-filtering/search-filter.jpg)
 
 Searching works on the current entity records, while filtering works also on the related records, which are configured by the administrator.
 
@@ -42,7 +42,7 @@ For InnoDB tables the following operators are available:
 
 To filter your entity records, open the filter drop-down list and set the desired checkbox(es):
 
-![Search and Filtering Panel](../_assets/user-guide/search-and-filtering/search-and-filtering-panel.jpg)
+![Search and Filtering Panel](./_assets/search-and-filtering/search-and-filtering-panel.jpg)
 
 To clear all filters, click the `Reset` button, located to the right of the search field.
 
@@ -54,7 +54,7 @@ The fields available for searching can be configured by developers in the metada
 
 On the [products](./products.md) detail view page, there is also the ability to filter the record data display by fields, locales, and scopes in the corresponding drop-down menus:
 
-![Product filters](../_assets/user-guide/search-and-filtering/product-filters.jpg)
+![Product filters](./_assets/search-and-filtering/product-filters.jpg)
 
 Keep in mind that the locales filter appears when the "Multi-Languages" module is installed and input language options are configured by your administrator. Go to our [store](https://atropim.com/store/multi-languages) to learn more about the "Multi-Languages" module and its features.
 
@@ -164,7 +164,7 @@ After clicking on the search results, the appropriate filter will be set automat
 
 Predefined search filters are available in the drop-down menu on the left of the search field on any entity list view page:
 
-![Search filters list](../_assets/user-guide/search-and-filtering/search-filters-list.jpg)
+![Search filters list](./_assets/search-and-filtering/search-filters-list.jpg)
 
 To filter the records, select the desired checkbox or several checkboxes. 
 
@@ -174,11 +174,11 @@ To extend the list, please contact your developer.
 
 To save a custom search filter, select the `Add filter > 'desired filter'` option from the filtering drop-down list:
 
-![Filters list](../_assets/user-guide/search-and-filtering/filter-list.jpg)
+![Filters list](./_assets/search-and-filtering/filter-list.jpg)
 
 The selected filter will be added to the current page:
 
-![Added filter](../_assets/user-guide/search-and-filtering/filter-added.jpg)
+![Added filter](./_assets/search-and-filtering/filter-added.jpg)
 
 If needed, click the `X` button to remove the added filter.
 
@@ -190,7 +190,7 @@ AtroPIM supports the ability to filter [product](./products.md) records not only
 
 To add a custom attribute filter, select the `Add attribute filter > 'product family' (or `All`) > 'product attribute'` option from the filtering drop-down list:
 
-![Attribute filters](../_assets/user-guide/search-and-filtering/attribute-filters.jpg)
+![Attribute filters](./_assets/search-and-filtering/attribute-filters.jpg)
 
 To remove the attribute filter, click the `X` button next to it.
 
@@ -200,15 +200,15 @@ Please, note that attribute filters are available for products only.
 
 You can create custom search filter templates. To do this, add the desired filters as described above and select the `Save filter` option from the filtering drop-down list:
 
-![Save filter option](../_assets/user-guide/search-and-filtering/save-filter-option.jpg)
+![Save filter option](./_assets/search-and-filtering/save-filter-option.jpg)
 
 On the "Save filters" page that appears, enter the name for the filter(s) and click the `Save` button to create the template. As a result, your search filter template will be added to the filtering drop-down list and set as a currently applied filter: 
 
-![Filter saved](../_assets/user-guide/search-and-filtering/filter-saved.jpg)
+![Filter saved](./_assets/search-and-filtering/filter-saved.jpg)
 
 To remove your custom search filter template, use the `Remove filter` option from the filtering drop-down list:
 
-![Remove filter option](../_assets/user-guide/search-and-filtering/remove-filter-option.jpg)
+![Remove filter option](./_assets/search-and-filtering/remove-filter-option.jpg)
 
 To complete the action, confirm your decision in the confirmation box that appears on top of the page.
 

@@ -32,7 +32,7 @@ The user can create any number of product attributes. Product fields can only be
 
 To create a product, go to the Product entity and click on `Create Product` (top right). A pop-up window is displayed in which you should fill in the mandatory fields for the new product.
 
-![](../_assets/how-tos/product description-in-6-steps/image52.png)
+![](./_assets/product description-in-6-steps/image52.png)
 
 The product fields can contain the information that is important for system users but not for end customers. This can be ID, SKU, alternative names of the products, etc.
 
@@ -42,11 +42,11 @@ The attribute (the property) - is a characteristic of the product. These are, fo
 
 Product attributes can be linked to the products in two ways - via product families:
 
-![](../_assets/how-tos/product-description-in-6-steps/image2.png)
+![](./_assets/product-description-in-6-steps/image2.png)
 
 or directly.
 
-![](../_assets/how-tos/product-description-in-6-steps/image3.png)
+![](./_assets/product-description-in-6-steps/image3.png)
 
 For example, if you assign a product to the “shirts” product family, these attributes are automatically linked to the product and the users are asked to fill the following attributes: gender, size, color, collar size, etc. (depending on which attributes are assigned to the product family  “shirts”). Therefore the correct configuration of product families is very important for the final quality of the product information. For more information, read the article [“How to create the product families?”](./how-to-create-the-product-families.md).
 
@@ -54,11 +54,11 @@ Product attributes can also be linked directly to the products; these are then m
 
 After the product attributes have been linked to the product, the attribute values can be entered. This can be done in two ways, via the context menu of an attribute:
 
-![](../_assets/how-tos/product-description-in-6-steps/image32.png)
+![](./_assets/product-description-in-6-steps/image32.png)
 
 or by editing the product:
 
-![](../_assets/how-tos/product-description-in-6-steps/image45.png)
+![](./_assets/product-description-in-6-steps/image45.png)
 
 For more information about attributes, please read the documentation [“Attribute”](../user-guide/attributes.md).
 
@@ -70,13 +70,13 @@ In AtroPIM, an image can be assigned to more than one product. And if you need t
 
 The product images are displayed in the Asset Relations panel. The assets are automatically grouped according to their types.
 
-![](../_assets/how-tos/product-description-in-6-steps/image48.png)
+![](./_assets/product-description-in-6-steps/image48.png)
 
 Here you can upload new assets (1) or select the assets that already exist in the DAM (2). You can upload files of various formats and sizes: csv, png, md, jpg, zip and other files that are allowed by the configuration. Maximum file size can also be configured. For convenience, the ability to select the asset according to the code that is unique to each asset has been added.
 
 It is also possible to assign different roles to the assets. The possible values can be configured via the Entity Manager. The role Main should be assigned to the main screen. It is displayed in the `Product Preview` panel:
 
-![](../_assets/how-tos/product-description-in-6-steps/image46.png)
+![](./_assets/product-description-in-6-steps/image46.png)
 
 The user has the option of determining the order of the images using drag-and-drop.
 
@@ -98,19 +98,19 @@ You can use existing pre-configured associations or create new associations. The
 
 In AtroPIM you can create unilateral (product A is associated with product B, but not vice versa) as well as bilateral associations (product A and product B are associated with each other). With two-way association, there is also the option of specifying different types of association between the products.
 
-![](../_assets/how-tos/product-description-in-6-steps/image5.png)
+![](./_assets/product-description-in-6-steps/image5.png)
 
 To create a product association, you have to go to the corresponding product page and click on `+` in the` Associated Product` panel. A popup will open where you can create the association with this and a selected product. If you activate the checkbox `Both Directions`, the additional field ` Related Association` is displayed. In this field you can select the type for backward association. An example of a bilateral association: product A is associated with product B, the association type is up-sell; and product B is associated with product A, the association type is down-sell.
 
 All associations between the products can be seen on the `Associated Products` page. When creating a two-way association, two different entries are added to this page.
 
-![](../_assets/how-tos/product-description-in-6-steps/image6.png)
+![](./_assets/product-description-in-6-steps/image6.png)
 
 ## Step 6: Categorize the product
 
 In order for your product descriptions to reach the end customers, one or more categories must be specified for each product to which the product is assigned.
 
-![](../_assets/how-tos/product-description-in-6-steps/image42.png)
+![](./_assets/product-description-in-6-steps/image42.png)
 
 In AtroPIM it is possible to use one or more category trees that are automatically created with the help of parent-child relationships. Each child category can only have one parent category, each parent category can have one or more child categories.
 

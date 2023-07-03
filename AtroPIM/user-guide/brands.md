@@ -23,7 +23,7 @@ If you want to make changes to the brand entity, e.g. add new fields, or modify 
 
 To create a new brand record, click `Brands` in the navigation menu to get to the brand records [list view](#listing), and then click the `Create Brand` button. The common creation window will open:
 
-![Brands creation](../_assets/user-guide/brands/brands-create.jpg)
+![Brands creation](./_assets/brands/brands-create.jpg)
 
 Here enter the desired name for the brand record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. The brand description is an optional field and can be left empty.
 
@@ -33,13 +33,13 @@ If the brand code is not unique, the error message will appear notifying you abo
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the brand creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/brands/creation-popup.jpg)
+![Creation pop-up](./_assets/brands/creation-popup.jpg)
 
 ## Listing
 
 To open the list of brand records available in the system, click the `Brands` option in the navigation menu:
 
-![Brands list view page](../_assets/user-guide/brands/brands-list-view.jpg)
+![Brands list view page](./_assets/brands/brands-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for brand records:
  - Name
@@ -62,7 +62,7 @@ The following mass actions are available for brand records on the list view page
 - Add relation
 - Remove relation
 
-![Brands mass actions](../_assets/user-guide/brands/brands-mass-actions.jpg)
+![Brands mass actions](./_assets/brands/brands-mass-actions.jpg)
 
 For details on these actions, refer to the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -74,7 +74,7 @@ The following single record actions are available for brand records on the list 
 - Edit
 - Remove
 
-![Brands single record actions](../_assets/user-guide/brands/brands-single-actions.jpg)
+![Brands single record actions](./_assets/brands/brands-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide.
 
@@ -82,7 +82,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the brand, click the `Edit` button on the detail view page of the currently open brand record; the following editing window will open:
 
-![Brands editing](../_assets/user-guide/brands/brands-edit.jpg)
+![Brands editing](./_assets/brands/brands-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -90,17 +90,17 @@ Besides, you can make changes in the brand record via [in-line editing](./views-
 
 Alternatively, make changes to the desired brand record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the brands list view page:
 
-![Editing popup](../_assets/user-guide/brands/brand-editing-popup.jpg)
+![Editing popup](./_assets/brands/brand-editing-popup.jpg)
 
 ## Removing
 
 To remove the brand record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/brands/remove-details.jpg)
+![Remove1](./_assets/brands/remove-details.jpg)
 
 or from the single record actions menu on the brands list view page:
 
-![Remove2](../_assets/user-guide/brands/remove-list.jpg)
+![Remove2](./_assets/brands/remove-list.jpg)
 
 By default, it is not possible to remove the brand, if there is any product associated with it.
 
@@ -116,7 +116,7 @@ Products that are linked to the brand are displayed on its [detail view](./views
  - Type
  - Active
 
-![Brand products](../_assets/user-guide/brands/brands-products.jpg)
+![Brand products](./_assets/brands/brands-products.jpg)
 
 If this panel is missing, please, contact your administrator as to your access rights configuration. Also, to be able to relate more entities to brands, please, contact your administrator.
 
@@ -124,7 +124,7 @@ By design, if a brand record is deactivated, all the related products will autom
 
 To create a new product to be linked to the given brand record, use the `+` button located on the `PRODUCTS` panel and enter the necessary data in the product creation pop-up that appears:
 
-![Creating products](../_assets/user-guide/brands/brands-create-product.jpg)
+![Creating products](./_assets/brands/brands-create-product.jpg)
 
 To link the already existing products with the given brand record, use the `Select` option from the actions menu located in the upper right corner of the `PRODUCTS` panel. Then in the "Products" pop-up window choose one or several products you would like to assign to this brand record and click the `Select` button.
 
@@ -132,20 +132,20 @@ To link the already existing products with the given brand record, use the `Sele
 
 To see all products linked to the given brand record, use the `Show full list` option:
 
-![Brand products](../_assets/user-guide/brands/show-full-option.jpg)
+![Brand products](./_assets/brands/show-full-option.jpg)
 
 Then the "Products" page opens, where all product records [filtered](./search-and-filtering.md) by the given brand are displayed:
 
-![Products full list](../_assets/user-guide/brands/products-full-list.jpg)
+![Products full list](./_assets/brands/products-full-list.jpg)
 
 To view the brand related product, click its name in the products list or select the `View` option from the single record actions menu for the appropriate record:
 
-![View product](../_assets/user-guide/brands/products-view.jpg)
+![View product](./_assets/brands/products-view.jpg)
 
 To edit the brand related product record, use the `Edit` option from the single record actions menu for the appropriate record. In the editing pop-up window that appears make changes in the desired fields, where possible. Click the `Save` button to apply your changes.
 
 Use the `Unlink` option from the single record actions menu to unlink the desired record from the brand and confirm your decision in the pop-up that appears:
 
-![Unlink confirmation](../_assets/user-guide/brands/unlink-confirmation.jpg)
+![Unlink confirmation](./_assets/brands/unlink-confirmation.jpg)
 
 To remove the product, select the `Remove` option from the single record actions drop-down list for the appropriate record.

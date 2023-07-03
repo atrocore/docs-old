@@ -26,7 +26,7 @@ Teams are created to connect people who have the same duties, work on the same p
 
 To create a team, the administrator has to go to `Administration` →` Teams` → `Create Team`.
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image8.png)
+![](./_assets/how-to-organize-effective-teamwork/image8.png)
 
 The creation of qualitative product descriptions requires cooperation between different teams and employees.
 
@@ -42,13 +42,13 @@ Each user can be assigned specific roles and the user himself can be assigned to
 
 To create a new user, the administrator has to go to `Administration` →` Users` and click on the button `Create User`. 
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image54.png)
+![](./_assets/how-to-organize-effective-teamwork/image54.png)
 
 Users should have access to the data and functions in the system that they need to fulfill their official duties.
 
 Every PIM user can view and edit the data of their own account (if such authorizations are set for the role) and change the password. You can also see which permissions the user has, depending on which roles are assigned to him. For this you have to click on `Access` in the settings of the personal account. It should be mentioned that the user receives the sum of all permissions for his roles.
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image17.png)
+![](./_assets/how-to-organize-effective-teamwork/image17.png)
 
 Example:
 
@@ -62,7 +62,7 @@ A new role can be created by the administrator:
 
 `Administration` →` Roles` → `Create Role`
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image26.png)
+![](./_assets/how-to-organize-effective-teamwork/image26.png)
 
 When creating a role, the authorizations for `Create`,` Read`, `Edit`,` Delete` and `Stream` must be set for the required entities.
 
@@ -85,7 +85,7 @@ The access level can be set for each authorization. For example, it can be set t
 
 The authorizations of a user with regard to the entries in the system are recorded using their ownership information:
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image57.png)
+![](./_assets/how-to-organize-effective-teamwork/image57.png)
 
 If the user is set as the owner or assigned user of an entry, he has access to this entry if his access level is `own` or higher for this entity (e.g. products).
 
@@ -95,7 +95,7 @@ For each entity in the system you can activate or deactivate the possibility to 
 
 To do this you have to go to `Administration` →` Еntity Manager`, open the required entity and click on `Edit`. Then you have to tick the checkbox `Team`,` Assigned User` or `Owner` and save the changes.
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image28.png)
+![](./_assets/how-to-organize-effective-teamwork/image28.png)
 
 To better understand how permissions and access levels are determined, let's look at the following examples.
 
@@ -170,7 +170,7 @@ Although the user Bill belongs to the team that is specified for both products, 
 
 AtroPIM offers among other things the possibility to configure the access rights on the field level of a certain entity. To do this, when editing the role on the `Field Level` panel, click on the `✚` icon after the relevant entity. A popup is opened with the fields belonging to this entity. After selecting the field, you can set access to read or edit this field by specifying `yes` or` no` for the required action.
 
-![](../_assets/how-tos/how-to-organize-effective-teamwork/image35.png) 
+![](./_assets/how-to-organize-effective-teamwork/image35.png) 
 
 This function is necessary if the user needs access to certain entries, but is not allowed to change the values in other fields (e.g. to avoid accidental changes) or to see them. This function is particularly useful when different people are responsible for filling in various fields. For example, if you have an employee who only needs to enter technical details on the product page, it is advisable to restrict his permissions to edit the `SKU` or` Product Status` fields.
 

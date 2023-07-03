@@ -27,7 +27,7 @@ If you want to make changes to the catalog entity (e.g. add new fields, or modif
 
 To create a new catalog record, click `Catalogs` in the navigation menu to get to the catalogs [list view](#listing), and then click the `Create Catalog` button. The common creation window will open:
 
-![Catalog creation](../_assets/user-guide/catalogs/catalogs-create.jpg)
+![Catalog creation](./_assets/catalogs/catalogs-create.jpg)
 
 Here enter the desired name for the catalog record being created and activate it, if needed. Its code is automatically generated based on the entered name, but you can change it via the keyboard. The catalog description is an optional field and can be left empty.
 
@@ -41,13 +41,13 @@ The new record will be added to the catalogs list. You can configure it right aw
 
 Alternatively, use the [quick create](./user-interface.md#quick-create) button on any AtroPIM page and fill in the required fields in the catalog creation pop-up that appears:
 
-![Creation pop-up](../_assets/user-guide/catalogs/creation-popup.jpg)
+![Creation pop-up](./_assets/catalogs/creation-popup.jpg)
 
 ## Listing
 
 To open the list of catalog records available in the system, click the `Catalogs` option in the navigation menu:
 
-![Catalogs list view](../_assets/user-guide/catalogs/catalogs-list-view.jpg)
+![Catalogs list view](./_assets/catalogs/catalogs-list-view.jpg)
 
 By default, the following fields are displayed on the [list view](./views-and-panels.md#list-view) page for catalog records:
 
@@ -73,7 +73,7 @@ The following mass actions are available for catalog records on the list view pa
 - Add relation
 - Remove relation
 
-![Catalogs mass actions](../_assets/user-guide/catalogs/catalogs-mass-actions.jpg)
+![Catalogs mass actions](./_assets/catalogs/catalogs-mass-actions.jpg)
 
 For details on these actions, refer to the [**Mass Actions**](./views-and-panels.md#mass-actions) section of the **Views and Panels** article in this user guide.
 
@@ -85,7 +85,7 @@ The following single record actions are available for catalog records on the lis
 - Edit
 - Remove
 
-![Catalogs single record actions](../_assets/user-guide/catalogs/catalogs-single-actions.jpg)
+![Catalogs single record actions](./_assets/catalogs/catalogs-single-actions.jpg)
 
 For details on these actions, please, refer to the [**Single Record Actions**](./views-and-panels.md#single-record-actions) section of the **Views and Panels** article in this user guide..
 
@@ -93,7 +93,7 @@ For details on these actions, please, refer to the [**Single Record Actions**](.
 
 To edit the catalog, click the `Edit` button on the [detail view](./views-and-panels.md#detail-view) page of the currently open catalog record; the following editing window will open:
 
-![Catalog Editing](../_assets/user-guide/catalogs/catalog-edit.jpg)
+![Catalog Editing](./_assets/catalogs/catalog-edit.jpg)
 
 Here edit the desired fields and click the `Save` button to apply your changes.
 
@@ -103,21 +103,21 @@ You can also manage [categories](#categories) and [products](#products) related 
 
 Alternatively, make changes to the desired catalog record in the [quick edit](./views-and-panels.md#quick-edit-view) pop-up that appears when you select the `Edit` option from the single record actions menu on the catalogs list view page:
 
-![Editing popup](../_assets/user-guide/catalogs/catalog-editing-popup.jpg)
+![Editing popup](./_assets/catalogs/catalog-editing-popup.jpg)
 
 ## Removing
 
 To remove the catalog record, use the `Remove` option from the actions menu on its detail view page
 
-![Remove1](../_assets/user-guide/catalogs/remove-details.jpg)
+![Remove1](./_assets/catalogs/remove-details.jpg)
 
 or from the single record actions menu on the catalogs list view page:
 
-![Remove2](../_assets/user-guide/catalogs/remove-list.jpg)
+![Remove2](./_assets/catalogs/remove-list.jpg)
 
 When you are trying to remove a catalog that contains products in it, the following confirmation message appears:
 
-![Confirmation](../_assets/user-guide/catalogs/remove-confirm.jpg)
+![Confirmation](./_assets/catalogs/remove-confirm.jpg)
 
 Click the `Remove` button to complete the operation or `Cancel` to abort it.
 
@@ -141,19 +141,19 @@ Categories that are linked to the catalog record are shown on the `CATEGORIES` p
  - Category tree
  - Active
 
-![Categories panel](../_assets/user-guide/catalogs/categories-panel.jpg)
+![Categories panel](./_assets/catalogs/categories-panel.jpg)
 
 On this panel, you can link categories to the given catalog record by selecting the existing ones or creating new category records.
 
 To create new category records, click the `+` button located in the upper right corner of the `CATEGORIES` panel and enter the necessary data in the category creation pop-up that appears:
 
-![Creating categories](../_assets/user-guide/catalogs/catalogs-create-category.jpg)
+![Creating categories](./_assets/catalogs/catalogs-create-category.jpg)
 
 Click the `Save` button to complete the category record creation process or `Cancel` to abort it.
 
 To assign an existing category (or several categories) to the catalog record, use the `Select` option from the actions menu  of the `CATEGORIES` panel:
 
-![Adding categories](../_assets/user-guide/catalogs/categories-select.jpg)
+![Adding categories](./_assets/catalogs/categories-select.jpg)
 
 In the "Categories" pop-up that appears, choose the desired category (or categories) from the list and press the `Select` button to link the item(s) to the catalog record.
 
@@ -161,7 +161,7 @@ Please, note that only root categories should be linked to catalogs, which means
 
 Categories linked to the given catalog record can be viewed, edited, unlinked, or removed via the corresponding options from the single record actions menu on the `CATEGORIES` panel:
 
-![Categories actions](../_assets/user-guide/catalogs/categories-actions-menu.jpg)
+![Categories actions](./_assets/catalogs/categories-actions-menu.jpg)
 
 ### Products
 
@@ -171,15 +171,15 @@ Products that are linked to the catalog record are displayed on its detail view 
  - Type
  - Active
 
-![Catalog products](../_assets/user-guide/catalogs/catalog-products.jpg)
+![Catalog products](./_assets/catalogs/catalog-products.jpg)
 
 To see all products linked to the given catalog record, use the `Show full list` option:
 
-![Show full option](../_assets/user-guide/catalogs/show-full-option.jpg)
+![Show full option](./_assets/catalogs/show-full-option.jpg)
 
 Then the "Products" page opens, where all product records [filtered](./search-and-filtering.md) by the given catalog are displayed:
 
-![Products full list](../_assets/user-guide/catalogs/products-full-list.jpg)
+![Products full list](./_assets/catalogs/products-full-list.jpg)
 
 To view the catalog related product, click its name in the products list. The [detail view](./views-and-panels.md#detail-view) page of the given product will open, where you can perform further actions according to your access rights, configured by the administrator. 
 

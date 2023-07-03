@@ -4,7 +4,7 @@ The creation of the qualitative and full-fledged product descriptions requires a
 
 We understand a workflow to be the successive and parallel fulfillment of certain tasks that lead to the achievement of a certain state (this can be the product status, for example). A workflow therefore consists of states and transitions between them. If the transition occurs, a new state is reached. Every user of AtroPIM can implement his specific needs with the help of workflows. Any work processes can be mapped with it.
 
-![](../_assets/how-tos/how-to-use-the-workflows/image44.png) 
+![](./_assets/how-to-use-the-workflows/image44.png) 
 
 For the automation of the workflow processes, we offer a special workflow module, which is based on the [Symfony Workflow Component](https://symfony.com/doc/current/components/workflow.html). The necessary workflows are currently being created at the programming level. Over time, we will allow workflows to be configured through the user interface.
 
@@ -20,7 +20,7 @@ In our example, we consider a simple workflow that will suit the majority of use
 - `ToDos` (of type `Multi-Enum`) - to map the tasks that are still open.
 - `Channels` (of type `Multi-Enum`) - to mark the channels through which the product description is already published.
 
-![](../_assets/how-tos/how-to-use-the-workflows/image55.png)
+![](./_assets/how-to-use-the-workflows/image55.png)
 
 The flowchart shows that the usual workflow is as follows: Draft → In Progress → Prepared → Reviewed → Ready → Published. If the review reveals that something is wrong with the product data, the product status is set to `Rejected`. All possible transitions are marked with arrows.
 
@@ -48,7 +48,7 @@ The following product statuses are set up by default in the system:
 - `Not Ready` - the product information must be edited further,
 - `Ready` - the product information is ready for publication. 
 
-![](../_assets/how-tos/how-to-use-the-workflows/image36.png)
+![](./_assets/how-to-use-the-workflows/image36.png)
 
 The product status helps to control the process of preparing product information.
 
@@ -56,7 +56,7 @@ With the filters, each user can select the products on which descriptions he has
 
 For filtering according to a certain status, you have to select `Product Status` in the filters, enter the corresponding value and click on the `Search` button. To reset the filter settings, you have to click the `Reset` button - this will reset all filter and sorting settings. If it is necessary to remove only one of some filters, you have to click on `x` next to the required filter and then on the button `Search`.
 
-![](../_assets/how-tos/how-to-use-the-workflows/image43.png)
+![](./_assets/how-to-use-the-workflows/image43.png)
 
 The administrator can change the available status values and their arrangement in the `Entity Manager`. We would recommend not creating too many statuses, but rather those for the most important states in the preparation of your product descriptions. The status values should be clear - this will avoid problems with controlling the preparation of products for publication and confusion among employees.
 
@@ -70,7 +70,7 @@ These values can be linked to a specific phase of the workflow and also be compl
 
 The users can filter the products by `ToDos`. To do this, you have to select the field `ToDos` for the filters and enter the values in this field that are to be searched for and click on the search button.
 
-![](../_assets/how-tos/how-to-use-the-workflows/image13.png)
+![](./_assets/how-to-use-the-workflows/image13.png)
 
 If the field `ToDos` is not displayed in the filters, the administrator should set it to be displayed as a filter. The administrator can change the list and arrangement of the possible ToDos values. We would recommend not to create too many values and to give them names that are as short as possible so that they do not take up too much space. It is advisable to use the abbreviations if possible, the names must be as unique as possible.
 
