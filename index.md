@@ -1,20 +1,21 @@
 ![logo](logo.png)
 
-# Help Center
+# AtroCore Help Center
 
-> Welcome to our Help Center! Here you will find:
+> Welcome to our Help Center for our software products AtroCore, AtroPIM, AtroDAM and others. Here you find:
 
 - User Guides
 - Admin Guides
+- Developer Guides
 - How To's
 - FAQs
-- Developer Guides
 
 ## Links
 - [Installation Guide](./atrocore/admin-guide/installation.md)
 - [Our Website](https://atrocore.com)
+- [Contact Us](https://www.atrocore.com/contact)
 
----
+## Additional Information
 
 This work is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
