@@ -2,7 +2,7 @@
 
 # AtroCore Help Center
 
-> Welcome to our Help Center for our software products AtroCore, AtroPIM, AtroDAM and others. Here you find:
+Welcome to our Help Center for our software products AtroCore, AtroPIM, AtroDAM and others. Here you find:
 
 - User Guides
 - Admin Guides
