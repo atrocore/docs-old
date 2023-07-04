@@ -10,9 +10,9 @@
 - FAQs
 - Developer Guides
 
-Please use the search bar in the top left corner to find something specific!
-
-[Our Website](https://atrocore.com)
+## Links
+- [Installation Guide](./atrocore/admin-guide/installation.md)
+- [Our Website](https://atrocore.com)
 
 This work is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
