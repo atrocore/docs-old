@@ -27,14 +27,29 @@ After that the adapter will be installed.
 
 ![import-new-enterprise-data-provider](_assets/easycatalog-adapter/import-new-enterprise-data-provider.png)
 
-## Configure Feed on PIM side
+## Configure Export Feed on PIM side
 
 On any export feed you have to put a value in the field "Code" (this value is unique in the system).
 This information will be used later in the configuration of a new easycatalog data source.
 
+![feed-detail](_assets/easycatalog-adapter/export-feed-detail.png)
+
+You have to use the configurator to chose what data the pim will send to easy catalog.
+The feed must contain a column named "ID" that contains the ids of the records.
+
+![feed-configurator](_assets/easycatalog-adapter/export-feed-configurator.png)
+
+## Configure Import Feed on PIM side
+
+On any import feed you have to put a value in the field "Code" (this value is unique in the system).
+This information will be used later in the configuration of a new easycatalog data source.
+
+You can create an import feed directly from an export feed by using the functionality "Duplicate as Import Feed"
+
 ![feed-detail](_assets/easycatalog-adapter/feed-detail.png)
 
 You have to use the configurator to chose what data the pim will send to easy catalog.
+The feed must contain a column named "ID" as the entity identifier.
 
 ![feed-configurator](_assets/easycatalog-adapter/feed-configurator.png)
 
