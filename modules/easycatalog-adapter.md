@@ -46,12 +46,12 @@ This information will be used later in the configuration of a new easycatalog da
 
 You can create an import feed directly from an export feed by using the functionality "Duplicate as Import Feed"
 
-![feed-detail](_assets/easycatalog-adapter/feed-detail.png)
+![feed-detail](_assets/easycatalog-adapter/import-feed-detail.png)
 
 You have to use the configurator to chose what data the pim will send to easy catalog.
 The feed must contain a column named "ID" as the entity identifier.
 
-![feed-configurator](_assets/easycatalog-adapter/feed-configurator.png)
+![feed-configurator](_assets/easycatalog-adapter/import-feed-configurator.png)
 
 
 ## Configure a new Data Source on EasyCatalog
