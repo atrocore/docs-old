@@ -62,6 +62,7 @@ The following settings are available here:
 - **Name** – import feed name
 - **Description** – description of the import feed usage, can be used as a reminder for the future or as a hint for other users of the given import feed
 - **Type** – the import feed type, cannot be modified later
+- **Code** - import feed code, must be unique
 - **Action** – define the action to be performed in the system during the data import:
     - *Create Only* – only new data records will be created, existing data records will not be updated (even if some data is changed)
     - *Update Only* – existing records will be updated, new data records will not be created (even if the import data have some new records)
@@ -352,4 +353,14 @@ To *duplicate* the existing import feed record, use the corresponding option fro
 
 You will be redirected to the import feed creation page and get all the values of the last chosen import feed record copied in the empty fields of the new feed record to be created. After save the mapping rules from the configurator will be copied too.
 
+
+To *create import feed from export feed* use the option `Duplicate as import` on export feed page:
+
+![Duplicate as import](_assets/import-feeds/import-feed-duplicate-as-import.png)
+
+You will be redirected to the import feed creation page in the edit mode. All matching fields (such as description, code, file format, entity) as well as the mapping rules from the configurator will be copied from the import feed. If necessary, you can change the value of any of the fields, add or delete a mapping rule. The action field will be set as "update only" by default. You can change it to any other in edit mode. The name of the new import feed will be copied from the export one with the addition (From Export). 
+
 To *remove* the import feed record, use the corresponding option from the action’s menu of your import feed.
+
+![Remove import feed](_assets/import-feeds/import-feed-remove.png)
+
