@@ -1,6 +1,6 @@
 # Import/Export Feeds: REST API
 
-For EasyCatalog Integration, there are 2 rest apis that are available to export and import data, one in `Import Feeds` module and the other in `Export Feeds` module.
+Import and Export Feeds can also be used as REST API endpoints with a flat data structure. So, if need need to use a custom REST API endpoint just configure a data feed for it.
 
 ## REST API in `Export Feeds` Module
 
