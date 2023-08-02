@@ -117,14 +117,12 @@ When you choose the Twig type field for a calculation condition or formula in th
 {% set calculatedPrice = productPrice.price %}
 
 The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
-In calculation profile, you can use calculation parameter you have defined, it allows you to define global value which can be used in your calculation profile twig.
+In calculation profile, you can use config data, it can be used in your calculation profile twig.
 
 ![prices](./_assets/pricing/calculation-parameter-add.png)
 
-To use your calculation parameter in the twig fields, use it's key as the identifier : calculationParameter.key; for example, let's assume that i have added these three calculation parameters:
-- name: "german taxes", key: "germanTaxes", value: 22.32
-- name: "retail margin", key: "retailMargin", value: 7
-- name: "shipping rates", key: "shippingRates", value: 20
+To use config data in the twig fields, you just need to call config, then precise what you want.
+For example, if i want the baseCurrency, i can write config.baseCurrency
 
 To use your currency rate in the twig fields, you just need to call the currency you want like the parameter of the object currencyRate; let's assume that you have currency EUR, USD in your system, so you can call : currencyRate.EUR, currencyRate.USD; if the currency does not exist, it will return 0.
 
@@ -144,15 +142,15 @@ Example 2: Dynamic Value
 {% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
 The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
 
-Example 3: With Calculation Parameter
+Example 3: With Config Data
 
-{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
+{% if product.tax >= 19 and config.baseCurrency == 'EUR' %}
     {% set proceed = true %}
 {% else %}
     {% set proceed = false %}
 {% endif %}
 
-In this example, we check if the product.tax is more or equal than our global calculation parameter german taxes identify by our key germanTaxes, and if the product quantity is less or equal than the minimum number for reseller identify by our key minimumForReseller then we set proceed to true
+In this example, we check if the product.tax is more or equal than 19 , also if our baseCurreny coming from config data is EUR , then we set proceed to true
 
 Example 4: With currency rate
 
@@ -186,17 +184,7 @@ Example 2: Fixed Value
 {% set calculatedPrice = 150 %}
 This example sets the calculated price to a fixed value of 150.
 
-Example 3: With Calculation Parameter and Currency Rate
-
-{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
-    {% set calculatedPrice = productPrice.price*(1 + calculationParameter.globalTaxes) + calculationParameter.retailProfit %}
-{% else %}
-    {% set calculatedPrice = productPrice.price*calculationParameter.generalProfit + currencyRate.EUR %}
-{% endif %}
-
-In this example, we used our global calculation parameter to check condition and set calculatedPrice value
-
-Example 4: Dynamic Calculated Price
+Example 3: Dynamic Calculated Price
 
 {% if product.brand is empty %}
     {% set calculatedPrice = 10 + product.tax * productPrice.price * 1.2 %}
@@ -207,7 +195,7 @@ Example 4: Dynamic Calculated Price
 {% endif %}
 In the first case, if the brand is empty, the formula will be 10 + product.tax * productPrice.price * 1.2. In the second case, if the tax is less than 30, we have another formula. In the last case, we round the value of 1.4 * price then subtract 2.
 
-Example 5: Calculated Price from Another PriceProfile
+Example 4: Calculated Price from Another PriceProfile
 
 {% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
 {% set calculatedPrice = getProductPrice.price * 1.2 %}
@@ -217,7 +205,7 @@ In this example, you can define a price related to a price profile; you can use 
 ------------ the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
 Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price  
 
-Example 6: Smooth your price
+Example 5: Smooth your price
 
 {% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
 In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to redure or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
