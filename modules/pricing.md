@@ -117,19 +117,19 @@ When you choose the Twig type field for a calculation condition or formula in th
 {% set calculatedPrice = productPrice.price %}
 
 The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
-In calculation profile, you can use calculation parameter you have defined, it allows you to define global value which can be used in your calculation profile twig.
+In calculation profile, you can use config variables you have defined as a global value which can be used in your calculation profile twig.
 
-![prices](./_assets/pricing/calculation-parameter-add.png)
+![prices](./_assets/pricing/config-variables-add.png)
 
-To use your calculation parameter in the twig fields, use it's key as the identifier : calculationParameter.key; for example, let's assume that i have added these three calculation parameters:
-- name: "german taxes", key: "germanTaxes", value: 22.32
-- name: "retail margin", key: "retailMargin", value: 7
-- name: "shipping rates", key: "shippingRates", value: 20
+You can use config variables as calculation parameters in the twig fields, use it's key as the identifier : config.key; for example, let's assume that i have added these three config variables:
+
+- key: "germanTaxes", value: 22.32
+- key: "retailMargin", value: 7
+- key: "shippingRates", value: 20
 
 To use your currency rate in the twig fields, you just need to call the currency you want like the parameter of the object currencyRate; let's assume that you have currency EUR, USD in your system, so you can call : currencyRate.EUR, currencyRate.USD; if the currency does not exist, it will return 0.
 
-to get one of value, i simply write calculationParameter.germanTaxes for german taxes; calculationParameter.retailMargin for retail margin, 
-calculationParameter.shippingRates; 
+to get one of value, i simply write config.germanTaxes; config.retailMargin or config.shippingRates; 
 
 #### Example Calculation Conditions
 Here are some examples of how you can define your calculation conditions using Twig:
@@ -144,15 +144,15 @@ Example 2: Dynamic Value
 {% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
 The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
 
-Example 3: With Calculation Parameter
+Example 3: With Config Variables
 
-{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
+{% if product.tax >= config.germanTaxes and product.quantity <= config.minimumForReseller %}
     {% set proceed = true %}
 {% else %}
     {% set proceed = false %}
 {% endif %}
 
-In this example, we check if the product.tax is more or equal than our global calculation parameter german taxes identify by our key germanTaxes, and if the product quantity is less or equal than the minimum number for reseller identify by our key minimumForReseller then we set proceed to true
+In this example, we check if the product.tax is more or equal than our global variable german taxes identify by our key germanTaxes, and if the product quantity is less or equal than the minimum number for reseller identify by our key minimumForReseller then we set proceed to true
 
 Example 4: With currency rate
 
@@ -186,15 +186,15 @@ Example 2: Fixed Value
 {% set calculatedPrice = 150 %}
 This example sets the calculated price to a fixed value of 150.
 
-Example 3: With Calculation Parameter and Currency Rate
+Example 3: With Config Variable and Currency Rate
 
-{% if product.tax >= calculationParameter.germanTaxes and product.quantity <= calculationParameter.minimumForReseller %}
-    {% set calculatedPrice = productPrice.price*(1 + calculationParameter.globalTaxes) + calculationParameter.retailProfit %}
+{% if product.tax >= config.germanTaxes and product.quantity <= config.minimumForReseller %}
+    {% set calculatedPrice = productPrice.price*(1 + config.globalTaxes) + config.retailProfit %}
 {% else %}
-    {% set calculatedPrice = productPrice.price*calculationParameter.generalProfit + currencyRate.EUR %}
+    {% set calculatedPrice = productPrice.price*config.generalProfit + currencyRate.EUR %}
 {% endif %}
 
-In this example, we used our global calculation parameter to check condition and set calculatedPrice value
+In this example, we used config variables to check condition and set calculatedPrice value
 
 Example 4: Dynamic Calculated Price
 
