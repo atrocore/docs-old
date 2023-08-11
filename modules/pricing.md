@@ -135,11 +135,13 @@ Here are some examples of how you can define your calculation conditions using T
 Example 1: Affecting a True or False Value
 
 {% set proceed = false %}
+{{ proceed }}
 This condition will never be met, so the formula will never be applied.
 
 Example 2: Dynamic Value
 
 {% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
+{{ proceed }}
 The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
 
 Example 3: With Config Data
@@ -149,6 +151,7 @@ Example 3: With Config Data
 {% else %}
     {% set proceed = false %}
 {% endif %}
+{{ proceed }}
 
 In this example, we check if the product.tax is more or equal than 19 , also if our baseCurreny coming from config data is EUR , then we set proceed to true
 
@@ -159,6 +162,7 @@ Example 4: With currency rate
 {% else %}
     {% set proceed = false %}
 {% endif %}
+{{ proceed }}
 
 In this example, we check if the EURO currency rate multiply by the price of the productPrice is more than 100
 
@@ -169,6 +173,7 @@ Example 5: Complex Condition
 {% elseif productPrice.price < 50 %}
     {% set proceed = false %}
 {% endif %}
+{{ proceed }}
 This example defines a condition based on tax and price. If the tax is between 10 and 25, proceed will be set to true. Otherwise, if the price is less than 50, proceed will be set to false.
 
 #### Example Calculation Formulae
@@ -177,11 +182,13 @@ Here are some examples of how you can define your calculation formulae using Twi
 Example 1: Taking the Purchase Price as Base
 
 {% set calculatedPrice = productPrice.price %}
+{{ calculatedPrice }}
 This example sets the calculated price equal to the purchase price.
 
 Example 2: Fixed Value
 
 {% set calculatedPrice = 150 %}
+{{ calculatedPrice }}
 This example sets the calculated price to a fixed value of 150.
 
 Example 3: Dynamic Calculated Price
@@ -193,12 +200,14 @@ Example 3: Dynamic Calculated Price
 {% elseif 'Computer' in product.categories %}
     {% set calculatedPrice = (1.4 * productPrice.price) | ceil - 2 %}
 {% endif %}
+{{ calculatedPrice }}
 In the first case, if the brand is empty, the formula will be 10 + product.tax * productPrice.price * 1.2. In the second case, if the tax is less than 30, we have another formula. In the last case, we round the value of 1.4 * price then subtract 2.
 
 Example 4: Calculated Price from Another PriceProfile
 
 {% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
 {% set calculatedPrice = getProductPrice.price * 1.2 %}
+{{ calculatedPrice }}
 In this example, you can define a price related to a price profile; you can use it throught the getPrice function, which needs 3 parameters: 
 ------------ the id of the product you target(in this case, it is the same product), the name 
 ------------ the name of the profile you target (in this case it is 'b2b usd profile'), you can copy and paste it in quotes
@@ -208,6 +217,7 @@ Then it will return a productPrice object, you can then use it to access any fie
 Example 5: Smooth your price
 
 {% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
+{{ calculatedPrice }}
 In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to redure or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
 
 - if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
@@ -240,9 +250,11 @@ With these elements, you can combine and define your minimum/maximum validation 
 #### Example for minimum and maximum price validation
 Example 1 (taking the purchase price as a base):
 {% set validationPrice = 0.2 * productPrice.price %}
+{{ validationPrice }}
 
 Example 2 (setting a fixed value for price validation):
 {% set validationPrice = 10 %}
+{{ validationPrice }}
 
 Example 3 (dynamic price validation with condition):
 {% if product.brand is empty %}
@@ -252,4 +264,4 @@ Example 3 (dynamic price validation with condition):
 {% elseif 'Computer' in product.categories %}
 {% set validationPrice = 1.4 * productPrice.price %}
 {% endif %}
-
+{{ validationPrice }}
