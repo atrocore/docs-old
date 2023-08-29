@@ -23,5 +23,6 @@ This work is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/
 - [RSS for latest created pages](https://help.atrocore.com/feed_rss_created.xml)
 - [RSS for latest updated pages](https://help.atrocore.com/feed_rss_created.xml)
 
-<hl>
+
+<br><br>
 Made with **MkDocs** and **Material for MkDocs**.
