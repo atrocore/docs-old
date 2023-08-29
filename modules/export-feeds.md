@@ -224,6 +224,36 @@ To see the list of export feeds linked to the channel and operate with them on a
 When the channel export is used, the data is exported into a single archive with separate files for each active export feed, linked to the given channel.
 
 
+### Asset Export to a ZIP archive
+
+When exporting from Assets, Product, Brand or other entities that contain the Asset field, you can export files to a ZIP archive. In this case, the archive will consist of the exported file in chosen format and one or more (depending on the number of fields with assets) folders with exported documents. The folder will have the name of the field from which files are exported.
+
+In order to export assets to an archive, you need to check the checkbox "Export assets to a ZIP archive" in  Export feed configurator. The checkbox appears only if selected field contains assets.
+
+![Export to archive](_assets/export-feeds/export-assets-to-archive.png)
+
+The names of the files in the archive correspond to the names of the assets by default. You can change naming using the "File Name Template" field.
+
+![File name template](_assets/export-feeds/file-name-template.png)
+
+To set file names you can use the following variables:
+
+- {{currentNumber}} - serial number of the asset in the export entity
+- {{fileName}} - the actual name of the file
+- {{entity}}- entity object that is exported
+
+By default, the variable {{fileName}} is specified in the "File Name Template" field. This means that if you don't change anything in it, the file will have the original asset name. If you want to add a sequence number to the file name, the template will look like this:
+
+{{fileName}}_{{currentNumber}}
+
+You can also add to the file name the name of object (Product, Brand, etc.) from which the asset is exported. To do this, use the following template:
+
+{{entity}} {{fileName}} {{currentNumber}}
+
+Then when exporting from two products that have two assets each, the naming will be as follows:
+
+![File naming](_assets/export-feeds/file-naming.png)
+
 ## Running Export Feed
 
 Click on `Export` button to export the data from your system. 
