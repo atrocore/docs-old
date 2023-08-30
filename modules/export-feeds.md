@@ -254,6 +254,20 @@ Then when exporting from two products that have two assets each, the naming will
 
 ![File naming](_assets/export-feeds/file-naming.png)
 
+To add the attribute value to the file name, you can use the findRecord function. As parameters, you need to pass the name of the entity (ProductAttributeValue) and the identifiers of the record (f.e. product Id, attribute Id, channel Id, language). 
+For example:
+
+{% set productId = entity.id %}
+
+{% set pav = findRecord('ProductAttributeValue', {'productId' : productId, 'attributeId' : 'h64e5a3eeaf1a728f', 'channelId':'','language':'main'})%}
+
+ {{pav.value}} {{ fileName }} {{currentNumber}}
+
+ We have attribute value 67 for Product1 and 4435 for Product2 so the file names will look like this:
+
+ ![File naming](_assets/export-feeds/file-naming1.png)
+
+
 ## Running Export Feed
 
 Click on `Export` button to export the data from your system. 
