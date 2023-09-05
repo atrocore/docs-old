@@ -162,9 +162,44 @@ Select the checkbox to unlink the attribute record from other entities and click
 
 Use the `Duplicate` option from the actions drop-down menu to go to the attribute creation page and get all the values of the last chosen attribute record copied in the empty fields of the new attribute record to be created. Modifying the attribute code is required, as this value has to be unique.
 
+## Attribute of script type
 
+For some attributes you may need a value that consists of modified (or not) pre-existing values. For this attribute of script type may be needed. 
+Scrips are based on twig code (for more detailed information regarding twig syntaxes please go to https://twig.symfony.com/). 
 
+First, you need to select a desired output for the script:
+ 
+![Attribute output type](./_assets/attributes/output_type.png)
 
+Then, by using Twig write a script:
+ 
+![Attribute output type](./_assets/attributes/script_field.png)
+
+To see what the script does you can look at "Script value" field. It selects a random product attribute value from products that the script is assigned to.
+ 
+![Attribute output type](./_assets/attributes/script_previw.png)
+
+### Here are some examples of what you can achieve by using attributes of script type:
+
+#### Selecting values for specific product
+ 
+![Attribute output type](./_assets/attributes/script_field.png)
+
+![Attribute output type](./_assets/attributes/script_previw.png)
+
+This script finds if the product name is 'Topshop casual shirt' ({% set product=findEntity('Product', {'name': 'Topshop casual shirt'}) %}) and selects fields name {{product.name}}, createdAt {{product.createdAt}} and the name of an assigned catalog {{product.catalog.name}}. Then it finds all assets assigned to the product {%set productAssets = findEntities('ProductAsset')%} and selects the name of a product in this asset {{ productAsset.product }} and an asset in this asset {{ productAsset.asset }}.
+
+#### Referencing other attribute value
+
+![Attribute output type](./_assets/attributes/reffer_to_attribute.png)
+
+Here are two options how you can refer to another attribute value. The both find an attribute by Id. Option one is restricted to only current product (though you can select language and scope. If not selected they are 'main language' and 'Global'). The second finds any entity by all its defining fields (for ProductAttributeValue they are productId, attributeId, language and channel).
+
+#### Using conditions
+
+![Attribute output type](./_assets/attributes/conditions.png)
+
+You can use conditions for scripts. This script finds if the product SKU is empty or not and checks a mark if it is.
 
 
  
