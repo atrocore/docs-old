@@ -11,6 +11,8 @@ You may need to adjust `Maximum Number of Records per Iteration *` option to lim
 
 ![Selecting HTTP request](_assets/export-feeds-remote-file/export-feeds-remote-file-create.png)
 
+![Selecting HTTP request](_assets/export-feeds-remote-file/export-feeds-remote-file-create.png)
+
 ## Export Data Settings
 
 Select a format you want data to be exported in. You can select CSV, XLS, JSON or XML. For JSON or XML there is a `Template` to be defined. After that fill the required fields.
