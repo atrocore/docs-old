@@ -37,6 +37,12 @@ To execute all import and export jobs assigned to a Connector press `Execute` bu
 
 This will make sure your intent is achieved.
 
+### Сonnector priority
+
+You can set priority to connector. By default it is "Normal" - on the same level as all basic tasks. If set low or high, the respective Job will be executed with the low or high priority. The priority of the feed(s) mentioned in connector is not changed, so if run without connector they will refer to their own priority.
+
+![Connector priority](_assets/connector/priority.png)
+
 ## Additional functions
 
 "Connector" module also has some additional functions to help ypu export and import more flexible. It includes additional filtering and value modifiers.
