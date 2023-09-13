@@ -44,14 +44,17 @@ Attributes are automatically validated according to their type. The following at
 | DateTime                     | Date and time picker						|
 | List                         | List of possible values, which is set up upon the attribute creation or editing; a single value can be set for the product attribute. |
 | Float                        | Number with a decimal part		|
-| Int                          | Integer attribute					|
+| Integer                      | Integer attribute					|
+| Float Range                  | Range of values from smallest to largest of type float	|
+| Integer Range                | Range of values from smallest to largest of type integer	|
 | Multi-value List             | List of possible values, which is set up upon attribute creation or editing; multiple values can be set for the product attribute. |
 | Text                         | Text area, for long multiline texts		|
-| Unit                         | Number with a measurement value selection  |
 | Url                          | URL with a hyperlink, which is automatically created |
 | String                    | Short text attribute				|
 | HTML                      | Text area for long multiline texts that contains a built-in text editor   |
 | Asset			           | File attachment  |
+| Alias			           | displays the value of another attribute(s) linked to it |
+| Script                      | a dynamic attribute that can have different data types and display the value of any field or attribute configured in the field of type Twig  |
 
 ## Creating
 
@@ -161,6 +164,29 @@ Select the checkbox to unlink the attribute record from other entities and click
 ## Duplicating
 
 Use the `Duplicate` option from the actions drop-down menu to go to the attribute creation page and get all the values of the last chosen attribute record copied in the empty fields of the new attribute record to be created. Modifying the attribute code is required, as this value has to be unique.
+
+## Numeric attribute types
+
+There are two types of attributes for displaying numeric data in PIM: Integer and Float. And also the ranges of these two types.
+For both attribute types, you can specify a minimum and maximum allowable value (1). 
+
+![min-max-value](./_assets/attributes/min-max-value.png)
+
+If you specify these fields for the attribute, the value of the attribute when entered will be validated according to them. If the entered value is not within the valid range, the error message "Value shouldn't be greater (less) then ..." will appear on the screen.
+
+For float or float range attributes, you can also specify the number of decimal places allowed (2). If you leave of this field empty, the number of decimal places is limited to 12 digits by default.
+
+Units of measurement can also be added to attributes of numeric type. The "Measure" field is used for this. A measure is a separate entity that is related to attributes by a many-to-one relationship. You can add an unlimited number of units to each measure and also choose the unit that will be used by default.
+
+To create a new measure record, click `Measures` in the navigation menu (if it is not there, you can add it through Administration --> User interface) and then click the `Create Measure` button. A page for creating a new measure will open
+
+![create-new-measure](./_assets/attributes/create-new-measure.png)
+
+Enter the measure name and code (by default, this field is optional) and click the Save button. To add a new unit to the measure, click the "Create" (+) button on the Units tab. Unit creation pop-up window will appear:
+
+![create-unit-pop-up](./_assets/attributes/create-unit-popup.png)
+
+You can create a unit from the measure entity, or vice versa: go to the Unit entity, create a new unit via the "Create Unit" button and choose the measure to which you want to add it. In the "Convert to" field, you can choose the units of measurement to which the current unit should be converted. A default unit can be selected for both the measure and the attribute to which the measure is added.
 
 ## Attribute of script type
 
