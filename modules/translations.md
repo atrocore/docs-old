@@ -25,11 +25,18 @@ Possible values are:
 
 If the language you want to translate to does not exist in translation rules when translating module will just copy information from a source box without translating it.
 
-### "Translated" option configuration
+### "Approved" option configuration
 
-In the module settings you may enable an additional parameter for your multilingual text fields, namely the "translated" option. By default, its value is "false", however if you set this value to "true" you will be able to mark every multilingual field or attribute value as "translated". This value will be set automatically to "true" if the "automated translation" is enabled. You may set it to "false" if you are not happy with the quality of machine translation and want to edit it later. After the edition you may set the "translated" value to "true" manually to mark it as correctly translated.
+In the module settings you may enable an additional parameter for your multilingual text fields, namely the "approved" option. Here you can also determine what action should be taken on the "approved" checkbox when a field is automatically translated. Possible values are:
+- set "approved" checkbox: checkbox is checked after the record has been translated automatically
+- unset "approved" checkbox: the checkbox is cleared after the record has been translated automatically
+- do nothing: the value of the checkbox does not change after automatic translation
 
-Please note that any information concerning the "translated" parameter hereafter is effective only in case it is enabled in settings.
+![approved_checkbox](_assets/translation/approved-checkbox.png) 
+
+You can use this value from "true" to "false" if you are not happy with the quality of machine translation and want to edit it later. After the edition you may set the "translated" value to "true" manually to mark it as correctly translated.
+
+Please note that any information concerning the "approved" parameter hereafter is effective only in case it is enabled in settings.
 
 ### Translation rules configuration
 
@@ -37,16 +44,18 @@ On the `Translation rules` panel all your translation configurations are reflect
 
 ![translation_rules_panel_create](_assets/translation/translation-rules-panel-create.png)  
  
-In the side-popup window you will be able to set up your translation rule. Only after you configure and add the rule for a particular destination language it will be available for automated translation.
+In the side-popup window you will be able to set up your translation rule. Only after you configure, add the rule for a particular destination language and set it as "Active" it will be available for translation. To be able to translate records  using a rule automatically, you need to set the checkbox "Enable automatic translation" for this rule. 
 
 ![new_translation_rule](_assets/translation/new-translation-rule.png)  
 
 - **Destination language** – the language to which the translation is made.
 - **Source language** – the language which is the source for the translation.
+- **Active** - the status of the translation rule.
+- **Enable automatic translation** - allow to use this rule for automatic translation.
 
-Please note, if there is no translation rule for some language as a destination language, the translations to that language will not be made, either automatically or by clicking the `Translate` button.
+Please note, if there is no translation rule for some language as a destination language or if the rule is inactive, the translations to that language will not be made, either automatically or by clicking the `Translate` button.
 
-For some destination language only one rule can be created. For each destination language multiple source languages can be selected. By changing the sorting order of the source languages, you define the order, in which source language the value is looked up. E.g., if for the Spanish as a destination language the source languages are English and German – the system will look up for the value in English, if it available it will be taken, if not the system will take the value for the second language, namely German, and so in.
+For each destination language only one source languages can be selected. If you want to have multiple source languages for the same destination language, you can create multiple rules for it. By changing the sorting order of the rules, you define the order, in which source language the value is looked up. E.g., if for the Spanish as a destination language there are two translation rules with English and German source languages  – the system will look up for the value in English, if it is available (active/enable for automatic translation) it will be taken, if not the system will take the value for the second language, namely German, and so in.
 
 ### Language configuration
 
@@ -71,44 +80,35 @@ To switch to the edit mode, hover the mouse over the field you want to edit and 
 
 ### Edit mode
 
-After the "Translations" module is properly installed and configured additional meta data appears for each multilingual field:
+After the "Translations" module is properly installed and translation rules are configured additional meta data appears for each multilingual field:
 
 ![translation_options](_assets/translation/translation-options.png) 
 
-You have two checkboxes – `translated` and `translate automatically` as well as an additional button `Translate`.
+The following options appear for multilingual fields and attributes:
 
-- **translate automatically** – translation for the field/attribute value above will be made automatically as soon as the source language value is set.
-- **translated** – this checkbox is used to mark the field/attribute value as translated.
+- **approved** – this checkbox is used to mark the field/attribute value as translated, available for all multilingual fields and attributes.
+- **not translate from** - if checked, translation is triggered for no language. The value of the checkbox is not saved, it is advisable to use it only when editing a record in edit mode, if you do not want the change of this field (attribute) to affect fields (attribute) in other languages. This checkbox appears only if there is at least one translation rule from this language and checkboxes "Active" and "Enable automatic translation" are set for it. 
+- **not translate to** - if this checkbox is set, automatic translation of this field (attribute) does not occur when editing fields (attributes) in other languages. The value of the checkbox is not stored, it is possible to use it only when editing a record in edit mode. This checkbox appears only if there is at least one translation rule to this language, checkboxes "Active" and "Enable automatic translation" are set for it and checkbox "translate automatically" is set for the field (attribute). 
 - **Translate** – if the value has not been translated automatically, you may still provide it with the machine translation by clicking the `Translate` button. Please take into consideration that this button will not be available if the translation rule for this language is not created.
 
-Please note, the checkbox `translated` will be automatically set if the checkbox `translate automatically` for the value is set and translation is executed. 
-You still can unset this checkbox, if you are not satisfied with the quality of the translation, or set it manually, if translation is done manually. In no other case this checkbox is set or unset by the system automatically.
+If you want your multilingual value to be translated automatically you should set `translate automatically` checkbox in field (attribute) configuration. 
 
-Set `translate automatically` checkbox if you want your multilingual value to be translated into automatically. Translation is executed for all values marked as `translate automatically` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages. In other words, translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
+![translate_automatically](_assets/translation/translate-automatically.png) 
 
-The `translated` checkbox carries out an information function and can be used to mark the value that has been translated either automatically or manually.
+Translation is executed for all values marked as `translate automatically` in all languages specified in translation rules as destination languages for which the language of the edited value is set as one of the source languages if the rule is active and automatic translation is enabled for it. In this case translations will be executed automatically for all corresponding fields/attribute values for every destination language specified in the translation rule. 
+
+The `approved` checkbox carries out an information function and can be used to mark the value that has been translated either automatically or manually. For each multilingual field/attribute the module adds additional meta data and action fields, which can be used anywhere in the system:
+- **"Field name" / Approved** – metadata field: possible values are "True" or "False". These field can be used for mass actions, import/export feeds and search and filtering.
 
 The `Translate` button on the right corner under the text box is used to apply a machine translation for a certain value, regardless of whether both checkboxes are set or not.
 
-In the edit mode all the changes/translations can be still changed, and you may change also the `translate automatically` and `translated` checkboxes anyway you like.
-
-Please note, the option `Translate automatically` is available only for the languages, for which a translation rule is created. And a translation rule can be created only if the destination language is supported. E.g., Ukrainian is not available for translations via DeepL, so no translation rule can be created for it.
-For some languages the automated translation option may not be available. To enable it, you need to configure the **Translation rules** for this language.
+In the edit mode all the changes/translations can be still changed, and you may change also the `not translate from`, `not translate to` and `translated` checkboxes anyway you like.
 
 ### In-line edit mode
 
 Changing some values via in-line edit mode may trigger automatic translations, if for the corresponding values the checkbox `translate automatically` is set. Thus, the new translated values for the corresponding fields are automatically stored in the database, without possibility to review these changes. So, if you always need to review the changes before saving a data record, please always use the edit mode. 
 
 Please note, if you change the "translate automatically" value to "true" the automated translation will be triggered only after the editing the source language value.
-
-## Additional possibilities
-
-For each multilingual field/attribute the module adds additional meta data and action fields, which can be used anywhere in the system.
-- **"Field name": translate automatically** – meta data field: possible values are "True" or "False".
-- **"Field name": translated** – metadata field: possible values are "True" or "False".
-- **"Field name" | Translate** – action field: usage of this field will trigger a click on the button `Translate`.
-
-These fields can be used for mass actions, import/export feeds and search and filtering.
 
 ### Mass action
 
@@ -118,29 +118,25 @@ To apply an action to multiple entities simultaneously, choose the required enti
 
 ![mass_update](_assets/translation/mass-update.png)   
 
-In the opened window click the `Select field` dropdown menu. For each multilingual field three actions are available.
+In the opened window click the `Select field` dropdown menu. For each multilingual field two actions are available.
 
 ![mass_update_select_field](_assets/translation/mass-update-select-field.png)  
 
 Possible additional choices are:
-- **"Field name": translate automatically** – choose this field and set/unset the checkbox to change the meta data value `translate automatically` for the field "Field name" for the selected data records.
-- **"Field name": translated** – choose this field and set/unset the checkbox to change the meta data value `translated` for the field "Field name" for the selected data records.
-- **"Field name" | Translate** – usage of this field triggers a click on the `Translate` button for the field "Field name" for the selected data records.
+- **"Field name" / Approved** – choose this field and set/unset the checkbox to change the meta data value `approved` for the field "Field name" for the selected data records.
+- **Translate** – usage of this field triggers a click on the `Translate` button for the field "Field name" for the selected data records.
 
 #### Updating attribute values
 
-<!-- please add description here -->
+The same mass translation actions as for fields can be performed for multilingual attributes. To do this, you need to click the "Select attribute" button in the "Mass update" window and select the desired attribute. In the appeared window you can choose the scope and language of the attribute you want to change by mass action and click on "Add" button.
 
-### Usage of Import & Export Feeds
+![mass_update_attributes](_assets/translation/mass-update-attributes.png)  
 
-Additional meta data for multilingual fields or attributes can also be used for import and export.
+In the next window, a field for entering the attribute value and a "Translate" checkbox will appear on the bottom right. Usage of this checkbox triggers a click on the `Translate` button for the choosing attribute for the selected data records. If you check this box, the field for entering the attribute will become inactive. If any value is already set in it, it will be deleted.
 
-With "Translations" module the extended functionality will be provided for the export/import feeds as well. In the configurator settings you will be able to use these "additional fields". 
+You can also perform a mass translation of all possible fields and attributes to a specific language for selected records. To do this, select the required records of the entity, click the "Actions" button and select an option `Translate / language`. After that, all records in the selected language will be translated according to the first active rule, for which this language is selected as "Destination language" and the checkbox "Enable automatic translation" is set.
 
-![configurator](_assets/translation/configurator.png) 
+You can also perform a global translation of all records in the system according to the selected rule. To do this, go to the module settings, select the required rule in the translation rules panel, click on the three dots to the right of it and select the "Apply globally" option.
 
-Possible additional choices are:
+![apply_globally](_assets/translation/apply-globally.png)  
 
-- **"Field name": translate automatically** – choose this option to export/import the "translate automatically" value of the corresponding field.
-- **"Field name": translated** – choose this option to export/import the value indicating whether this field has been translated. 
-- **"Field name" | Translate** – this option "executes" a click on the `Translate` button and executes a machine translation for the specified field value. It can only be used in import feeds, not in export feeds.
