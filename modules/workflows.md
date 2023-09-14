@@ -55,7 +55,7 @@ There are two condition types available - "Basic" and "Twig". Their logic basica
 
 #### Basic
 
-For easier use you can select basic conditions. They follow common logic with AND OR and NOT. These are combined in any shape. Fields are the end results, and their options too look at are the same as for filtering. On the example below you can see a formula where workflow triggers on the trigger action when a field "amount" is empty or brand is Xiaomi.
+For easier use you can select basic conditions. They follow common logic with AND OR and NOT. These are combined in any shape. Fields are the end results, and their options to look at are the same as for filtering. On the example below you can see a formula where workflow triggers on the trigger action when a field "amount" is empty or brand is Xiaomi.
  
 ![Basic conditions](./_assets/workflows/basic.png)   
 
