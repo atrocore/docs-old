@@ -39,24 +39,37 @@ You can configure as many workflows as you wish. More than one workflow can be a
 
 Click on the button `Create Workflow` to create a new workflow.
 
-To create a new workflow define the "name", then choose the "entity" to allign with the workflow and the "field", which stores the possible places of the workflow. You can also define the "init states" here. More than one is allowed. You can also write a brief description about your workflow, so that you don't forget how it works in the future.
+To create a new workflow, define the "Name", then choose the "Trigger entity" to align with the workflow and the entity, which is going to be investigated when searching. Then define the "Trigger Actions" and "Conditions Type".
 
 ![Create product workflow](./_assets/workflows/create-product-workflow.png)
 
-### Transitions
-In the panel Transitions you can define all possible transitions for your workflow. Click on the plus icon to define a new transition.
+### Trigger Actions
 
-![Transition list](./_assets/workflows/transitions-list.png)
+For workflow to work you must set trigger actions. When mentioned action is done to a Trigger entity then workflow is started. You can choose multiple actions, but at least one is always required. For more advance settings use conditions.
+ 
+![Create product workflow](./_assets/workflows/trigger_actions.png)   
 
-Choose the “from” state and the “to” state, activate the transition and click on the `Save` button to save the new transition.
+### Conditions Type
 
-![New transition](./_assets/workflows/create-new-transition.png)
+There are two condition types available - "Basic" and "Twig". Their logic basically states: "trigger workflow on trigger action when condition is fulfilled (the results are true)".
 
-The frontend automatically supports, that only configured transitions are available. So if you set the system up so that when choose from “Draft” the workflow can only change to “Prepared”. This is the only option that will be available in the dropdown menu for the state.
+#### Basic
 
-The system will automatically create the workflow chart, so you can see what your workflow looks like visually.
+For easier use you can select basic conditions. They follow common logic with AND OR and NOT. These are combined in any shape. Fields are the end results, and their options too look at are the same as for filtering. On the example below you can see a formula where workflow triggers on the trigger action when a field "amount" is empty or brand is Xiaomi.
+ 
+![Basic conditions](./_assets/workflows/basic.png)   
 
-![Workflow chart](./_assets/workflows/workflow-chart.png)
+#### Twig
+
+Twig is more complicated use case but as a result more versatile. To use it you have to set a formula that results in a default Boolean variable "proceed" ({% set proceed = ... %}). For more detailed twig guidelines and syntax please go to https://twig.symfony.com/doc/.
+
+> Please note, conditions use database query to function. They are launched every time Trigger Actions are made. So, not to overload it with multiple queries, please, minimize amount of database queries by using best practices. For example, for twig you can set variables (like {% set brand = entity.brand %}) instead of doing full blown database queries for every field. You can also check if an entity is linked to another (like {% if entity.brand is not empty %}) before setting variables.
+
+## Workflow Actions
+
+If all conditions are met, workflow actions are launched. They are Update and Data exchange. Data exchange is launching a selected connector or an export/import feed. Update is in fact a mass update set on condition. You can select any entity to update or set Self-Targeted. Setting Self-Targeted will update only triggering record. Multiple actions can be assigned to one workflow.
+ 
+![Basic conditions](./_assets/workflows/actions.png)   
 
 ## Advanced Workflows
 Any advanced workflows and business process modeling can be implemented by workflow programming. Please refer to the Symfony Documentation to get to know the process.
