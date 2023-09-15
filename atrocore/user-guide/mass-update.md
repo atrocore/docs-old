@@ -1,6 +1,6 @@
 # Mass updates
 
-Mass updates is a tool used to quickly modify information that is the same for different records. You can mass update all the fields and attributes for products.
+Mass updates is a tool used to quickly modify information that is the same for different records. You can mass update all the fields for products or categories and/or attributes for products.
 
 ![Mass update select](./_assets/mass-update/mass-update-options.png)
 
