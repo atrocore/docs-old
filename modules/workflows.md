@@ -69,7 +69,7 @@ Twig is more complicated use case but as a result more versatile. To use it you 
 
 If all conditions are met, workflow actions are launched. They are Update and Data exchange. Data exchange is launching a selected connector or an export/import feed. Update is in fact a mass update set on condition. You can select any entity to update or set Self-Targeted. Setting Self-Targeted will update only triggering record. Multiple actions can be assigned to one workflow.
 
-You can also run the workflow actions manually. To do so, visit workflow action page and press 'Execute' button.
+You can also run the workflow actions manually. To do so, visit workflow action page and press 'Execute' button. You can also run multiple workflow actions at the same time. To do this, you need to go to the entity Workflow Actions, check the actions you want to run, click the Action --> Execute. 
  
 ![Basic conditions](./_assets/workflows/actions.png)   
 
