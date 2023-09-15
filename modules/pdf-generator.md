@@ -50,9 +50,13 @@ PDF Templates are usually created by our team but if you want to do it yourself 
 
 ![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template.png) 
 
-Select an `Entity type *` for a template. Each template has an input language configured in syntax. For different languages of the same entity you will need different templates.
+Select an `Entity type` for a template. Each template has an input language configured in syntax. For different languages of the same entity you will need different templates.
 
 If your template is too big so you are afraid of timeouts, use `Use queue manager` - now PDF will be created anyway (but it will be in queue manager).
+
+For conventional naming schemas use `File Name Template`.
+
+`Default Asset Category` and `Default Asset Type` are used when Pdf is saved as an asset.
 
 ![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template-top.png) 
 
