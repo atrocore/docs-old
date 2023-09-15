@@ -4,6 +4,8 @@ The "PDF Generator" module enables you to generate PDF files based on any data.
 
 > Please note, templates for generation of PDF files are needed to be individually coded for this module to work. Usually these are coded directly by AtroCore Team or by our Solution Partner.
 
+> Please note, for pdf generation chrome is required on your server. It is used for PDf generation.
+
 PDF document can be generated for:
 - single item, eg some product
 - list of items, eg list of products.
@@ -55,7 +57,7 @@ If your template is too big so you are afraid of timeouts, use `Use queue manage
 ![saving-pdf-as-an-asset](_assets/pdf-generator/pdf-template-top.png) 
 
 `PDF template` field is your main body of a template. If you need additionally generated header and footer 
-`Page number markup in the header` and `Page number markup in the footer` are there. They are configured same as `PDF template` field. So, if you need, for example, number of pages you can use pageNumber in the footer.
+`Page number markup in the header` and `Page number markup in the footer` are there. They are configured same as `PDF template` field. So, if you need, for example, number of pages you can use pageNumber in the footer. If you want regular updates for a file, use `Replace existing file` checkbox - it will save al lot of server space.
 
 Table of contents is not available by manual configuring but we can program it additionally.
 
