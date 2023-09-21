@@ -41,7 +41,7 @@ Example of GET API request:
 GET https://address_of_your_atrocore/api/v1/Product/2d643ca0gff7rh7c6
 ```
 
-## 3. Step: Bulk Create and Bulk Update
+## Bulk Create and Bulk Update
 
 To do bulk create and bulk update, you can use the request 
 
