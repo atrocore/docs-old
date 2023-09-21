@@ -41,7 +41,37 @@ Example of GET API request:
 GET https://address_of_your_atrocore/api/v1/Product/2d643ca0gff7rh7c6
 ```
 
+## 3. Step: Bulk Create and Bulk Update
 
+To do bulk create and bulk update, you can use the request 
 
+```
+POST https://address_of_your_atrocore/api/v1/MassActions/action/upsert
+```
+
+The system will try to find existing entities based on the identifier or unique fields. If an entity is found, it will be updated, otherwise it will be created by the system.
+
+Example of Payload:
+
+```
+[
+    {
+        "entity": "Product",
+        "payload": {
+            "name": "Apple iPhone 15",
+            "sku": "iphone15"
+        }
+    },
+    {
+        "entity": "Product",
+        "payload": {
+            "id: "2348924928743",
+            "name": "Apple iPhone 15 Pro Max",
+        }
+    }
+]
+```
+
+You can see more detail about this api on `https://address_of_your_atrocore/apidocs/` in section "MassActions"
 
 
