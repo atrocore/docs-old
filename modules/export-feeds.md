@@ -102,7 +102,7 @@ The export file parameters are configured on the `FEED SETTINGS` panel:
 - **List Value Separator** - specify the mark for dividing the values of the list.
 - **Convert relations to string** - check if the relations of the exported entity should be converted to string.
 - **Field Delimiter for Relation** - specify the mark for separating the relations.
-- **Mark for a not linked attribute** - specify how a not linked attribute should be labeled.
+- **Marking for no relation** - specify how a not linked relation should be labeled.
 
 
 #### Filter
