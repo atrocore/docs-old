@@ -96,7 +96,7 @@ The next panel is the settings panel:
 - **Entity** – select the desired entity for the imported data from the drop-down list of all entities available in the system.
 - **Unused Source Fields** – this field is initially empty. After save you will see here the list of available unmapped columns.
 - **List Value Separator** – is the separator to split the values in the list (eg for "multienum" or "array" fields and attributes).
-- **Mark for a non-linked attribute** – this mark is only available for the product entity. This symbol marks attribute which should not be linked to the respective product.
+- **Marking for no relation** – this mark is only available for the product entity. This symbol marks relation which should not be linked to the respective product.
 - **Field delimiter for relation** – field delimiter, which is used to separate fields in the relation, default value is "|".
 - **Thousand separator** –  define the symbol, which is used as thousand separator. This parameter is optional. The numerical values without thousand separator will be also imported (eg both values 1234,34 and 1.234,34 will be imported, if "." is defined as a thousand separator).
 - **Decimal mark** – select the used decimal mark, usually `.` or `,` should be defined here.
