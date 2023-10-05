@@ -52,6 +52,10 @@ PDF Templates are usually created by our team but if you want to do it yourself 
 
 Select an `Entity type` for a template. Each template has an input language configured in syntax. For different languages of the same entity you will need different templates.
 
+`Chrome is installed` and `Ghostscript is installed` check if chrome and Ghostscript are installed on the server. Chrome is required for PDFs to be generated and Ghostscript is required for `Ghostscript parameters` to function.
+
+`Ghostscript parameters` allow you to modify an asset created by generator (to minimize usage of server space for example). The script on the picture, "-sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -dCompatibilityLevel=1.4" turns assets created by generator in black and white ones, for example, to minimize usage of server space.
+
 If your template is too big so you are afraid of timeouts, use `Use queue manager` - now PDF will be created anyway (but it will be in queue manager).
 
 For conventional naming schemas use `File Name Template`.
