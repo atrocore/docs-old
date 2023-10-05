@@ -140,3 +140,23 @@ You can also perform a global translation of all records in the system according
 
 ![apply_globally](_assets/translation/apply-globally.png)  
 
+### Translation Glossaries
+
+In deepL you can create your own glossary to specify translations for some words and to avoid undesired translations (for example, for brands). You can create any number of glossaries with an unlimited number of terms. To create Translation Glossary go to the `Administration / Translation Glossaries` and click Create Translation Glossary button.
+
+![translation_glossary](_assets/translation/translation-glossary.png)  
+![create_glossary](_assets/translation/create-glossary.png)  
+
+- **Name** – specify the name of your glossary
+- **Type** – set the glossary type. Possible values of the field: empty and deepL. Only if the "deepL" type is selected, the glossary will be used for automatic translation
+- **Destination language** – the language to which the translation is made
+- **Source language** – the language which is the source for the translation
+- **Code** – specify the code of your glossary
+- **Active** – the status of the translation rule. If the glossary is inactive it can not be added to the translation rule
+- **Words** –  a text field in which pairs of words are written. Terms in glossary should be written as pairs separated by a colon (source word : destination word). Each pair should be written on a separate line.
+
+Please note that in order for the glossary to be used during translation, you need to activate it, select the deedL type and add it to the translation rule.
+
+![glossary_selection](_assets/translation/glossary-selection.png)  
+
+For a translation rule, you can select only the glossary whose source and destination languages match the source and destination languages of the rule. Only one glossary can be selected for one rule. If the selected glossary is of the DeepL type, it is used to receive the translation.
