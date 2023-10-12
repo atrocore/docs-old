@@ -1,6 +1,6 @@
 # Connector
 
-The "Connector" module allows you to orchestrate multiple import and export feeds, of any type. Ypu can set the sort order for the execution of your feeds, run the sequence automatically as a scheduled or event-based job, or manually, in just one click. Also it adds additional functions to export and import feeds.
+The "Connector" module allows you to orchestrate multiple import and export feeds, of any type. You can set the sort order for the execution of your feeds, run the sequence automatically as a scheduled or event-based job, or manually, in just one click. Also it adds additional functions to export and import feeds.
 
 ## Main functions
 
