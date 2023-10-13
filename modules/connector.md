@@ -80,4 +80,8 @@ Modifiers, their description and examples are in the table under the `Value Modi
 
 > When exporting attribute values, you can also modify them, but, because one entity can have different attributes, attribute modifiers have to be written in formulas.
 
+### "Data sync errors" widgets
 
+You can monitor export and import errors by using "Data sync errors for Import" and "Data sync errors for Import" widgets.
+
+![widget](_assets/connector/connector-widget.png)
