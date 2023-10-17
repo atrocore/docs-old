@@ -39,7 +39,7 @@ You can configure as many workflows as you wish. More than one workflow can be a
 
 Click on the button `Create Workflow` to create a new workflow.
 
-To create a new workflow, define the "Name", then choose the "Trigger entity" to align with the workflow and the entity, which is going to be investigated when searching. Then define the "Trigger Actions" and "Conditions Type".
+To create a new workflow, define the "Name", then choose the "Trigger entity" to align with the workflow and the entity, which is going to be investigated when searching. Then define the "Trigger Actions" and "Conditions Type". Use the Sort Order field to set the order in which the workflows should be launched.
 
 ![Create product workflow](./_assets/workflows/create-product-workflow.png)
 
@@ -72,6 +72,23 @@ If all conditions are met, workflow actions are launched. They are Update and Da
 You can also run the workflow actions manually. To do so, visit workflow action page and press 'Execute' button. You can also run multiple workflow actions at the same time. To do this, you need to go to the entity Workflow Actions, check the actions you want to run, click the Action --> Execute. 
  
 ![Basic conditions](./_assets/workflows/actions.png)   
+
+
+There are two types of update actions: Basic and Script. Their principle is the same as for workflow conditions. For both actions, you can set conditions inside the action itself. These conditions will be checked after the workflow conditions have been met. 
+
+![Action type](./_assets/workflows/action-type.png)  
+
+#### Basic
+
+For the basic type, the conditions are set using a filter in the Search panel. The field (or fields) that you want to update using the workflow action must be specified in the Update panel. For example, an action that should update an Attribute group for all attributes whose name contains the characters "111" and no Attribute Tab is specified would look like this:
+
+![Basic action](./_assets/workflows/basic-action.png)   
+
+#### Script
+
+For the workflow actions of type Script, conditions can be specified both in the Search panel and in the Twig field (the Search panel is not available for a self-targeted action). The entity field you want to change is set via the script. The commands are the same as for any Twig field. For example, a Workflow Action of type Script, which sets a certain Brand for a product provided that the value of the field "mpn" equals "333" or "444", would look like this:
+
+![Script action](./_assets/workflows/script-action.png) 
 
 ## Advanced Workflows
 Any advanced workflows and business process modeling can be implemented by workflow programming. Please refer to the Symfony Documentation to get to know the process.
