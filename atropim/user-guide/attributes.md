@@ -54,6 +54,7 @@ Attributes are automatically validated according to their type. The following at
 | HTML                      | Text area for long multiline texts that contains a built-in text editor   |
 | Asset			           | File attachment  |
 | Alias			           | displays the value of another attribute(s) linked to it |
+| Link			           | Reference to any other entity |
 | Script                      | a dynamic attribute that can have different data types and display the value of any field or attribute configured in the field of type Twig  |
 
 ## Creating
@@ -187,6 +188,13 @@ Enter the measure name and code (by default, this field is optional) and click t
 ![create-unit-pop-up](./_assets/attributes/create-unit-popup.png)
 
 You can create a unit from the measure entity, or vice versa: go to the Unit entity, create a new unit via the "Create Unit" button and choose the measure to which you want to add it. In the "Convert to" field, you can choose the units of measurement to which the current unit should be converted. A default unit can be selected for both the measure and the attribute to which the measure is added.
+
+## Attribute of type link
+
+The link type attribute allows you to add any field of another entity to the product as a link. By clicking on the value of this attribute, you can go to the entity whose field it refers to. When creating an attribute of type link, you need to select the entity to which it refers and its field, which should be displayed as the attribute value.
+
+![link-attribute](./_assets/attributes/link-attribute.png)
+
 
 ## Attribute of script type
 
