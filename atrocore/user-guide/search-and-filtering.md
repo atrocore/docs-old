@@ -71,7 +71,7 @@ Logical operator NOR is directly not available, but can be set by defining speci
 
 ### Variables in filters
 
-You can also use variables as input for filters that require a specific value (eg Equals, Not Equals, etc.). 
+You can also use variables as input value for filters that require a specific value (eg Equals, Not Equals, etc.). 
 
 ![Variables](./_assets/search-and-filtering/variables.png)
 
