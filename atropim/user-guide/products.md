@@ -147,6 +147,13 @@ or from the single record actions menu on the products list/plate view page:
 
 ![Remove2](./_assets/products/remove-list.jpg)
 
+## Restoring 
+
+After deleting PIM records, they are stored in the database for 90 days (by default). The Restore function allows you to restore any record from any entity.
+If you want to return a deleted product, select the filter `Deleted`, select the desired product(s) and click the Restore button. Such an option exists both for a separate record and as a mass action.
+
+![Restoring](./_assets/products/restoring.jpeg)
+
 ## Duplicating
 
 Use the `Duplicate` option from the actions menu to go to the product creation page and get all the values of the last chosen product record copied in the empty fields of the new product record to be created. Modifying the SKU value is required, as this value has to be unique within the catalog.
