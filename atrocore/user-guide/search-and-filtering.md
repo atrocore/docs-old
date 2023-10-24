@@ -69,6 +69,12 @@ The system behavior is different for the OR and AND logical operators:
 
 Logical operator NOR is directly not available, but can be set by defining specific filter criteria for almost each field type.
 
+### Variables in filters
+
+You can also use variables as input value for filters that require a specific value (eg Equals, Not Equals, etc.). 
+
+![Variables](./_assets/search-and-filtering/variables.png)
+
 ### Available Filtering Criteria
 
 Depending of the field type, you can apply the following filtering criteria:
