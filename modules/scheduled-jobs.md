@@ -24,11 +24,12 @@ This jobs start system update on the schedule you set. The settings set by updat
 
 ![Main menu](_assets/scheduled-jobs/scheduled-jobs-main-menu.png)
 
-### Old deleted data cleanup
+### Delete data forever
 
-This job cleans old data that was deleted but is stored in system in case you need backups.
+This job removes deleted records from the database. By default, deleted data is stored for 90 days. But you can adjust the terms in the field "Minimum age (in days) of data " in job settings.
 
-![Import feed Scheduled](_assets/scheduled-jobs/scheduled-jobs-cleanup.png)
+![delete data forever](_assets/scheduled-jobs/scheduled-jobs-delete-data.png)
+
 
 ### Import Feed
 
