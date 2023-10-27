@@ -208,17 +208,19 @@ Example 4: Calculated Price from Another PriceProfile
 {% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
 {% set calculatedPrice = getProductPrice.price * 1.2 %}
 {{ calculatedPrice }}
-In this example, you can define a price related to a price profile; you can use it throught the getPrice function, which needs 3 parameters: 
+In this example, you can define a price related to a price profile; you can use it through the getPrice function, which needs 3 parameters: 
 ------------ the id of the product you target(in this case, it is the same product), the name 
 ------------ the name of the profile you target (in this case it is 'b2b usd profile'), you can copy and paste it in quotes
 ------------ the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
-Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price  
+Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price.
+
+When one price is calculated on the basis of another, the other is noted that it has already been listed.
 
 Example 5: Smooth your price
 
 {% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
 {{ calculatedPrice }}
-In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to redure or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
+In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to reduce or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
 
 - if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
 - if we have smoothyPrice(12.65, -0.01, 1, 'down') = 11.99; first we round 12.65 according to multiplier 1 and direction 'down', we have 12, then 12 -0.01 = 11.99
