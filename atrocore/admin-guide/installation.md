@@ -32,7 +32,7 @@ cd /var/www/my-atrocore-project
 > It is essential, that you use the composer version, which is embedded in our software, because this version contains some of our modifications needed for backup and restoring of the system files and the database. That is why `php composer.phar update` is used. Please **DO NOT** use composer, which is installed on your server as it does not contain the required modifications.
 
 #### 3.1. If you want to install AtroPIM and AtroDAM with demo data
-> Demo data can be install only for MySQL database system.
+> Demo data can be installed only for MySQL database system.
 
 run
 ```
@@ -47,7 +47,7 @@ git clone https://github.com/atrocore/skeleton-pim-no-demo.git . && php composer
 ```
 
 #### 3.3. If you want to install AtroDAM with demo data
-> Demo data can be install only for MySQL database system.
+> Demo data can be installed only for MySQL database system.
 
 run
 ```
