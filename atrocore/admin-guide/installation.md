@@ -33,6 +33,8 @@ cd /var/www/my-atrocore-project
 
 #### 3.1. If you want to install AtroPIM and AtroDAM with demo data
 
+> Demo data can be install only for MySQL database system.
+
 run
 ```
 git clone https://github.com/atrocore/skeleton-pim.git . && php composer.phar self-update && php composer.phar update
