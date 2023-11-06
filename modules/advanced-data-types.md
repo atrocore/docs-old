@@ -18,7 +18,7 @@ A good example could be the entity "Product Channels", which is included in the 
 
 To find, create and edit them you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
 
-![creating assets](_assets/relationship/creating-assets.png)
+![Creating assets](_assets/relationship/creating-assets.png)
 
 ### Creating and editing Relationship type entity
 
