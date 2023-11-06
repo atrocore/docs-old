@@ -18,7 +18,7 @@ A good example could be the entity "Product Channels", which is included in the 
 
 To find, create and edit them you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
 
-![Creating assets](_assets/Relationship/creating-assets.png)
+![Creating assets](_assets/relationship/creating-assets.png)
 
 ### Creating and editing Relationship type entity
 
@@ -26,22 +26,22 @@ When creating a "Relationship" type entity, select "Relationship" as a Type. The
 
 This entity type, like any other entity type allows you enable/disable this entity, set Default Order, Text Filter Fields, etc. 
 
-![Relationship](_assets/Relationship/relationship.png)
+![Relationship](_assets/relationship/relationship.png)
 
 ### Adding new fields
 
 To add additional fields for the entity of type "Relationship" go to `Administration / Entity` and press `Fields` for your entity. You see all the fields that this entity has. Some fields are generated automatically, you cannot edit or delete them. To add a new field click on `Add field` and choose the type for your new field.
 
-![additional fields](_assets/Relationship/additional-fields.png)
+![additional fields](_assets/relationship/additional-fields.png)
 
 ### Adding new relations
 
 To add a new relation for your entity of type "Relationship"  go to `Administration / Entity` and press `Relationships`. You will see all relations of this entity. Some relationships are generated automatically, you cannot edit or delete them. They are needed for this entity type. To add a new Relationship press `Create link`.
 
-![a new relation](_assets/Relationship/a-new-relation.png)
+![a new relation](_assets/relationship/a-new-relation.png)
 
 If you select the Many-to-One link type, two additional checkboxes appear on the link creation page:
 - `Relationship Entity` - check this option to mark the foreign entity as the target entity for a relationship. All target entities together build up a unique index
 - `Main Relationship Entity` - check this checkbox to mark this foreign entity as the primary entity from which the relative entity should be viewed. Only one of the foreign entities can be selected as the main one.
 
-![create a new link](_assets/Relationship/create-a-new-link.png)
+![create a new link](_assets/relationship/create-a-new-link.png)
