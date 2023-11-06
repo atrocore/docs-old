@@ -47,6 +47,7 @@ git clone https://github.com/atrocore/skeleton-pim-no-demo.git . && php composer
 ```
 
 #### 3.3. If you want to install AtroDAM with demo data
+> Demo data can be install only for MySQL database system.
 
 run
 ```
