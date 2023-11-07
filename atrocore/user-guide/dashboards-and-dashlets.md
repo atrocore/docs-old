@@ -4,7 +4,7 @@ Dashboards are designed for quick navigation within the AtroCore entities data d
 
 ![Dashboard](_assets/dashboards-and-dashlets/dashboard-interface.jpg)
 
-Both dashboards and dashlets are [user customizable](./user-interface-core.md#user-interface-settings), i.e. you can add, rename and delete dashboards, as well as modify the dashlets layout.
+Both dashboards and dashlets are [user customizable](./user-interface.md), i.e. you can add, rename and delete dashboards, as well as modify the dashlets layout.
 
 ## Dashboards
 
