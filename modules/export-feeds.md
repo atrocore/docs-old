@@ -320,7 +320,7 @@ The following States are available:
 - **Canceled** – for the export job that has been stopped by the user.
 
 You can use the data record action menu to view details of the respective export job or remove it.
-![data-record-action](_assets/export-feeds/import-feeds-import-results- menu.png)
+![data-record-action](_assets/export-feeds/import-feeds-import-results-menu.png)
 
 ### Exported File
 
