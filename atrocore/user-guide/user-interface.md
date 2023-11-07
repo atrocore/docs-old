@@ -8,17 +8,17 @@ The following elements make up the AtroCore user interface:
 
 - [**Navigation Menu**](#navigation-menu) – to navigate through available entities.
 - [**Taskbar**](#taskbar) – to help the user interact with the AtroCore system in a more efficient way; additional information or actions are displayed here. 
-- [**Search and Filtering Panel**](./search-and-filtering-core.md) – to search and filter within one entity or its related entities.
+- [**Search and Filtering Panel**](./search-and-filtering-core.md) – to search and filter within one enatrocore/user-guide/views-and-panels-cotity or its related entities.
 
 Within the AtroCore system your information may be presented in various ways:
 
-- [**List View**](./views-and-panels-core.md#list-view) – to view the lists of entity records.
-- [**Detail View**](./views-and-panels-core.md#detail-view) – to view the entity record details.
-- [**Create View**](./views-and-panels-core.md#create-view) – to create a new entity record in the main window.
-- [**Edit View**](./views-and-panels-core.md#edit-view) – to edit the entity record.
-- [**Quick Detail View (pop-up)**](./views-and-panels-core.md#quick-detail-view-small-detail-view) – to view the record details in the pop-up window.
-- [**Quick Edit View (pop-up)**](./views-and-panels-core.md#quick-edit-view) – to edit the record detail in the pop-up window.
-- [**Quick Create View**](./views-and-panels-core.md#quick-create-view) – to create a new entity record in the pop-up window.
+- [**List View**](./views-and-panels.md#list-view) – to view the lists of entity records.
+- [**Detail View**](./views-and-panels.md#detail-view) – to view the entity record details.
+- [**Create View**](./views-and-panels.md#create-view) – to create a new entity record in the main window.
+- [**Edit View**](./views-and-panels.md#edit-view) – to edit the entity record.
+- [**Quick Detail View (pop-up)**](./views-and-panels.md#quick-detail-view-small-detail-view) – to view the record details in the pop-up window.
+- [**Quick Edit View (pop-up)**](./views-and-panels.md#quick-edit-view) – to edit the record detail in the pop-up window.
+- [**Quick Create View**](./views-and-panels.md#quick-create-view) – to create a new entity record in the pop-up window.
 
 ## Navigation Menu
 
@@ -88,7 +88,7 @@ To create new records from anywhere, click the quick create button located in th
 
 ![Quick Create](./_assets/user-interface/quick-create.jpg)
 
-The [quick create view](./views-and-panels-core.md#quick-create-view) page will be opened.
+The [quick create view](./views-and-panels.md#quick-create-view) page will be opened.
 
 > If there is no quick create button on your taskbar, please, contact your administrator.
 
@@ -154,7 +154,7 @@ You can also create a post in the corresponding message box right on the `STREAM
 
 ![Stream post](./_assets/user-interface/stream-post.jpg)
 
-Self-posted messages can be edited and removed via the corresponding options of the common [single-record actions](./views-and-panels-core.md#single-record-actions) menu:
+Self-posted messages can be edited and removed via the corresponding options of the common [single-record actions](./views-and-panels.md#single-record-actions) menu:
 
 ![Stream post menu](./_assets/user-interface/stream-post-menu.jpg)
 
