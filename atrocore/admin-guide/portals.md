@@ -12,7 +12,7 @@ On `General` panel you need to assign the Portal's name, role, set it active/ina
 
 On the `Settings` panel you can set the `Default currency` and the default `Locale` for the portal users.
 
-![discussion-button](_assets/portal/assets-portal.png)
+![discussion-button](_assets/portal/Assets-Portal.png)
 
 In `user interface` panel you select which entities should be accessible via navigation menu in the portal, select the logo, default theme and available entities for the Quick Create. First, you can select logo and theme.
 
