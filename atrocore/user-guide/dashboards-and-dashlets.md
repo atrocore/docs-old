@@ -2,7 +2,7 @@
 
 Dashboards are designed for quick navigation within the AtroCore entities data displayed on separate dashlets. The dashboard is the starting page of AtroCore that can be reached any time via clicking the `AtroCore` logo located in the upper left corner of the AtroCore pages:
 
-![Dashboard](./_assets/dashboards-and-dashlets/dashboard-interface.jpg)
+![Dashboard](_assets/dashboards-and-dashlets/dashboard-interface.jpg)
 
 Both dashboards and dashlets are [user customizable](./user-interface-core.md#user-interface-settings), i.e. you can add, rename and delete dashboards, as well as modify the dashlets layout.
 
