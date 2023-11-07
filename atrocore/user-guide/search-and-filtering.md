@@ -6,7 +6,7 @@ Searching works on the current entity records, while filtering works also on the
 
 ## Search
 
-Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels-core.md#list-view) view page:
+Search and filtering allow you to quickly focus on the records you want to see. These sections are automatically available on each entity [list](./views-and-panels.md#list-view) view page:
 
 ![Search and filtering](./_assets/search-and-filtering/search-filter.png)
 
