@@ -31,7 +31,7 @@ The list view page shows a table of records with main fields configured for each
   - *[navigation menu](./user-interface-core.md#navigation-menu) (1);*
   - *[taskbar](./user-interface-core.md#taskbar) (2);*
   - *[breadcrumb navigation](./user-interface-core.md#breadcrumb-navigation) including the page name (3);*
-  - *[search and filtering panel](./search-and-filtering-core.md) (4);*
+  - *[search and filtering panel](./search-and-filtering.md) (4);*
   - *records list (5).* 
 
 ![Default List View](./_assets/views-and-panels/default-list-view-core.jpg)
