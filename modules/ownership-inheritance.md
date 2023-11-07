@@ -40,7 +40,7 @@ The assigned teams of a product attribute value can be inherited:
 
 You can also overwrite the existing ownership information by applying the configured inheritance to all existing records. Click the respective checkbox “Overwrite existing data” to do this.
 
-![overwrite](./_assets/ownership-inheritance/ownership-inheritance-configuration-with-overwrite.png)
+![overwrite](./_assets/ownership-inheritance/ownership-inheritance-configuration-with-overwr.png)
 
 ## User functions
 No additional actions are required from users.
