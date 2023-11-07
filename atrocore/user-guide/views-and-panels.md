@@ -59,7 +59,7 @@ The following mass actions are available in the AtroCore system:
 - **Remove** – to remove the selected entity records.
 - **Merge** – to merge the selected entity records.
 - **Mass update** – to update several selected entity records at once. To have a longer list of fields available for mass updating, please, contact your administrator.
-- **[Export](../modules/export-feeds.md)** – to export the desired data fields of the selected entity records in the XLSX (Excel) or CSV format.
+- **[Export](../../modules/export-feeds.md)** – to export the desired data fields of the selected entity records in the XLSX (Excel) or CSV format.
 - **Follow** – to enable tracking of the changes for the selected entity records. 
 - **Unfollow** – to disable tracking of the changes for the selected entity records.
 - **Add relation** – to relate the selected entity records with other entities (or entity).
