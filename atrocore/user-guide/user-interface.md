@@ -158,7 +158,7 @@ Self-posted messages can be edited and removed via the corresponding options of 
 
 ![Stream post menu](./_assets/user-interface/stream-post-menu.jpg)
 
-To learn more about the stream and its features, please, refer to the corresponding [article](./stream-core.md) within this user guide.
+To learn more about the stream and its features, please, refer to the corresponding [article](./stream.md) within this user guide.
 
 #### User Preferences
 
@@ -172,7 +172,7 @@ To reset preferences to default, please click the `Reset to default` button.
 
 Select the `Custom Tab List` checkbox to enable a custom navigation menu. Using the `Add` button select the entities to be linked to your custom [navigation menu](#navigation-menu).
 
-[Dashboard](./dashboards-and-dashlets-core.md#dashboards) layout and [dashlet](./dashboards-and-dashlets-core.md#dashlets) settings are also available for editing on the `USER INTERFACE` panel:
+[Dashboard](./dashboards-and-dashlets.md#dashboards) layout and [dashlet](./dashboards-and-dashlets.md#dashlets) settings are also available for editing on the `USER INTERFACE` panel:
 
 ![Dashboard settings](./_assets/user-interface/ui-dashboard.jpg)
 
@@ -192,7 +192,7 @@ To rearrange your dashboard view, drag-and-drop the dashlets right on the `USER 
 
 ![Dashlets order](./_assets/user-interface/dashlets-order.jpg)
 
-Alternatively, you can customize your [dashboard](./dashboards-and-dashlets-core.md#dashboards) view in the same way on the AtroCore starting page.
+Alternatively, you can customize your [dashboard](./dashboards-and-dashlets.md#dashboards) view in the same way on the AtroCore starting page.
 
 #### Email Accounts
 
