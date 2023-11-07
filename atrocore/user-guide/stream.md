@@ -6,7 +6,7 @@ Stream is a separate AtroCore [entity](./what-is-atrocore.md#concept-of-entity),
 
 AtroCore supports the following **types** of stream entries:
 - **Posts** – messages assigned to the current user by other system users, as well as his own messages posted in the stream, irregardless of the assignee.
-- **Updates** – notifications about changes in the [audited](./what-is-atrocore-core.md#concept-of-data-auditing) fields of the user-related entries. *Please, note that entity fields are made audited only by the administrator.*
+- **Updates** – notifications about changes in the [audited](./what-is-atrocore.md#concept-of-data-auditing) fields of the user-related entries. *Please, note that entity fields are made audited only by the administrator.*
 - **All** – general changes in the user- or entity-related actions.
 
 ## User Activity Stream
