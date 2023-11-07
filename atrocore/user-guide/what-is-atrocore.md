@@ -18,7 +18,7 @@ AtroCore is the best fit **for businesses**, who want to:
 
 The following add-on applications are available on the AtroCore basis:
 
-- [AtroPIM](./what-is-atropim.md)
+- [AtroPIM](../../atropim/user-guide/what-is-atropim.md)
 - AtroCRM
 - AtroDAM
 
@@ -30,7 +30,7 @@ All three applications can be used in a single instance as well as extended with
 
 An entity is any singular, identifiable and separate object or unit of data that can be classified and have stated relationships to other entities. The entities are used to model and manage business data. For example, in AtroCore the following entities are used by default: Account, Contact, Email, Stream, Team, User, etc. 
 
-Each entity in the system can have many records. These entity records can be managed and operated with on various [views](./views-and-panels-core.md) available in the AtroCore system.
+Each entity in the system can have many records. These entity records can be managed and operated with on various [views](./views-and-panels.md) available in the AtroCore system.
 
 ### Concept of Data Auditing
 
