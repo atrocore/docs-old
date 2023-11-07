@@ -32,7 +32,7 @@ The user can create any number of product attributes. Product fields can only be
 
 To create a product, go to the Product entity and click on `Create Product` (top right). A pop-up window is displayed in which you should fill in the mandatory fields for the new product.
 
-![](./_assets/product description-in-6-steps/image52.png)
+![](./_assets/product-description-in-6-steps/image52.png)
 
 The product fields can contain the information that is important for system users but not for end customers. This can be ID, SKU, alternative names of the products, etc.
 
