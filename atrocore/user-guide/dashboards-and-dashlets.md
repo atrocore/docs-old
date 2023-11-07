@@ -40,7 +40,7 @@ In order to switch between dashboards available in the system, click the button 
 
 ## Dashlets
 
-Dashlets are [user-configurable](./user-interface-core.md#user-interface-settings) blocks, which can be placed via drag-and-drop anywhere on the dashboard, giving you a quick overview of your records and activity. 
+Dashlets are [user-configurable](./user-interface-core.md) blocks, which can be placed via drag-and-drop anywhere on the dashboard, giving you a quick overview of your records and activity. 
 
 Dashlets provide you with valuable information regarding records of specific entities.
 
@@ -59,7 +59,7 @@ The added dashlets can be resized using the double-headed arrow in the bottom ri
 The following dashlets are available in AtroCore out-of-the-box:
 - My Inbox
 - Record List
-- [Stream](./stream-core.md)
+- [Stream](./stream.md)
 
 ### Dashlet Actions 
 
