@@ -97,13 +97,13 @@ To customize the fields display for other layout types of the entity, make simil
 
 #### Search Filters
 
-In the same way, multilingual fields can also be added to the [search filters](./search-and-filtering.md) list in the Layout Manager:
+In the same way, multilingual fields can also be added to the [search filters](../user-guide/search-and-filtering.md) list in the Layout Manager:
 
 ![Search filters](./_assets/multilingualism/search-filters.jpg)
 
 #### Mass Update
 
-To activate the [mass update](./views-and-panels.md#mass-actions) of the entity records by multilingual fields, click `Mass Update` and drag-and-drop the desired fields one by one to the `Enabled` column:
+To activate the [mass update](./user-guide/views-and-panels.md#mass-actions) of the entity records by multilingual fields, click `Mass Update` and drag-and-drop the desired fields one by one to the `Enabled` column:
 
 ![Mass update](./_assets/multilingualism/mass-update.jpg)
 
