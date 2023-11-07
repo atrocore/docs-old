@@ -183,7 +183,7 @@ In all other cases, i.e. when the `+` button is used, you will be taken to the [
 
 ## Quick Create View
 
-The quick create view is shown in a pop-up window and uses the layout of the [quick detail view](#quick-detail-view-small-detail-view) page. It is usually applicable for creating records for the related entities or appears when the [quick create](./user-interface-core.md#quick-create) button is used on any AtroCore page:
+The quick create view is shown in a pop-up window and uses the layout of the [quick detail view](#quick-detail-view-small-detail-view) page. It is usually applicable for creating records for the related entities or appears when the [quick create](./user-interface.md#quick-create) button is used on any AtroCore page:
 
 ![Quick create view](./_assets/views-and-panels/quick-create-view.jpg)
 
