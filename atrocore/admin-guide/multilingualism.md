@@ -103,7 +103,7 @@ In the same way, multilingual fields can also be added to the [search filters](.
 
 #### Mass Update
 
-To activate the [mass update](./user-guide/views-and-panels.md#mass-actions) of the entity records by multilingual fields, click `Mass Update` and drag-and-drop the desired fields one by one to the `Enabled` column:
+To activate the [mass update](../user-guide/views-and-panels.md#mass-actions) of the entity records by multilingual fields, click `Mass Update` and drag-and-drop the desired fields one by one to the `Enabled` column:
 
 ![Mass update](./_assets/multilingualism/mass-update.jpg)
 
