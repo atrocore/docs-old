@@ -168,8 +168,8 @@ Use the `Duplicate` option from the actions drop-down menu to go to the attribut
 
 ## Numeric attribute types
 
-There are two types of attributes for displaying numeric data in PIM: Integer and Float. And also the ranges of these two types.
-For both attribute types, you can specify a minimum and maximum allowable value (1). 
+There are two types of attributes for displaying numeric data in PIM: Integer and Float. And also the ranges of these two types (Integer Range and Float Range).
+For all attribute types, you can specify a minimum and maximum allowable value (1). 
 
 ![min-max-value](./_assets/attributes/min-max-value.png)
 
@@ -177,7 +177,7 @@ If you specify these fields for the attribute, the value of the attribute when e
 
 For float or float range attributes, you can also specify the number of decimal places allowed (2). If you leave of this field empty, the number of decimal places is limited to 12 digits by default.
 
-Units of measurement can also be added to attributes of numeric type. The "Measure" field is used for this. A measure is a separate entity that is related to attributes by a many-to-one relationship. You can add an unlimited number of units to each measure and also choose the unit that will be used by default.
+Units of measurement can also be added to attributes of numeric type. The "Measure" and "Unit" fields are used for this. A measure is a separate entity that is related to attributes by a many-to-one relationship. You can add an unlimited number of units to each measure and also choose the unit that will be used by default.
 
 To create a new measure record, click `Measures` in the navigation menu (if it is not there, you can add it through Administration --> User interface) and then click the `Create Measure` button. A page for creating a new measure will open
 
