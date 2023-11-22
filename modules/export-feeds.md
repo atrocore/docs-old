@@ -166,6 +166,23 @@ Both entity field and product attribute records added to the export feed can be 
 
 Click the `Remove` button to delete the corresponding added entity field or product attribute record.
 
+
+#### Script type in configurator 
+
+If you want to export values in a specific way and cannot achieve this with standard methods, you will need a script item in the configurator. It significantly expands the standard export capabilities and will allow you to get modified data from any entity. This type is available when the Connector module is installed.
+
+![Script in configurator](_assets/export-feeds/export-script-in-configurator.png)
+
+Scrips are based on twig code (for more detailed information regarding twig syntax please go to https://twig.symfony.com/). 
+
+Write a script in corresponding field and save configurator item. 
+Below you can see an example of a script that exports in one column Value From for attributes of Range types and Code of List Options for attributes of type List.
+
+{% if record.attributeType == 'rangeInt' or  record.attributeType == 'rangeFloat' %}
+ {{ record.valueFrom }}
+{% elseif record.attributeType == 'extensibleEnum' %}
+ {{ record.valueOptionData.code }}
+
 ## Export Feed Operations and Actions
 
 Export feed records can be duplicated and removed whenever needed.
