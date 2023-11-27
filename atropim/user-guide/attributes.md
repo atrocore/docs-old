@@ -177,7 +177,9 @@ If you specify these fields for the attribute, the value of the attribute when e
 
 For float or float range attributes, you can also specify the number of decimal places allowed (2). If you leave of this field empty, the number of decimal places is limited to 12 digits by default.
 
-Units of measurement can also be added to attributes of numeric type. The "Measure" and "Unit" fields are used for this. A measure is a separate entity that is related to attributes by a many-to-one relationship. You can add an unlimited number of units to each measure and also choose the unit that will be used by default.
+## Units of measurement
+
+Units of measurement can be added to attributes of numeric and string type. The "Measure" and "Unit" fields are used for this. A measure is a separate entity that is related to attributes by a many-to-one relationship. You can add an unlimited number of units to each measure and also choose the unit that will be used by default.
 
 To create a new measure record, click `Measures` in the navigation menu (if it is not there, you can add it through Administration --> User interface) and then click the `Create Measure` button. A page for creating a new measure will open
 
