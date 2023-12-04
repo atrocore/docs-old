@@ -317,6 +317,8 @@ The following States are available:
 You can use the data record action menu to view details of the respective import job or remove it.
 ![data-record-action](_assets/import-feeds/import-feeds-import-results-menu.png)
 
+For the **Failed** or  **Canceled** jobs you can select 'Try again' option. 
+
 ### Import Job Details
 
 To view the Import Job record details, click on its name in the "Import Jobs" record.
