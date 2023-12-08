@@ -167,6 +167,23 @@ Both entity field and product attribute records added to the export feed can be 
 Click the `Remove` button to delete the corresponding added entity field or product attribute record.
 
 
+#### Units in configurator 
+
+If you want to export values (fields or attributes) that have units in them you can do it in several different ways:
+
+- Value Unit / Werteihheit / Значення міри - will export only the unit (name/code/ets - needs to be selected) value of the field or attribute in this column.
+
+![Value Unit](_assets/export-feeds/valueunit.png)
+
+- Value (numerical) / Wert (numerisch) / Значення (чисельне) - will export only numeric (int/float) value of the field or attribute in this column.
+
+![Value (numerical)](_assets/export-feeds/valuenumerical.png)
+
+- Value / Wert / Значення -- full value (numerical+Unit) - will export both numeric (int/float) and unit (name) values of the field or attribute in this column.
+
+![Value](_assets/export-feeds/value.png)
+
+
 #### Script type in configurator 
 
 If you want to export values in a specific way and cannot achieve this with standard methods, you will need a script item in the configurator. It significantly expands the standard export capabilities and will allow you to get modified data from any entity. This type is available when the Connector module is installed.
