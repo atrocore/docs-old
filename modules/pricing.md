@@ -113,8 +113,8 @@ On Calculation Profile page, pay attention to calculation conditions and formula
 ### For Calculation Conditions and Formulae in "calculation profile":
 When you choose the Twig type field for a calculation condition or formula in the Calculation Profile, you'll see something like the following by default:
 
-{% set proceed = true %}
-{% set calculatedPrice = productPrice.price %}
+    {% set proceed = true %}
+    {% set calculatedPrice = productPrice.price %}
 
 The proceed variable determines whether the condition is met, and the calculatedPrice variable determines the resulting price. You should not remove these variables, as doing so will distort the results. Instead, you can change their values as needed.
 In calculation profile, you can use config data, it can be used in your calculation profile twig.
@@ -134,46 +134,49 @@ Here are some examples of how you can define your calculation conditions using T
 
 Example 1: Affecting a True or False Value
 
-{% set proceed = false %}
-{{ proceed }}
+    {% set proceed = false %}
+    {{ proceed }}
+
 This condition will never be met, so the formula will never be applied.
 
 Example 2: Dynamic Value
 
-{% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
-{{ proceed }}
+    {% set proceed = (product.brand in ['epson', 'microsoft', 'apple']) %}
+    {{ proceed }}
+
 The proceed value will be dynamic; it will be true if the brand of the current product is one of those three, and false otherwise.
 
 Example 3: With Config Data
 
-{% if product.tax >= 19 and config.baseCurrency == 'EUR' %}
+    {% if product.tax >= 19 and config.baseCurrency == 'EUR' %}
     {% set proceed = true %}
-{% else %}
+    {% else %}
     {% set proceed = false %}
-{% endif %}
-{{ proceed }}
+    {% endif %}
+    {{ proceed }}
 
 In this example, we check if the product.tax is more or equal than 19 , also if our baseCurreny coming from config data is EUR , then we set proceed to true
 
 Example 4: With currency rate
 
-{% if currencyRate.EUR*productPrice.price > 100 %}
+    {% if currencyRate.EUR*productPrice.price > 100 %}
     {% set proceed = true %}
-{% else %}
+    {% else %}
     {% set proceed = false %}
-{% endif %}
-{{ proceed }}
+    {% endif %}
+    {{ proceed }}
 
 In this example, we check if the EURO currency rate multiply by the price of the productPrice is more than 100
 
 Example 5: Complex Condition
 
-{% if product.tax >= 10 and product.tax <= 25 %}
+    {% if product.tax >= 10 and product.tax <= 25 %}
     {% set proceed = true %}
-{% elseif productPrice.price < 50 %}
+    {% elseif productPrice.price < 50 %}
     {% set proceed = false %}
-{% endif %}
-{{ proceed }}
+    {% endif %}
+    {{ proceed }}
+
 This example defines a condition based on tax and price. If the tax is between 10 and 25, proceed will be set to true. Otherwise, if the price is less than 50, proceed will be set to false.
 
 #### Example Calculation Formulae
@@ -181,45 +184,50 @@ Here are some examples of how you can define your calculation formulae using Twi
 
 Example 1: Taking the Purchase Price as Base
 
-{% set calculatedPrice = productPrice.price %}
-{{ calculatedPrice }}
+    {% set calculatedPrice = productPrice.price %}
+    {{ calculatedPrice }}
+
 This example sets the calculated price equal to the purchase price.
 
 Example 2: Fixed Value
 
-{% set calculatedPrice = 150 %}
-{{ calculatedPrice }}
+    {% set calculatedPrice = 150 %}
+    {{ calculatedPrice }}
+
 This example sets the calculated price to a fixed value of 150.
 
 Example 3: Dynamic Calculated Price
 
-{% if product.brand is empty %}
+    {% if product.brand is empty %}
     {% set calculatedPrice = 10 + product.tax * productPrice.price * 1.2 %}
-{% elseif product.tax < 30 %}
+    {% elseif product.tax < 30 %}
     {% set calculatedPrice = (1 + product.tax) * productPrice.price * 1.15 %}
-{% elseif 'Computer' in product.categories %}
+    {% elseif 'Computer' in product.categories %}
     {% set calculatedPrice = (1.4 * productPrice.price) | ceil - 2 %}
-{% endif %}
-{{ calculatedPrice }}
+    {% endif %}
+    {{ calculatedPrice }}
+
 In the first case, if the brand is empty, the formula will be 10 + product.tax * productPrice.price * 1.2. In the second case, if the tax is less than 30, we have another formula. In the last case, we round the value of 1.4 * price then subtract 2.
 
 Example 4: Calculated Price from Another PriceProfile
 
-{% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
-{% set calculatedPrice = getProductPrice.price * 1.2 %}
-{{ calculatedPrice }}
+    {% set getProductPrice = getPrice(product.id, 'b2b usd profile', productPrice.amount) %}
+    {% set calculatedPrice = getProductPrice.price * 1.2 %}
+    {{ calculatedPrice }}
+
 In this example, you can define a price related to a price profile; you can use it through the getPrice function, which needs 3 parameters: 
------------- the id of the product you target(in this case, it is the same product), the name 
------------- the name of the profile you target (in this case it is 'b2b usd profile'), you can copy and paste it in quotes
------------- the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
-Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then i multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price.
+- the id of the product you target(in this case, it is the same product), the name 
+- the name of the profile you target (in this case it is 'b2b usd profile'), you can copy and paste it in quotes
+- the amount of product you target, with these elements, it is going to fetch the product price with all those 3 values
+Then it will return a productPrice object, you can then use it to access any fields of element, in the example case, i just access the price field by using getProductPrice.price... then I multiply by 1.2 to have 20% more than the purchase price. At the end my calculatedPrice for the current product price is based on another product price.
 
 When one price is calculated on the basis of another, the other is noted that it has already been listed.
 
 Example 5: Smooth your price
 
-{% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
-{{ calculatedPrice }}
+    {% set calculatedPrice = smoothyPrice(productPrice.price, 0.01, 0.5, 'up') %}
+    {{ calculatedPrice }}
+
 In this example, you can define a smoothyPrice; smoothyPrice is price like 14.59$, 29.49$, 39.99$; the smoothyPrice has 4 parameters, the first one is the price to round; the second one is the delta value to reduce or add; the third parameter is the multiplier roundTo, it can be 10, 1, 0.5 etc... the last parameter is the rounding direction to tell if we should round price up, down, or normal; default value is normal; See some examples to better understand
 
 - if we have smoothyPrice(12.65, -0.01, 1, 'up') = 12.99; first we round 12.65 according to multiplier 1 and direction 'up', we have 13, then 13 -0.01 = 12.99
@@ -240,30 +248,33 @@ You can also set a fixed value that is not dependent on the product price by set
 
 To access the fields of the product and product price, you can use the following syntax:
 
-productPrice.price: Price amount in the entity Product Price
-productPrice.calculatedPrice: Calculated price amount in the entity Product Price, which is to be recalculated
-productPrice.amount: amount of the product
-productPrice.priceCurrency: currency of the price
-product.Price: Purchase price amount in the entity Product
-product.brand: Brand of the product
-product.tax: Tax of the product
+- productPrice.price: Price amount in the entity Product Price
+- productPrice.calculatedPrice: Calculated price amount in the entity Product Price, which is to be recalculated
+- productPrice.amount: amount of the product
+- productPrice.priceCurrency: currency of the price
+- product.Price: Purchase price amount in the entity Product
+- product.brand: Brand of the product
+- product.tax: Tax of the product
 With these elements, you can combine and define your minimum/maximum validation dynamically. Here are some examples:
 
 #### Example for minimum and maximum price validation
 Example 1 (taking the purchase price as a base):
-{% set validationPrice = 0.2 * productPrice.price %}
-{{ validationPrice }}
+
+    {% set validationPrice = 0.2 * productPrice.price %} 
+    {{ validationPrice }}
 
 Example 2 (setting a fixed value for price validation):
-{% set validationPrice = 10 %}
-{{ validationPrice }}
+
+    {% set validationPrice = 10 %}
+    {{ validationPrice }}
 
 Example 3 (dynamic price validation with condition):
-{% if product.brand is empty %}
-{% set validationPrice = 10 + product.tax * productPrice.price %}
-{% elseif product.tax < 20 %}
-{% set validationPrice = (1 + product.tax) * productPrice.price %}
-{% elseif 'Computer' in product.categories %}
-{% set validationPrice = 1.4 * productPrice.price %}
-{% endif %}
-{{ validationPrice }}
+
+    {% if product.brand is empty %}
+    {% set validationPrice = 10 + product.tax * productPrice.price %}
+    {% elseif product.tax < 20 %}
+    {% set validationPrice = (1 + product.tax) * productPrice.price %}
+    {% elseif 'Computer' in product.categories %}
+    {% set validationPrice = 1.4 * productPrice.price %}
+    {% endif %}
+    {{ validationPrice }}
