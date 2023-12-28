@@ -237,7 +237,6 @@ Here are two options how you can refer to another attribute value. The both find
 
 You can use conditions for scripts. This script finds if the product SKU is empty or not and checks a mark if it is.
 
-
 ## Attribute of Date and Date-time type
 
 There are two types of attributes for displaying time-related data in PIM: Date and Date-time. For Date attribute you select a date on a calendar in pop-up or type it. For Date-time attribute you can also select time in pop-up or type it.
@@ -253,3 +252,6 @@ You can set a Default Date for both types of attributes. This is a function that
 ![Attribute output type](./_assets/attributes/default_date_time.png)
 
 > For Date attributes the time defaults are not applicable.
+
+## Attribute of Composition type
+

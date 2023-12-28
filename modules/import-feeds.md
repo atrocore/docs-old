@@ -83,9 +83,10 @@ The import data parameters are configured on the `IMPORT DATA SETTINGS` panel:
 
 - **Format** – specify the format of the file from which the data will be imported. **CSV File** or **Excel File** types are available here. 
 - **File** – here you can upload the file which is to be imported or its shortened version (as a sample), which will be used for the configuration. The file should be UTF-8 encoded.
+- **Maximum Number of Records per Job** – here you can select how many records will be imported in one job. Multiple jobs for big imports is preferable for weaker systems.
+- **Sheet** – here you can select a sheet of file which is to be imported or its shortened version (as a sample), which will be used for the configuration.
 - **Header row** – activate the checkbox if the column names are included in the import file or leave it empty if the file to be imported has no header row with column names.
-- **Field delimiter** – select the preferred field delimiter to be used in the CSV import file, possible values are `,`, `;`,`\t`, `|`.
-- **Text qualifier** – select the preferred separator of the values within a cell: single or double quotes can be selected.
+- **Connection** – select the connection if needed (if file is imported from a remote database for example).
 
 
 ### Feed Settings
