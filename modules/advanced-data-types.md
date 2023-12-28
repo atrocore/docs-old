@@ -10,29 +10,15 @@ Alias – allows to link the attribute value to another attribute value. If the 
 
 This attribute type should be used if you need to trasfer to some external system, eg some marketplace, your existing attribute values with a different attribute name/code etc. You have an attribute with a code "hat_size" and it needs to be transfered to the amazon marketplace with a code "headdress_size" and maybe a different name.
 
-## Relationship
+## Relation entity type
 
-For the entities Relationship type is added. Use this entity type if you need to create a many-to-many relationship betweeen two entities and assign additional properties to this relation, what is not possible for a standard many-to-many relation. 
+When you create a many-to-many relationship between two entities, an entity of type Relation is automatically created in the entity manager. The entity name is formed by combining the names of the two entities that form it. By default, the entity has two fields of the link type, which refer to the related base (or hieararchy) entities, as well as the fields id, created/modify at and created/modify by. The Advanced Data Types module provides the ability to edit, configure entities of type Relation and display it as a menu item. If you have this module installed, you can perform the same actions on a Relation entity as you would on a base or hierarchy entity. You can assign additional properties to Relation entity: add new fields, change labels, select Text Filter Fields, Default Order and create new links with other entities.
 
-A good example could be the entity "Product Channels", which is included in the PIM module. This entity links the entities "Products" and "Channels", so that multiple products can be linked with multiple channels. Additionally for the entity "Product Channels" you have the possibility to activate/deactivate some product for a channel. This checkbox is an additional property for a relationship "Product Channels". The Admin can also add any additional properties, if needed.
+A good example could be the entity "Product Channels", which is included in the PIM module. This entity links the entities "Products" and "Channels", so that multiple products can be linked with multiple channels. Additionally for the entity "Product Channels" you have the possibility to activate/deactivate some product for a channel. This checkbox is an additional property for a relation "Product Channels". The Admin can also add any additional properties, if needed.
 
-To find, create and edit them you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
+To find, create and edit entity you can go to `Administration / Entities` page. To create entity press `Create entity` button. To edit existing one select the entity and press `Edit` button.
 
-![Creating assets](_assets/advanced-data-types/creating-assets.png)
-
-### Creating and editing Relationship type entity
-
-When creating a "Relationship" type entity, select "Relationship" as a Type. Then, select entities to be related. As you can see on a picture below you need to have at lease two entities to be related. System name for the entity cannot be changed, but you still can change the singular and plural label for this Relationship.
-
-This entity type, like any other entity type allows you enable/disable this entity, set Default Order, Text Filter Fields, etc. 
-
-![Relationship](_assets/advanced-data-types/relationship.png)
-
-### Adding new fields
-
-To add additional fields for the entity of type "Relationship" go to `Administration / Entity` and press `Fields` for your entity. You see all the fields that this entity has. Some fields are generated automatically, you cannot edit or delete them. To add a new field click on `Add field` and choose the type for your new field.
-
-![additional fields](_assets/advanced-data-types/additional-fields.png)
+![Create an entity](_assets/advanced-data-types/creating-assets.png)
 
 ### Adding new relations
 
@@ -40,8 +26,18 @@ To add a new relation for your entity of type "Relationship"  go to `Administrat
 
 ![a new relation](_assets/advanced-data-types/a-new-relation.png)
 
-If you select the Many-to-One link type, two additional checkboxes appear on the link creation page:
-- `Relationship Entity` - check this option to mark the foreign entity as the target entity for a relationship. All target entities together build up a unique index
-- `Main Relationship Entity` - check this checkbox to mark this foreign entity as the primary entity from which the relative entity should be viewed. Only one of the foreign entities can be selected as the main one.
+For entity of type Relation it is possible to create only many-to-one link with another entity.
 
-![create a new link](_assets/advanced-data-types/create-a-new-link.png)
+### Adding new fields
+
+To add additional fields for the entity of type "Relation" go to `Administration / Entity` and press `Fields` for your entity. You see all the fields that this entity has. Some fields are generated automatically, you cannot edit or delete them. To add a new field click on `Add field` and choose the type for your new field.
+
+![additional fields](_assets/advanced-data-types/additional-fields.png)
+
+### Setting permissions for an entity of type Relation
+
+An entity of type relation inherits the permissions from the two entities it consists of. That is, if the user has permission to create, read and edit the ProductChannel entity, but editing is prohibited for one or both entities (Channel and Product), then the user will not be able to edit the ProductChannel entity either. Thus, in order to have permission to perform some action with an entity of the Relation type, the user must be allowed this action for both the entities that form it, as well as for the Relation entity itself.
+
+To configure permissions for a specific user, you need to add a role to the user and configure the permissions for that role in `Administration / Roles`
+
+![permissions settings](_assets/advanced-data-types/permissions.png)
