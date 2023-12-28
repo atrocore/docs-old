@@ -24,12 +24,6 @@ This jobs start system update on the schedule you set. The settings set by updat
 
 ![Main menu](_assets/scheduled-jobs/scheduled-jobs-main-menu.png)
 
-### Delete data forever
-
-This job removes deleted records from the database. By default, deleted data is stored for 90 days. But you can adjust the terms in the field "Minimum age (in days) of data " in job settings.
-
-![delete data forever](_assets/scheduled-jobs/scheduled-jobs-delete-data.png)
-
 
 ### Import Feed
 
@@ -76,3 +70,9 @@ This job starts the selected connector on the schedule you set. The settings set
 This job looks for the selected jobs done by import and export feeds and/or other scheduled jobs and then starts ones of them that had failed status in the last hours set in `Maximum hours to look back` field.
 
 ![Retrial Scheduled](_assets/scheduled-jobs/scheduled-jobs-retrials.png)
+
+# Delete data jobs
+
+Scheduled jobs also include jobs for deleting outdated data. These are system jobs which start with the "Delete". Only administrator can change the settings of the delete forever jobs in the config.php file. By default, import and export jobs and their logs, attachments, notifications, action history records and queue items older than 21 days are permanently deleted. Cleaning is run once a week, every Sunday. To see the status of the delete jobs, you need to select the Jobs tab on the Scheduled jobs page.
+
+![Delete data](_assets/scheduled-jobs/scheduled-jobs-delete-data.png)
