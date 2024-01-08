@@ -57,6 +57,8 @@ Attributes are automatically validated according to their type. The following at
 | Link			           | Reference to any other entity |
 | Script                      | a dynamic attribute that can have different data types and display the value of any field or attribute configured in the field of type Twig  |
 
+The ability to create attributes of type alias, link, link multiple ans script is provided by the Advanced Data Types module. You can read more about these types here [Advanced data types](/modules/advanced-data-types.md#attributes-of-type-alias).
+
 ## Creating
 
 To create a new attribute record, click `Attributes` in the navigation menu to get to the attribute [list view](#listing) and then click the `Create Attribute` button. The common creation pop-up window will appear:
@@ -190,52 +192,6 @@ Enter the measure name and code (by default, this field is optional) and click t
 ![create-unit-pop-up](./_assets/attributes/create-unit-popup.png)
 
 You can create a unit from the measure entity, or vice versa: go to the Unit entity, create a new unit via the "Create Unit" button and choose the measure to which you want to add it. In the "Convert to" field, you can choose the units of measurement to which the current unit should be converted. A default unit can be selected for both the measure and the attribute to which the measure is added.
-
-## Attribute of type link
-
-The link type attribute allows you to add any field of another entity to the product as a link. By clicking on the value of this attribute, you can go to the entity whose field it refers to. When creating an attribute of type link, you need to select the entity to which it refers and its field, which should be displayed as the attribute value.
-
-![link-attribute](./_assets/attributes/link-attribute.png)
-
-
-## Attribute of script type
-
-For some attributes you may need a value that consists of modified (or not) pre-existing values. For this attribute of script type may be needed. 
-Scrips are based on twig code (for more detailed information regarding twig syntaxes please go to https://twig.symfony.com/). 
-
-First, you need to select a desired output for the script:
- 
-![Attribute output type](./_assets/attributes/output_type.png)
-
-Then, by using Twig write a script:
- 
-![Attribute output type](./_assets/attributes/script_field.png)
-
-To see what the script does you can look at "Script value" field. It selects a random product attribute value from products that the script is assigned to.
- 
-![Attribute output type](./_assets/attributes/script_previw.png)
-
-### Here are some examples of what you can achieve by using attributes of script type:
-
-#### Selecting values for specific product
- 
-![Attribute output type](./_assets/attributes/script_field.png)
-
-![Attribute output type](./_assets/attributes/script_previw.png)
-
-This script finds if the product name is 'Topshop casual shirt' ({% set product=findEntity('Product', {'name': 'Topshop casual shirt'}) %}) and selects fields name {{product.name}}, createdAt {{product.createdAt}} and the name of an assigned catalog {{product.catalog.name}}. Then it finds all assets assigned to the product {%set productAssets = findEntities('ProductAsset')%} and selects the name of a product in this asset {{ productAsset.product }} and an asset in this asset {{ productAsset.asset }}.
-
-#### Referencing other attribute value
-
-![Attribute output type](./_assets/attributes/reffer_to_attribute.png)
-
-Here are two options how you can refer to another attribute value. The both find an attribute by Id. Option one is restricted to only current product (though you can select language and scope. If not selected they are 'main language' and 'Global'). The second finds any entity by all its defining fields (for ProductAttributeValue they are productId, attributeId, language and channel).
-
-#### Using conditions
-
-![Attribute output type](./_assets/attributes/conditions.png)
-
-You can use conditions for scripts. This script finds if the product SKU is empty or not and checks a mark if it is.
 
 ## Attribute of Date and Date-time type
 
